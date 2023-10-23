@@ -1,0 +1,11 @@
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+@use 'tailwindcss/common/fonts/font';
+
+html,
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
