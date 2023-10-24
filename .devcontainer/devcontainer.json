@@ -3,25 +3,31 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "college",
   "remoteUser": "node",
-  "extensions": [
-    "vue.volar",
-    "vue.vscode-typescript-vue-plugin",
-    "dbaeumer.vscode-eslint",
-    "hex-ci.stylelint-plus",
-    "kisstkondoros.vscode-codemetrics",
-    "streetsidesoftware.code-spell-checker",
-    "christian-kohler.path-intellisense",
-    "bradlc.vscode-tailwindcss",
-    "teamchilla.blueprint"
-  ],
-  "settings": {
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "bash",
-        "icon": "terminal-bash"
-      }
-    },
-    "terminal.integrated.defaultProfile.linux": "bash"
+  "customizations": {
+     "vscode": {
+        "extensions": [
+           "vue.volar",
+           "vue.vscode-typescript-vue-plugin",
+           "dbaeumer.vscode-eslint",
+           "hex-ci.stylelint-plus",
+           "kisstkondoros.vscode-codemetrics",
+           "streetsidesoftware.code-spell-checker",
+           "christian-kohler.path-intellisense",
+           "teamchilla.blueprint",
+           "Codium.codium",
+           "GitHub.copilot",
+           "GitHub.copilot-chat"
+        ],
+        "settings": {
+           "terminal.integrated.profiles.linux":{
+              "bash":{
+                 "path":"bash",
+                 "icon":"terminal-bash"
+              }
+           },
+           "terminal.integrated.defaultProfile.linux":"bash"
+        }
+     }
   },
   "workspaceFolder": "/usr/src/app"
 }

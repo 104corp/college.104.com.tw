@@ -3,11 +3,9 @@ services:
   college:
     image: public.ecr.aws/w7v4c0m1/node:lts
     container_name: "college"
-    build:
-      context: ./
-      dockerfile: Dockerfile
     volumes:
       - ../:/usr/src/app
     ports:
       - 3000:3000
+      - 443:443
     tty: true
