@@ -5,29 +5,26 @@
     "dev": "vite -m development",
     "build": "env BUILD=true vite build",
     "preview": "vite preview --port 5050",
+    "init": "sh script/generateKey.sh",
     "lint": "npm run lint:script && npm run lint:style",
     "lint:style": "stylelint --cache src/**/*.{vue,scss} --fix",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix src",
     "prepare": "husky install",
-    "test": "vitest",
-    "test:e2e": "start-server-and-test preview http://127.0.0.1:5050/ './node_modules/.bin/cypress install && cypress open'",
-    "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:5050/ './node_modules/.bin/cypress install && cypress run'"
+    "test": "vitest"
   },
   "dependencies": {
+    "@unocss/reset": "^0.57.0",
     "@vueuse/core": "^9.6.0",
     "@vueuse/head": "^1.0.25",
     "pinia": "^2.0.30",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6",
+    "unocss": "^0.57.0",
     "vitest": "^0.18.1",
-    "cypress": "^10.4.0",
-    "start-server-and-test": "^1.14.0",
-    "tailwindcss": "git+https://github.com/104corp/tailwindcss.git#v1.4.1"
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@104corp/eslint-config-104z": "git+https://github.com/104corp/104z-eslint-config.git#v2.1.0",
     "@104corp/stylelint-config-104z": "git+https://github.com/104corp/stylelint-config-104z.git#v1.0.0",
-    "@vitejs/plugin-legacy": "^4.0.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "husky": "^8.0.0",
     "sass": "^1.51.0",
