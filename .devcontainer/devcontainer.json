@@ -16,7 +16,8 @@
            "teamchilla.blueprint",
            "Codium.codium",
            "GitHub.copilot",
-           "GitHub.copilot-chat"
+           "GitHub.copilot-chat",
+           "antfu.unocss"
         ],
         "settings": {
            "terminal.integrated.profiles.linux":{

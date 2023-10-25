@@ -14,7 +14,6 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@unocss/reset": "^0.57.0",
     "@vueuse/core": "^9.6.0",
     "@vueuse/head": "^1.0.25",
     "pinia": "^2.0.30",

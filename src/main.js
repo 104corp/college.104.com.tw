@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createHead } from '@vueuse/head'
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
 
 import App from './App.vue'
 import router from './router'

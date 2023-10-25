@@ -1,11 +1,14 @@
-@use 'tailwindcss/base';
-@use 'tailwindcss/components';
-@use 'tailwindcss/utilities';
-@use 'tailwindcss/common/fonts/font';
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 html,
 body {
   display: flex;
   height: 100%;
   flex-direction: column;
+  font-size: 4px;
+  font-family: Arial, 'Microsoft JhengHei Modify', '微軟正黑體', 'Microsoft JhengHei', Roboto, 'PingFangTC', sans-serif;
+}
+
+html {
+
 }
