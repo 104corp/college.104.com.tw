@@ -1,0 +1,28 @@
+version: 0.2
+env:
+  shell: bash
+  parameter-store:
+    GITHUB_TOKEN: "GITHUB_TOKEN"
+phases:
+  install:
+    commands:
+      - n 20
+      - BRANCH_NAME=${CODEBUILD_WEBHOOK_HEAD_REF}
+      - BRANCH_NAME=${BRANCH_NAME,,}
+      - export BRANCH_NAME=${BRANCH_NAME##*/}
+      - export PULL_REQUEST=${CODEBUILD_SOURCE_VERSION##*/}
+      - npm ci --production=false
+
+  pre_build:
+    commands:
+      - npm run test
+      - npm run build
+
+  build:
+    commands:
+      - aws s3 sync dist s3://${DEPLOY_BUCKET_NAME}/${BRANCH_NAME} --delete --region=ap-northeast-1
+      - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'
+
+cache:
+  paths:
+    - "node_modules/**/*"

@@ -1,59 +1,55 @@
 import {
   fileURLToPath, URL 
 } from 'url'
-import legacy from '@vitejs/plugin-legacy'
   
-import { defineConfig } from 'vite'
+import {
+  defineConfig, loadEnv 
+} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-  
-// https://vitejs.dev/config/
-export default defineConfig({
-  build: {
-    target: [ 'es2015' ]
-  },
-  test: {
-    include: [ 'vitest/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}' ],
-    globals: true
-  },
-  plugins: [ 
-    vue(),
-    legacy({
-      targets: [
-        'defaults',
-        'not dead'
-      ],
-      modernPolyfills: true
-    }),
-    AutoImport({
-      include: [
-        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /\.vue$/,
-        /\.vue\?vue/, // .vue
-      ],
-      imports: [
-        'vue',
-        'vue-router'
-      ]
-    }),
-    Components({
-      dirs: [ 'src/components' ],
-      include: [ /\.vue$/, /\.vue\?vue/ ],
-      exclude: [ /[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/ ]
-    })
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
-  server: {
-    port: 3000,
-    host: true,
-    hmr: {
-      protocol: 'ws',
-      host: 'localhost'
-    }
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import fs from 'fs'
+import unocss from 'unocss/vite'
+
+export default defineConfig(({
+  command, mode 
+}) => {
+  process.env = {
+    ...process.env, ...loadEnv(mode, process.cwd()) 
+  }
+  process.env.VITE_IS_LOCAL = command === 'serve' && mode === 'development'
+
+  return {
+    build: {
+      target: [ 'esnext' ]
+    },
+    test: {
+      include: [ 'vitest/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}' ],
+      globals: true
+    },
+    plugins: [ 
+      vue(),
+      unocss(),
+      AutoImport({
+        resolvers: [ ElementPlusResolver() ],
+      }),
+      Components({
+        resolvers: [ ElementPlusResolver() ],
+      })
+    ],
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      }
+    },
+    server: process.env.VITE_IS_LOCAL ? {
+      port: 443,
+      host: '0.0.0.0',
+      https: {
+        key: fs.readFileSync('./.devcontainer/cert/wildcard.104-dev.com.tw-key.pem'),
+        cert: fs.readFileSync('./.devcontainer/cert/wildcard.104-dev.com.tw.pem'),
+      }
+    } : null
   }
 })
