@@ -25,8 +25,12 @@ export default defineConfig(({
       target: [ 'esnext' ]
     },
     test: {
-      include: [ 'vitest/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}' ],
-      globals: true
+      include: [ 'test/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}' ],
+      globals: true,
+      coverage: {
+        all: true,
+        include: [ 'src/**/*.{js,vue}' ]
+      }
     },
     plugins: [ 
       vue(),
