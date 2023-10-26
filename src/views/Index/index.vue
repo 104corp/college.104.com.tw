@@ -18,8 +18,8 @@
     </div>
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
-        <div class="Index__job__wrapper py-16 bg-white rounded-16 shadow-100">
-          <div class="flex items-center gap-12 mx-16">
+        <div class="Index__job__wrapper py-16 bg-white rounded-16 shadow-100 md:py-24">
+          <div class="flex items-center gap-12 mx-16 md:gap-24 md:mx-32">
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
                 <input
@@ -29,7 +29,7 @@
                   class="w-full text-14 focus:outline-none caret-orange-400"
                 >
               </div>
-              <button class="flex items-center gap-12 p-12 w-1/2">
+              <button class="flex items-center gap-12 pr-12 py-12 w-1/2">
                 <span class="w-1 h-12 bg-gray-400"></span>
                 <span class="flex-1 text-14 text-gray-400 text-left text-nowrap">地區</span>
                 <i class="i-icon:arrow text-gray-400 transform rotate-90"></i>
@@ -38,10 +38,10 @@
             <a
               href=""
               target="_blank"
-              class="btn btn-primary px-12 py-10"
+              class="btn btn-primary px-12 py-10 md:px-77"
             >搜尋</a>
           </div>
-          <div class="Index__job__tags flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26">
+          <div class="Index__job__tags flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26 md:px-32">
             <a
               href=""
               target="_blank"
@@ -93,127 +93,175 @@
               class="flex-none tag-primary-green-200"
             >自由安排時間</a>
           </div>
-          <div class="mx-16 mt-16 pt-12 bg-blue-300 rounded-8">
-            <div class="flex items-center justify-between px-12">
-              <div class="rounded-24 bg-white border border-gray-200">
-                <button class="px-16 py-8 text-14 font-700 text-white bg-lake-200 rounded-24">
-                  打工職缺
-                </button>
-                <button class="px-16 py-8 text-14 font-700 text-gray-500 rounded-24 hover:text-lake-200">
-                  實習機會
-                </button>
+          <div class="mx-16 mt-16 md:flex md:gap-28 md:mx-32 md:mt-28">
+            <div class="flex-1 pt-12 bg-blue-300 rounded-8 md:w-434 lg:w-auto">
+              <div class="flex items-center justify-between px-12">
+                <div class="rounded-24 bg-white border border-gray-200">
+                  <button class="px-16 py-8 text-14 font-700 text-white bg-lake-200 rounded-24 md:py-4">
+                    打工職缺
+                  </button>
+                  <button class="px-16 py-8 text-14 font-700 text-gray-500 rounded-24 md:hover:text-lake-200 md:py-4">
+                    實習機會
+                  </button>
+                </div>
+                <a
+                  href=""
+                  target="_blank"
+                  class="inline-flex items-center text-14 font-700 text-gray-500 md:hover:text-orange-400"
+                >更多<i class="i-icon:arrow ml-4"></i></a>
               </div>
+              <div class="Index__job__card__wrapper overflow-x-scroll px-12 pt-8 pb-12">
+                <div class="grid grid-cols-3 gap-8 min-w-676">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                  >
+                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                    </div>
+                    <div class="flex gap-8 mt-4 text-12 font-700">
+                      <div class="text-gray-500">
+                        新北市新店區
+                      </div>
+                      <div class="text-orange-400">
+                        時薪176~180元
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224">
               <a
                 href=""
                 target="_blank"
-                class="inline-flex items-center text-14 font-700 text-gray-500 hover:text-orange-400"
-              >更多<i class="i-icon:arrow ml-4"></i></a>
-            </div>
-            <div class="Index__job__card__wrapper overflow-x-scroll px-12 pt-8 pb-12">
-              <div class="grid grid-cols-3 gap-8 min-w-676">
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
+              >
+                <img
+                  src="@/assets/img/default-img.png"
+                  alt="無經驗可"
+                  draggable="false"
+                  class="object-cover w-full h-full rounded-8"
                 >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
+              </a>
+              <a
+                href=""
+                target="_blank"
+              >
+                <img
+                  src="@/assets/img/default-img.png"
+                  alt="暑期打工"
+                  draggable="false"
+                  class="object-cover w-full h-full rounded-8"
                 >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
+              </a>
+              <a
+                href=""
+                target="_blank"
+              >
+                <img
+                  src="@/assets/img/default-img.png"
+                  alt="時間彈性"
+                  draggable="false"
+                  class="object-cover w-full h-full rounded-8"
                 >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
+              </a>
+              <a
+                href=""
+                target="_blank"
+              >
+                <img
+                  src="@/assets/img/default-img.png"
+                  alt="短期任務"
+                  draggable="false"
+                  class="object-cover w-full h-full rounded-8"
                 >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
-                >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  target="_blank"
-                  class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 hover:shadow-100"
-                >
-                  <div class="Index__job__card__title text-14 font-700 text-blue-200">
-                    [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                  </div>
-                  <div class="flex gap-8 mt-4 text-12 font-700">
-                    <div class="text-gray-500">
-                      新北市新店區
-                    </div>
-                    <div class="text-orange-400">
-                      時薪176~180元
-                    </div>
-                  </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
