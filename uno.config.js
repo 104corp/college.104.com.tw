@@ -17,7 +17,8 @@ export default defineConfig({
     presetIcons({
       collections: {
         icon: FileSystemIconLoader(
-          './src/assets/icons'
+          './src/assets/icons',
+          svg => svg.replace(/#7E7E7E/, 'currentColor')
         )
       }
     })
@@ -65,7 +66,8 @@ export default defineConfig({
       },
       blue: {
         100: '#4E91FF',
-        200: '#1654B9'
+        200: '#1654B9',
+        300: '#F1F9F8'
       },
       purple: {
         100: '#78269F'
@@ -116,6 +118,7 @@ export default defineConfig({
           'box-shadow': `${ x }px ${ y }px ${ blur }px ${ spread }px`
         }
       }
-    ]
+    ],
+    [ 'shadow-100', { 'box-shadow': '0 2px 34px 0 rgba(126, 126, 126, 0.2)' } ]
   ]
 })
