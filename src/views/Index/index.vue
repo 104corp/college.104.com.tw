@@ -275,77 +275,77 @@
     <div class="SideBar mt-12 h-44 border">
       SideBar
     </div>
-  </div>
-  <div class="Index__tool">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-      BEST TOOLS
-    </div>
-    <h2 class="text-20 font-700 text-gray-600 text-center">
-      大學生必用神器介紹
-    </h2>
-    <div class="ToolShowcase mt-24 h-548 text-16 border">
-      ToolShowcase
-    </div>
-  </div>
-  <div class="Index__resume">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-      RESUME HELPER
-    </div>
-    <h2 class="text-20 font-700 text-gray-600 text-center">
-      幫你做出好履歷
-    </h2>
-  </div>
-  <div class="Index__story">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-      STORIES
-    </div>
-    <h2 class="text-20 font-700 text-gray-600 text-center">
-      看看他們在職場的故事
-    </h2>
-  </div>
-  <div class="Index__help">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
-      GET HELP
-    </div>
-    <h2 class="text-20 font-700 text-white text-center">
-      有職場疑問？我們為你解答
-    </h2>
-  </div>
-  <div class="Index__news">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-      NEWS
-    </div>
-    <h2 class="text-20 font-700 text-gray-600 text-center">
-      產業新訊
-    </h2>
-    <div class="ArticleGallery h-720 text-16 border">
-      ArticleGallery
-    </div>
-  </div>
-  <div class="Index__follow">
-    <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
-      FOLLOW US
-    </div>
-    <h2 class="text-20 font-700 text-white text-center">
-      關注動態
-    </h2>
-    <div class="Index__follow__wrapper">
-      <div>
-        <div class="ChannelInfo h-112 border"></div>
-        <div>
-          <div class="text-16 font-700 text-gray-600">
-            最新貼文
-          </div>
-          <div class="PostGallery h-188 border"></div>
-        </div>
+    <div class="Index__tool">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
+        BEST TOOLS
       </div>
-      <div>
-        <div class="ChannelInfo h-112 border"></div>
+      <h2 class="text-20 font-700 text-gray-600 text-center">
+        大學生必用神器介紹
+      </h2>
+      <div class="ToolShowcase mt-24 h-548 text-16 border">
+        ToolShowcase
+      </div>
+    </div>
+    <div class="Index__resume">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
+        RESUME HELPER
+      </div>
+      <h2 class="text-20 font-700 text-gray-600 text-center">
+        幫你做出好履歷
+      </h2>
+    </div>
+    <div class="Index__story">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
+        STORIES
+      </div>
+      <h2 class="text-20 font-700 text-gray-600 text-center">
+        看看他們在職場的故事
+      </h2>
+    </div>
+    <div class="Index__help">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
+        GET HELP
+      </div>
+      <h2 class="text-20 font-700 text-white text-center">
+        有職場疑問？我們為你解答
+      </h2>
+    </div>
+    <div class="Index__news">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
+        NEWS
+      </div>
+      <h2 class="text-20 font-700 text-gray-600 text-center">
+        產業新訊
+      </h2>
+      <div class="ArticleGallery h-720 text-16 border">
+        ArticleGallery
+      </div>
+    </div>
+    <div class="Index__follow">
+      <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
+        FOLLOW US
+      </div>
+      <h2 class="text-20 font-700 text-white text-center">
+        關注動態
+      </h2>
+      <div class="Index__follow__wrapper">
         <div>
-          <div class="text-16 font-700 text-gray-600">
-            最新單集
+          <div class="ChannelInfo h-112 border"></div>
+          <div>
+            <div class="text-16 font-700 text-gray-600">
+              最新貼文
+            </div>
+            <div class="PostGallery h-188 border"></div>
           </div>
-          <div class="PodcastEpisodes h-238 border"></div>
+        </div>
+        <div>
+          <div class="ChannelInfo h-112 border"></div>
+          <div>
+            <div class="text-16 font-700 text-gray-600">
+              最新單集
+            </div>
+            <div class="PodcastEpisodes h-238 border"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -374,10 +374,10 @@
 }
 
 .Index {
-  background-image: url('@/assets/img/Index/bg-top.svg'), linear-gradient(#d1ecea, #d1ecea);
-  background-position: top 100px center, top 100px center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto 225px, 100% 542px;
+  background-image: url('@/assets/img/Index/bg-top.png'), linear-gradient(#d1ecea, #d1ecea), url('@/assets/img/Index/bg-deco.png');
+  background-position: top 100px center, top 100px center, top 100px center;
+  background-repeat: no-repeat, no-repeat, repeat-y;
+  background-size: auto 225px, 100% 542px, 100% auto;
 
   &__job {
     &__tags {
@@ -401,9 +401,15 @@
 }
 
 // xl | lg | md | sm
+@screen md {
+  .Index {
+    background-size: auto 225px, 100% 630px, 100% auto;
+  }
+}
+
 @screen xl {
   .Index {
-    background-size: 100% 225px, 100% 630px;
+    background-size: 100% 225px, 100% 630px, 100% auto;
 
     .layout-container {
       max-width: 1440px;
