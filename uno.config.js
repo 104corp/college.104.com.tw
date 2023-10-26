@@ -61,6 +61,7 @@ export default defineConfig({
       },
       yellow: {
         100: '#FFC31B',
+        200: '#FFF1C1'
       },
       blue: {
         100: '#4E91FF',
