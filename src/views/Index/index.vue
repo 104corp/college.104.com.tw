@@ -18,7 +18,7 @@
     </div>
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
-        <div class="Index__job__wrapper py-16 bg-white rounded-16 shadow-100 md:py-24">
+        <div class="py-16 bg-white rounded-16 shadow-100 md:py-24">
           <div class="flex items-center gap-12 mx-16 md:gap-24 md:mx-32">
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
@@ -41,7 +41,7 @@
               class="btn btn-primary px-12 py-10 md:px-77"
             >搜尋</a>
           </div>
-          <div class="Index__job__tags flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26 md:px-32">
+          <div class="flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26 md:px-32">
             <a
               href=""
               target="_blank"
@@ -117,7 +117,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -134,7 +134,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -151,7 +151,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -168,7 +168,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -185,7 +185,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -202,7 +202,7 @@
                     target="_blank"
                     class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
                   >
-                    <div class="Index__job__card__title h-40 text-14 font-700 text-blue-200">
+                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                       [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                     </div>
                     <div class="flex gap-8 mt-4 text-12 font-700">
@@ -286,13 +286,254 @@
         ToolShowcase
       </div>
     </div>
-    <div class="Index__resume">
-      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-        RESUME HELPER
+    <div class="Index__resume pt-60 -mt-60">
+      <div class="pb-60 bg-lake-300">
+        <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
+          RESUME HELPER
+        </div>
+        <h2 class="text-20 font-700 text-gray-600 text-center">
+          幫你做出好履歷
+        </h2>
+        <div class="layout-container overflow-hidden mt-24 text-gray-600 bg-white rounded-16 shadow-100">
+          <div class="py-24 md:flex md:items-center">
+            <div class="mx-16 md:flex-none md:ml-40 md:mr-32 md:w-240">
+              <div class="text-20 font-700">
+                多種履歷版型<span class="md:hidden">，</span><br class="hidden md:block">為你增加亮點
+              </div>
+              <div class="mt-4 text-base">
+                自訂內容更多元的呈現自我
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-end mx-16 mt-16">
+                <a
+                  href=""
+                  target="_blank"
+                  class="inline-flex items-center text-14 font-700 text-gray-500 md:hover:text-orange-400"
+                >更多履歷<i class="i-icon:arrow ml-4"></i></a>
+              </div>
+              <div class="overflow-x-scroll">
+                <div class="flex gap-16 mt-16 mx-16 w-full min-w-848 max-w-1088 md:pl-0 md:pr-0">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                  >
+                    <div class="h-120">
+                      <img
+                        src="@/assets/img/default-img.png"
+                        alt="封面"
+                        draggable="false"
+                        class="object-cover w-full h-full"
+                      >
+                    </div>
+                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                        <img
+                          src="@/assets/img/default-img.png"
+                          alt="頭貼"
+                          draggable="false"
+                          class="object-cover w-full h-full"
+                        >
+                      </div>
+                      <div class="ml-12 mt-4 mb-8">
+                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="text-14">數據分析師</div>
+                      </div>
+                    </div>
+                    <div class="p-16 pt-8">
+                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                      <ul class="flex flex-wrap gap-8 mt-8">
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                  >
+                    <div class="h-120">
+                      <img
+                        src="@/assets/img/default-img.png"
+                        alt="封面"
+                        draggable="false"
+                        class="object-cover w-full h-full"
+                      >
+                    </div>
+                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                        <img
+                          src="@/assets/img/default-img.png"
+                          alt="頭貼"
+                          draggable="false"
+                          class="object-cover w-full h-full"
+                        >
+                      </div>
+                      <div class="ml-12 mt-4 mb-8">
+                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="text-14">數據分析師</div>
+                      </div>
+                    </div>
+                    <div class="p-16 pt-8">
+                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                      <ul class="flex flex-wrap gap-8 mt-8">
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                  >
+                    <div class="h-120">
+                      <img
+                        src="@/assets/img/default-img.png"
+                        alt="封面"
+                        draggable="false"
+                        class="object-cover w-full h-full"
+                      >
+                    </div>
+                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                        <img
+                          src="@/assets/img/default-img.png"
+                          alt="頭貼"
+                          draggable="false"
+                          class="object-cover w-full h-full"
+                        >
+                      </div>
+                      <div class="ml-12 mt-4 mb-8">
+                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="text-14">數據分析師</div>
+                      </div>
+                    </div>
+                    <div class="p-16 pt-8">
+                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                      <ul class="flex flex-wrap gap-8 mt-8">
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-16 bg-yellow-200">
+            <div class="text-base font-700 text-gray-500">
+              履歷工具
+            </div>
+            <div class="grid grid-cols-2 gap-16 mt-8">
+              <a
+                href=""
+                target="_blank"
+                class="flex items-center gap-12"
+              >
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                  <img
+                    src="@/assets/img/Index/icons/icon-resume-example.svg"
+                    alt="履歷範本"
+                    draggable="false"
+                    class="w-16"
+                  >
+                </div>
+                <div>
+                  <div class="text-base font-700">履歷範本</div>
+                  <div class="text-12 text-gray-500">參考他人履歷</div>
+                </div>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="flex items-center gap-12"
+              >
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                  <img
+                    src="@/assets/img/Index/icons/icon-resume-ai.svg"
+                    alt="AI履歷健診"
+                    draggable="false"
+                    class="w-16"
+                  >
+                </div>
+                <div>
+                  <div class="text-base font-700">AI履歷健診</div>
+                  <div class="text-12 text-gray-500">一鍵分析找優化方向</div>
+                </div>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="flex items-center gap-12"
+              >
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                  <img
+                    src="@/assets/img/Index/icons/icon-resume-check.svg"
+                    alt="真人履歷健診"
+                    draggable="false"
+                    class="w-16"
+                  >
+                </div>
+                <div>
+                  <div class="text-base font-700">真人履歷健診</div>
+                  <div class="text-12 text-gray-500">一對一免費線上健診</div>
+                </div>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="flex items-center gap-12"
+              >
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                  <img
+                    src="@/assets/img/Index/icons/icon-resume-article.svg"
+                    alt="履歷面試教學"
+                    draggable="false"
+                    class="w-16"
+                  >
+                </div>
+                <div>
+                  <div class="text-base font-700">履歷面試教學</div>
+                  <div class="text-12 text-gray-500">豐富的履歷教學文章</div>
+                </div>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="flex items-center gap-12"
+              >
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                  <img
+                    src="@/assets/img/Index/icons/icon-resume-tutorial.svg"
+                    alt="求職衝刺班"
+                    draggable="false"
+                    class="w-16"
+                  >
+                </div>
+                <div>
+                  <div class="text-base font-700">求職衝刺班</div>
+                  <div class="text-12 text-gray-500">履歷面試線上課程</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2 class="text-20 font-700 text-gray-600 text-center">
-        幫你做出好履歷
-      </h2>
     </div>
     <div class="Index__story">
       <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
@@ -358,45 +599,22 @@
 </script>
 
 <style lang="scss">
-@mixin text-overflow($line: 1) {
-  @if $line > 1 {
-    display: -webkit-box;
-    -webkit-line-clamp: $line;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  @else {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-
 .Index {
   background-image: url('@/assets/img/Index/bg-top.png'), linear-gradient(#d1ecea, #d1ecea), url('@/assets/img/Index/bg-deco.png');
   background-position: top 100px center, top 100px center, top 100px center;
   background-repeat: no-repeat, no-repeat, repeat-y;
   background-size: auto 225px, 100% 542px, 100% auto;
 
-  &__job {
-    &__tags {
-      &::-webkit-scrollbar {
-        --at-apply: 'hidden';
-      }
+  .overflow-x-scroll {
+    &::-webkit-scrollbar {
+      --at-apply: 'hidden';
     }
+  }
 
-    &__card {
-      &__wrapper {
-        &::-webkit-scrollbar {
-          --at-apply: 'hidden';
-        }
-      }
-
-      &__title {
-        @include text-overflow($line: 2);
-      }
-    }
+  &__resume {
+    background-image: url('@/assets/img/Index/bg-wave-blue.png');
+    background-repeat: repeat-x;
+    background-size: auto 61px;
   }
 }
 

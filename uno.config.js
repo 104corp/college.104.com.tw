@@ -54,7 +54,8 @@ export default defineConfig({
       },
       lake: {
         100: '#39C8D0',
-        200: '#00AFB8'
+        200: '#00AFB8',
+        300: '#D1ECEA'
       },
       green: {
         100: '#92CF53',
@@ -119,6 +120,25 @@ export default defineConfig({
         }
       }
     ],
-    [ 'shadow-100', { 'box-shadow': '0 2px 34px 0 rgba(126, 126, 126, 0.2)' } ]
+    [ 'shadow-100', { 'box-shadow': '0 2px 34px 0 rgba(126, 126, 126, 0.2)' } ],
+    [
+      /^text-overflow-([0-9_]*)$/,
+      ([ , line ]) => {
+        if (line > 1){
+          return {
+            'display': '-webkit-box',
+            '-webkit-line-clamp': line,
+            '-webkit-box-orient': 'vertical',
+            'overflow': 'hidden',
+          }
+        } else {
+          return {
+            'overflow': 'hidden',
+            'text-overflow': 'ellipsis',
+            'white-space': 'nowrap',
+          }
+        }
+      }
+    ]
   ]
 })
