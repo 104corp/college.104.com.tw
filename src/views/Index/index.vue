@@ -295,17 +295,17 @@
           幫你做出好履歷
         </h2>
         <div class="layout-container overflow-hidden mt-24 text-gray-600 bg-white rounded-16 shadow-100">
-          <div class="py-24 md:flex md:items-center">
+          <div class="pt-24 md:flex md:items-center">
             <div class="mx-16 md:flex-none md:ml-40 md:mr-32 md:w-240">
-              <div class="text-20 font-700">
+              <div class="text-20 font-700 md:text-24">
                 多種履歷版型<span class="md:hidden">，</span><br class="hidden md:block">為你增加亮點
               </div>
-              <div class="mt-4 text-base">
+              <div class="mt-4 text-base md:mt-24">
                 自訂內容更多元的呈現自我
               </div>
             </div>
-            <div>
-              <div class="flex items-center justify-end mx-16 mt-16">
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-end mx-16 mt-16 md:ml-0 md:mr-40">
                 <a
                   href=""
                   target="_blank"
@@ -313,11 +313,11 @@
                 >更多履歷<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll">
-                <div class="flex gap-16 mt-16 mx-16 w-full min-w-848 max-w-1088 md:pl-0 md:pr-0">
+                <div class="flex gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:ml-0 md:mr-40">
                   <a
                     href=""
                     target="_blank"
-                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                   >
                     <div class="h-120">
                       <img
@@ -327,7 +327,7 @@
                         class="object-cover w-full h-full"
                       >
                     </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
                       <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
                         <img
                           src="@/assets/img/default-img.png"
@@ -337,7 +337,7 @@
                         >
                       </div>
                       <div class="ml-12 mt-4 mb-8">
-                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
                         <div class="text-14">數據分析師</div>
                       </div>
                     </div>
@@ -349,14 +349,13 @@
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                       </ul>
                     </div>
                   </a>
                   <a
                     href=""
                     target="_blank"
-                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                   >
                     <div class="h-120">
                       <img
@@ -366,7 +365,7 @@
                         class="object-cover w-full h-full"
                       >
                     </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
                       <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
                         <img
                           src="@/assets/img/default-img.png"
@@ -376,7 +375,7 @@
                         >
                       </div>
                       <div class="ml-12 mt-4 mb-8">
-                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
                         <div class="text-14">數據分析師</div>
                       </div>
                     </div>
@@ -388,14 +387,13 @@
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                       </ul>
                     </div>
                   </a>
                   <a
                     href=""
                     target="_blank"
-                    class="overflow-hidden w-318 rounded-8 border border-gray-200 md:hover:shadow-100"
+                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                   >
                     <div class="h-120">
                       <img
@@ -405,7 +403,7 @@
                         class="object-cover w-full h-full"
                       >
                     </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-200">
+                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
                       <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
                         <img
                           src="@/assets/img/default-img.png"
@@ -415,7 +413,7 @@
                         >
                       </div>
                       <div class="ml-12 mt-4 mb-8">
-                        <div class="text-16 leading-24 font-700">梁小賢</div>
+                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
                         <div class="text-14">數據分析師</div>
                       </div>
                     </div>
@@ -427,7 +425,6 @@
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
                         <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
                       </ul>
                     </div>
                   </a>
@@ -435,99 +432,99 @@
               </div>
             </div>
           </div>
-          <div class="p-16 bg-yellow-200">
-            <div class="text-base font-700 text-gray-500">
+          <div class="p-16 bg-yellow-200 bg-op-60 md:flex md:items-center md:gap-16 md:px-40">
+            <div class="text-base font-700 text-gray-500 md:flex-none md:w-32">
               履歷工具
             </div>
-            <div class="grid grid-cols-2 gap-16 mt-8">
+            <div class="grid grid-cols-2 gap-16 mt-8 md:flex-1 md:grid-cols-3 md:gap-0 xl:grid-cols-5">
               <a
                 href=""
                 target="_blank"
-                class="flex items-center gap-12"
+                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-example.svg"
                     alt="履歷範本"
                     draggable="false"
-                    class="w-16"
+                    class="w-16 md:w-24"
                   >
                 </div>
                 <div>
-                  <div class="text-base font-700">履歷範本</div>
-                  <div class="text-12 text-gray-500">參考他人履歷</div>
+                  <div class="Index__resume__tool--name text-base font-700">履歷範本</div>
+                  <div class="text-12 text-gray-500 md:text-14">參考他人履歷</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="flex items-center gap-12"
+                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-ai.svg"
                     alt="AI履歷健診"
                     draggable="false"
-                    class="w-16"
+                    class="w-16 md:w-24"
                   >
                 </div>
                 <div>
-                  <div class="text-base font-700">AI履歷健診</div>
-                  <div class="text-12 text-gray-500">一鍵分析找優化方向</div>
+                  <div class="Index__resume__tool--name text-base font-700">AI履歷健診</div>
+                  <div class="text-12 text-gray-500 md:text-14">一鍵分析找優化方向</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="flex items-center gap-12"
+                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-check.svg"
                     alt="真人履歷健診"
                     draggable="false"
-                    class="w-16"
+                    class="w-16 md:w-24"
                   >
                 </div>
                 <div>
-                  <div class="text-base font-700">真人履歷健診</div>
-                  <div class="text-12 text-gray-500">一對一免費線上健診</div>
+                  <div class="Index__resume__tool--name text-base font-700">真人履歷健診</div>
+                  <div class="text-12 text-gray-500 md:text-14">一對一免費線上健診</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="flex items-center gap-12"
+                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-article.svg"
                     alt="履歷面試教學"
                     draggable="false"
-                    class="w-16"
+                    class="w-16 md:w-24"
                   >
                 </div>
                 <div>
-                  <div class="text-base font-700">履歷面試教學</div>
-                  <div class="text-12 text-gray-500">豐富的履歷教學文章</div>
+                  <div class="Index__resume__tool--name text-base font-700">履歷面試教學</div>
+                  <div class="text-12 text-gray-500 md:text-14">豐富的履歷教學文章</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="flex items-center gap-12"
+                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200">
+                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-tutorial.svg"
                     alt="求職衝刺班"
                     draggable="false"
-                    class="w-16"
+                    class="w-16 md:w-24"
                   >
                 </div>
                 <div>
-                  <div class="text-base font-700">求職衝刺班</div>
-                  <div class="text-12 text-gray-500">履歷面試線上課程</div>
+                  <div class="Index__resume__tool--name text-base font-700">求職衝刺班</div>
+                  <div class="text-12 text-gray-500 md:text-14">履歷面試線上課程</div>
                 </div>
               </a>
             </div>
@@ -622,6 +619,28 @@
 @screen md {
   .Index {
     background-size: auto 225px, 100% 630px, 100% auto;
+
+    &__resume {
+      &__card {
+        &:hover {
+          .Index__resume__card--name {
+            --at-apply: 'text-orange-400';
+          }
+        }
+      }
+
+      &__tool {
+        &:hover {
+          .Index__resume__tool--icon {
+            --at-apply: 'bg-orange-100';
+          }
+
+          .Index__resume__tool--name {
+            --at-apply: 'text-orange-400';
+          }
+        }
+      }
+    }
   }
 }
 
