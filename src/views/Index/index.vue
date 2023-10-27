@@ -328,7 +328,7 @@
                       >
                     </div>
                     <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
                         <img
                           src="@/assets/img/default-img.png"
                           alt="頭貼"
@@ -366,7 +366,7 @@
                       >
                     </div>
                     <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
                         <img
                           src="@/assets/img/default-img.png"
                           alt="頭貼"
@@ -404,7 +404,7 @@
                       >
                     </div>
                     <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 transform mb-8">
+                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
                         <img
                           src="@/assets/img/default-img.png"
                           alt="頭貼"
@@ -533,7 +533,7 @@
       </div>
     </div>
     <div class="Index__story pt-60 -mt-60">
-      <div class="pb-60 bg-white">
+      <div class="pb-120 bg-white">
         <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
           STORIES
         </div>
@@ -703,18 +703,341 @@
           <a
             href=""
             target="_blank"
-            class="inline-block px-16 text-base font-700 text-lake-200 border border-lake-200 rounded-4"
+            class="inline-block px-16 text-base font-700 text-lake-200 border border-lake-200 rounded-4 md:px-32"
           >更多他人經驗</a>
         </div>
       </div>
     </div>
-    <div class="Index__help">
-      <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
-        GET HELP
+    <div class="Index__help pt-60 -mt-60">
+      <div class="Index__help__wrapper pb-60 bg-lake-200">
+        <div class="text-36 leading-44 family-Bungee text-yellow-200 text-center md:pt-20">
+          GET HELP
+        </div>
+        <h2 class="text-20 font-700 text-white text-center">
+          有職場疑問？我們為你解答
+        </h2>
+        <div class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:grid-cols-2 md:gap-y-12 md:mt-32">
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+          >
+            <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
+            <div class="min-w-0">
+              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="flex items-center gap-4 flex-wrap mt-4">
+                <div class="flex">
+                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
+                </div>
+                <div class="text-14 text-gray-500">11 回答<span class="ml-10">觀看1,974</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex justify-center mt-24">
+          <a
+            href=""
+            target="_blank"
+            class="inline-block px-16 text-base font-700 text-white border border-white rounded-4 md:px-32"
+          >更多職場問答</a>
+        </div>
       </div>
-      <h2 class="text-20 font-700 text-white text-center">
-        有職場疑問？我們為你解答
-      </h2>
     </div>
     <div class="Index__news">
       <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
@@ -787,6 +1110,29 @@
     background-repeat: repeat-x;
     background-size: auto 61px;
   }
+
+  &__help {
+    background-image: url('@/assets/img/Index/bg-wave-lake.png');
+    background-repeat: repeat-x;
+    background-size: auto 61px;
+
+    &__wrapper {
+      background-image: url('@/assets/img/Index/bg-qa.png');
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+    }
+
+    .layout-container {
+      a {
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          --at-apply: 'hidden';
+        }
+      }
+    }
+  }
 }
 
 // xl | lg | md | sm
@@ -820,6 +1166,38 @@
       &__card {
         &:hover {
           .Index__story__card--title {
+            --at-apply: 'text-lake-200';
+          }
+        }
+      }
+    }
+
+    &__help {
+      .layout-container {
+        a {
+          &:nth-child(n) {
+            --at-apply: 'flex';
+          }
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(5),
+          &:nth-child(6) {
+            --at-apply: 'mr-100';
+          }
+
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(7),
+          &:nth-child(8) {
+            --at-apply: 'ml-100';
+          }
+        }
+      }
+
+      &__card {
+        &:hover {
+          .Index__help__card--title {
             --at-apply: 'text-lake-200';
           }
         }
