@@ -110,7 +110,7 @@
                   class="inline-flex items-center text-14 font-700 text-gray-500 md:hover:text-orange-400"
                 >更多<i class="i-icon:arrow ml-4"></i></a>
               </div>
-              <div class="Index__job__card__wrapper overflow-x-scroll px-12 pt-8 pb-12">
+              <div class="overflow-x-scroll px-12 pt-8 pb-12">
                 <div class="grid grid-cols-3 gap-8 min-w-676">
                   <a
                     href=""
@@ -287,7 +287,7 @@
       </div>
     </div>
     <div class="Index__resume pt-60 -mt-60">
-      <div class="pb-60 bg-lake-300">
+      <div class="pb-120 bg-lake-300">
         <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
           RESUME HELPER
         </div>
@@ -532,13 +532,181 @@
         </div>
       </div>
     </div>
-    <div class="Index__story">
-      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
-        STORIES
+    <div class="Index__story pt-60 -mt-60">
+      <div class="pb-60 bg-white">
+        <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
+          STORIES
+        </div>
+        <h2 class="text-20 font-700 text-gray-600 text-center">
+          看看他們在職場的故事
+        </h2>
+        <div class="overflow-x-scroll mt-24 md:overflow-hidden md:relative md:flex md:items-center justify-center">
+          <div class="flex gap-24 min-w-0">
+            <a
+              href=""
+              target="_blank"
+              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+            >
+              <div class="relative flex flex-col items-center pb-20">
+                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="故事"
+                    draggable="false"
+                  >
+                </div>
+                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="頭貼"
+                    draggable="false"
+                    class="object-cover w-full h-full"
+                  >
+                </div>
+              </div>
+              <div class="font-700 text-center">
+                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+              </div>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+            >
+              <div class="relative flex flex-col items-center pb-20">
+                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="故事"
+                    draggable="false"
+                  >
+                </div>
+                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="頭貼"
+                    draggable="false"
+                    class="object-cover w-full h-full"
+                  >
+                </div>
+              </div>
+              <div class="font-700 text-center">
+                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+              </div>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+            >
+              <div class="relative flex flex-col items-center pb-20">
+                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="故事"
+                    draggable="false"
+                  >
+                </div>
+                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="頭貼"
+                    draggable="false"
+                    class="object-cover w-full h-full"
+                  >
+                </div>
+              </div>
+              <div class="font-700 text-center">
+                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+              </div>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+            >
+              <div class="relative flex flex-col items-center pb-20">
+                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="故事"
+                    draggable="false"
+                  >
+                </div>
+                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="頭貼"
+                    draggable="false"
+                    class="object-cover w-full h-full"
+                  >
+                </div>
+              </div>
+              <div class="font-700 text-center">
+                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+              </div>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+            >
+              <div class="relative flex flex-col items-center pb-20">
+                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="故事"
+                    draggable="false"
+                  >
+                </div>
+                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                  <img
+                    src="@/assets/img/default-img.png"
+                    alt="頭貼"
+                    draggable="false"
+                    class="object-cover w-full h-full"
+                  >
+                </div>
+              </div>
+              <div class="font-700 text-center">
+                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+              </div>
+            </a>
+          </div>
+          <div class="hidden layout-container md:block md:absolute md:w-full xl:max-w-1200">
+            <div class="flex justify-between">
+              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
+              </button>
+              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                <i class="i-icon:arrow text-gray-500"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex md:gap-4 md:justify-center md:mt-24 md:py-8">
+          <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
+          <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
+          <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
+        </div>
+        <div class="flex justify-center mt-24">
+          <a
+            href=""
+            target="_blank"
+            class="inline-block px-16 text-base font-700 text-lake-200 border border-lake-200 rounded-4"
+          >更多他人經驗</a>
+        </div>
       </div>
-      <h2 class="text-20 font-700 text-gray-600 text-center">
-        看看他們在職場的故事
-      </h2>
     </div>
     <div class="Index__help">
       <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
@@ -566,7 +734,7 @@
       <h2 class="text-20 font-700 text-white text-center">
         關注動態
       </h2>
-      <div class="Index__follow__wrapper">
+      <div>
         <div>
           <div class="ChannelInfo h-112 border"></div>
           <div>
@@ -613,6 +781,12 @@
     background-repeat: repeat-x;
     background-size: auto 61px;
   }
+
+  &__story {
+    background-image: url('@/assets/img/Index/bg-wave-white.png');
+    background-repeat: repeat-x;
+    background-size: auto 61px;
+  }
 }
 
 // xl | lg | md | sm
@@ -637,6 +811,16 @@
 
           .Index__resume__tool--name {
             --at-apply: 'text-orange-400';
+          }
+        }
+      }
+    }
+
+    &__story {
+      &__card {
+        &:hover {
+          .Index__story__card--title {
+            --at-apply: 'text-lake-200';
           }
         }
       }
