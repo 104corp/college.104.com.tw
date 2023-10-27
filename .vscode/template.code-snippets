@@ -1,0 +1,11 @@
+{
+    "store-api": {
+		"prefix": "store-api",
+		"body": [
+			"// import apiService from '@/apis/index.js'",
+			"const result = await apiService.$__serviceName.$__get()",
+			"$__value = result",    
+			"return result",
+		]
+	}
+}
