@@ -275,7 +275,7 @@
     <div class="SideBar mt-12 h-44 border">
       SideBar
     </div>
-    <div class="Index__tool">
+    <div class="Index__tool pb-120">
       <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
         BEST TOOLS
       </div>
@@ -1039,43 +1039,62 @@
         </div>
       </div>
     </div>
-    <div class="Index__news">
-      <div class="mt-32 text-36 leading-44 family-Bungee text-lake-200 text-center">
+    <div class="Index__news pt-40 pb-100 bg-white md:pb-120">
+      <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
         NEWS
       </div>
       <h2 class="text-20 font-700 text-gray-600 text-center">
         產業新訊
       </h2>
-      <div class="ArticleGallery h-720 text-16 border">
-        ArticleGallery
+      <div class="mt-20 md:mt-32">
+        <div class="ArticleGallery h-720 text-16 border">
+          ArticleGallery
+        </div>
+      </div>
+      <div class="flex justify-center mt-24 md:mt-32">
+        <a
+          href=""
+          target="_blank"
+          class="inline-block px-16 text-base font-700 text-lake-200 border border-lake-200 rounded-4 md:px-32"
+        >更多產業新訊</a>
       </div>
     </div>
-    <div class="Index__follow">
-      <div class="mt-32 text-36 leading-44 family-Bungee text-yellow-200 text-center">
-        FOLLOW US
-      </div>
-      <h2 class="text-20 font-700 text-white text-center">
-        關注動態
-      </h2>
-      <div>
-        <div>
-          <div class="ChannelInfo h-112 border"></div>
-          <div>
-            <div class="text-16 font-700 text-gray-600">
-              最新貼文
-            </div>
-            <div class="PostGallery h-188 border"></div>
-          </div>
+    <div class="Index__follow md:pt-60 md:-mt-60">
+      <div class="py-40 bg-lake-200 md:pt-0 md:pb-60">
+        <div class="text-36 leading-44 family-Bungee text-yellow-200 text-center">
+          FOLLOW US
         </div>
-        <div>
-          <div class="ChannelInfo h-112 border"></div>
-          <div>
-            <div class="text-16 font-700 text-gray-600">
-              最新單集
+        <h2 class="text-20 font-700 text-white text-center">
+          關注動態
+        </h2>
+        <ul class="layout-container mt-16 px-16 bg-white rounded-16 md:px-40">
+          <li class="flex flex-col gap-12 py-20 md:flex-row md:items-center md:gap-32">
+            <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+              ChannelInfo
             </div>
-            <div class="PodcastEpisodes h-238 border"></div>
-          </div>
-        </div>
+            <div class="min-w-0 flex-1">
+              <div class="text-base font-700">
+                最新貼文
+              </div>
+              <div class="PostGallery h-188 border md:h-250">
+                PostGallery
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col gap-12 py-20 border-t border-gray-300 md:flex-row md:items-center md:gap-32">
+            <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+              ChannelInfo
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="text-base font-700">
+                最新單集
+              </div>
+              <div class="PodcastEpisodes h-238 border md:h-272">
+                PodcastEpisodes
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -1202,6 +1221,12 @@
           }
         }
       }
+    }
+
+    &__follow {
+      background-image: url('@/assets/img/Index/bg-wave-lake.png');
+      background-repeat: repeat-x;
+      background-size: auto 61px;
     }
   }
 }
