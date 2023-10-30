@@ -111,109 +111,118 @@
                 >更多<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll px-12 pt-8 pb-12">
-                <div class="grid grid-cols-3 gap-8 min-w-676">
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                <div class="min-w-676">
+                  <div
+                    v-if="false"
+                    class="loading mt-8 h-164"
+                  ></div>
+                  <div
+                    v-else
+                    class="grid grid-cols-3 gap-8"
                   >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
-                  >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
-                  >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
-                  >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
-                  >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
-                  >
-                    <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
-                      [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
-                    </div>
-                    <div class="flex gap-8 mt-4 text-12 font-700">
-                      <div class="text-gray-500">
-                        新北市新店區
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                    >
+                      <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
+                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
-                      <div class="text-orange-400">
-                        時薪176~180元
+                      <div class="flex gap-8 mt-4 text-12 font-700">
+                        <div class="text-gray-500">
+                          新北市新店區
+                        </div>
+                        <div class="text-orange-400">
+                          時薪176~180元
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -305,129 +314,135 @@
               </div>
             </div>
             <div class="flex-1 min-w-0">
-              <div class="flex items-center justify-end mx-16 mt-16 md:ml-0 md:mr-40">
-                <a
-                  href=""
-                  target="_blank"
-                  class="inline-flex items-center text-14 font-700 text-gray-500 md:hover:text-orange-400"
-                >更多履歷<i class="i-icon:arrow ml-4"></i></a>
-              </div>
-              <div class="overflow-x-scroll">
-                <div class="flex gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:ml-0 md:mr-40">
+              <div
+                v-if="false"
+                class="loading mt-16 h-358"
+              ></div>
+              <div v-else>
+                <div class="flex items-center justify-end mx-16 mt-16 md:ml-0 md:mr-40">
                   <a
                     href=""
                     target="_blank"
-                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
-                  >
-                    <div class="h-120">
-                      <img
-                        src="@/assets/img/default-img.png"
-                        alt="封面"
-                        draggable="false"
-                        class="object-cover w-full h-full"
-                      >
-                    </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                    class="inline-flex items-center text-14 font-700 text-gray-500 md:hover:text-orange-400"
+                  >更多履歷<i class="i-icon:arrow ml-4"></i></a>
+                </div>
+                <div class="overflow-x-scroll">
+                  <div class="flex gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:ml-0 md:mr-40">
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                    >
+                      <div class="h-120">
                         <img
                           src="@/assets/img/default-img.png"
-                          alt="頭貼"
+                          alt="封面"
                           draggable="false"
                           class="object-cover w-full h-full"
                         >
                       </div>
-                      <div class="ml-12 mt-4 mb-8">
-                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
-                        <div class="text-14">數據分析師</div>
+                      <div class="flex items-end px-16 h-56 border-b border-gray-300">
+                        <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                          <img
+                            src="@/assets/img/default-img.png"
+                            alt="頭貼"
+                            draggable="false"
+                            class="object-cover w-full h-full"
+                          >
+                        </div>
+                        <div class="ml-12 mt-4 mb-8">
+                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-14">數據分析師</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="p-16 pt-8">
-                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
-                      <ul class="flex flex-wrap gap-8 mt-8">
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
-                  >
-                    <div class="h-120">
-                      <img
-                        src="@/assets/img/default-img.png"
-                        alt="封面"
-                        draggable="false"
-                        class="object-cover w-full h-full"
-                      >
-                    </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                      <div class="p-16 pt-8">
+                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <ul class="flex flex-wrap gap-8 mt-8">
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                    >
+                      <div class="h-120">
                         <img
                           src="@/assets/img/default-img.png"
-                          alt="頭貼"
+                          alt="封面"
                           draggable="false"
                           class="object-cover w-full h-full"
                         >
                       </div>
-                      <div class="ml-12 mt-4 mb-8">
-                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
-                        <div class="text-14">數據分析師</div>
+                      <div class="flex items-end px-16 h-56 border-b border-gray-300">
+                        <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                          <img
+                            src="@/assets/img/default-img.png"
+                            alt="頭貼"
+                            draggable="false"
+                            class="object-cover w-full h-full"
+                          >
+                        </div>
+                        <div class="ml-12 mt-4 mb-8">
+                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-14">數據分析師</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="p-16 pt-8">
-                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
-                      <ul class="flex flex-wrap gap-8 mt-8">
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                      </ul>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
-                  >
-                    <div class="h-120">
-                      <img
-                        src="@/assets/img/default-img.png"
-                        alt="封面"
-                        draggable="false"
-                        class="object-cover w-full h-full"
-                      >
-                    </div>
-                    <div class="flex items-end px-16 h-56 border-b border-gray-300">
-                      <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                      <div class="p-16 pt-8">
+                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <ul class="flex flex-wrap gap-8 mt-8">
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        </ul>
+                      </div>
+                    </a>
+                    <a
+                      href=""
+                      target="_blank"
+                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                    >
+                      <div class="h-120">
                         <img
                           src="@/assets/img/default-img.png"
-                          alt="頭貼"
+                          alt="封面"
                           draggable="false"
                           class="object-cover w-full h-full"
                         >
                       </div>
-                      <div class="ml-12 mt-4 mb-8">
-                        <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
-                        <div class="text-14">數據分析師</div>
+                      <div class="flex items-end px-16 h-56 border-b border-gray-300">
+                        <div class="w-96 aspect-1 overflow-hidden rounded-1/2 mb-8">
+                          <img
+                            src="@/assets/img/default-img.png"
+                            alt="頭貼"
+                            draggable="false"
+                            class="object-cover w-full h-full"
+                          >
+                        </div>
+                        <div class="ml-12 mt-4 mb-8">
+                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-14">數據分析師</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="p-16 pt-8">
-                      <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
-                      <ul class="flex flex-wrap gap-8 mt-8">
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
-                        <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
-                      </ul>
-                    </div>
-                  </a>
+                      <div class="p-16 pt-8">
+                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <ul class="flex flex-wrap gap-8 mt-8">
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">正向</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">工作認真</li>
+                          <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">親切友善</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -540,164 +555,170 @@
         <h2 class="text-20 font-700 text-gray-600 text-center">
           看看他們在職場的故事
         </h2>
-        <div class="overflow-x-scroll mt-24 md:overflow-hidden md:relative md:flex md:items-center justify-center">
-          <div class="flex gap-24 min-w-0">
-            <a
-              href=""
-              target="_blank"
-              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
-            >
-              <div class="relative flex flex-col items-center pb-20">
-                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="故事"
-                    draggable="false"
-                  >
+        <div
+          v-if="false"
+          class="loading mt-24 h-296 md:h-450"
+        ></div>
+        <div v-else>
+          <div class="overflow-x-scroll mt-24 md:overflow-hidden md:relative md:flex md:items-center justify-center">
+            <div class="flex gap-24 min-w-0">
+              <a
+                href=""
+                target="_blank"
+                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+              >
+                <div class="relative flex flex-col items-center pb-20">
+                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="故事"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
                 </div>
-                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="頭貼"
-                    draggable="false"
-                    class="object-cover w-full h-full"
-                  >
+                <div class="font-700 text-center">
+                  <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                  <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
-              </div>
-              <div class="font-700 text-center">
-                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
-                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-              </div>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
-            >
-              <div class="relative flex flex-col items-center pb-20">
-                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="故事"
-                    draggable="false"
-                  >
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+              >
+                <div class="relative flex flex-col items-center pb-20">
+                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="故事"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
                 </div>
-                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="頭貼"
-                    draggable="false"
-                    class="object-cover w-full h-full"
-                  >
+                <div class="font-700 text-center">
+                  <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                  <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
-              </div>
-              <div class="font-700 text-center">
-                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
-                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-              </div>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
-            >
-              <div class="relative flex flex-col items-center pb-20">
-                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="故事"
-                    draggable="false"
-                  >
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+              >
+                <div class="relative flex flex-col items-center pb-20">
+                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="故事"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
                 </div>
-                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="頭貼"
-                    draggable="false"
-                    class="object-cover w-full h-full"
-                  >
+                <div class="font-700 text-center">
+                  <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                  <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
-              </div>
-              <div class="font-700 text-center">
-                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
-                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-              </div>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
-            >
-              <div class="relative flex flex-col items-center pb-20">
-                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="故事"
-                    draggable="false"
-                  >
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+              >
+                <div class="relative flex flex-col items-center pb-20">
+                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="故事"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
                 </div>
-                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="頭貼"
-                    draggable="false"
-                    class="object-cover w-full h-full"
-                  >
+                <div class="font-700 text-center">
+                  <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                  <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
-              </div>
-              <div class="font-700 text-center">
-                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
-                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-              </div>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
-            >
-              <div class="relative flex flex-col items-center pb-20">
-                <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="故事"
-                    draggable="false"
-                  >
+              </a>
+              <a
+                href=""
+                target="_blank"
+                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+              >
+                <div class="relative flex flex-col items-center pb-20">
+                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="故事"
+                      draggable="false"
+                    >
+                  </div>
+                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
+                    <img
+                      src="@/assets/img/default-img.png"
+                      alt="頭貼"
+                      draggable="false"
+                      class="object-cover w-full h-full"
+                    >
+                  </div>
                 </div>
-                <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                  <img
-                    src="@/assets/img/default-img.png"
-                    alt="頭貼"
-                    draggable="false"
-                    class="object-cover w-full h-full"
-                  >
+                <div class="font-700 text-center">
+                  <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
+                  <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
+                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
+              </a>
+            </div>
+            <div class="hidden layout-container md:block md:absolute md:w-full xl:max-w-1200">
+              <div class="flex justify-between">
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                  <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
+                </button>
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                  <i class="i-icon:arrow text-gray-500"></i>
+                </button>
               </div>
-              <div class="font-700 text-center">
-                <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
-                <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-              </div>
-            </a>
-          </div>
-          <div class="hidden layout-container md:block md:absolute md:w-full xl:max-w-1200">
-            <div class="flex justify-between">
-              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
-                <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
-              </button>
-              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
-                <i class="i-icon:arrow text-gray-500"></i>
-              </button>
             </div>
           </div>
-        </div>
-        <div class="hidden md:flex md:gap-4 md:justify-center md:mt-24 md:py-8">
-          <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
-          <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
-          <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
+          <div class="hidden md:flex md:gap-4 md:justify-center md:mt-24 md:py-8">
+            <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
+            <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
+            <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
+          </div>
         </div>
         <div class="flex justify-center mt-24">
           <a
@@ -716,7 +737,14 @@
         <h2 class="text-20 font-700 text-white text-center">
           有職場疑問？我們為你解答
         </h2>
-        <div class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:grid-cols-2 md:gap-y-12 md:mt-32">
+        <div
+          v-if="false"
+          class="loading mt-24 h-328 md:h-372"
+        ></div>
+        <div
+          v-else
+          class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:grid-cols-2 md:gap-y-12 md:mt-32"
+        >
           <a
             href=""
             target="_blank"
