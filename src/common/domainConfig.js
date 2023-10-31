@@ -1,0 +1,1 @@
+export const mainUrl = `https://www.${ import.meta.env.VITE_MAIN_DOMAIN }/`

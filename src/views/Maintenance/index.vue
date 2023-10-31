@@ -1,5 +1,18 @@
 <template>
-  <div class="Maintenance pt-44 bg-white md:pt-124 md:pb-48 md:bg-gray-100">
+  <div class="Maintenance flex-1 pt-44 bg-white md:pt-94 md:pb-48 md:bg-gray-100">
+    <div class="fixed top-0 flex items-center justify-center w-full h-44 bg-white border-b border-gray-200 md:justify-start md:h-70 md:shadow-0-2-8-0 md:shadow-color-gray-600-20">
+      <a
+        :href="mainUrl"
+        class="layout-container md:w-full"
+      >
+        <img
+          src="@/assets/img/logo.svg"
+          alt="104人力銀行"
+          draggable="false"
+          class="w-116 md:w-180"
+        >
+      </a>
+    </div>
     <div class="layout-container flex flex-col gap-40 items-center px-16 pt-64 bg-white md:flex-row md:justify-center md:gap-52 md:pt-0 md:h-472 md:border md:border-gray-200 md:rounded-4">
       <div class="w-162 md:w-370">
         <img
@@ -27,6 +40,8 @@
 </template>
 
 <script setup>
+import { mainUrl } from '@/common/domainConfig.js'
+
 const props = defineProps({
   time: {
     type: String,
