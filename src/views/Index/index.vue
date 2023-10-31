@@ -1095,30 +1095,34 @@
         <h2 class="text-20 font-700 text-white text-center">
           關注動態
         </h2>
-        <ul class="layout-container mt-16 px-16 bg-white rounded-16 md:px-40">
-          <li class="flex flex-col gap-12 py-20 md:flex-row md:items-center md:gap-32">
-            <div class="ChannelInfo h-112 border md:w-300 md:h-312">
-              ChannelInfo
-            </div>
-            <div class="min-w-0 flex-1">
-              <div class="text-base font-700">
-                最新貼文
+        <ul class="layout-container mt-16 px-16 py-20 bg-white rounded-16 md:px-40 md:py-24">
+          <li>
+            <div class="flex flex-col gap-12 mx-auto md:flex-row md:items-center md:gap-32 md:max-w-1120">
+              <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+                ChannelInfo
               </div>
-              <div class="PostGallery h-188 border md:h-250">
-                PostGallery
+              <div class="min-w-0 flex-1">
+                <div class="text-base font-700">
+                  最新貼文
+                </div>
+                <div class="PostGallery h-188 border md:h-250">
+                  PostGallery
+                </div>
               </div>
             </div>
           </li>
-          <li class="flex flex-col gap-12 py-20 border-t border-gray-300 md:flex-row md:items-center md:gap-32">
-            <div class="ChannelInfo h-112 border md:w-300 md:h-312">
-              ChannelInfo
-            </div>
-            <div class="min-w-0 flex-1">
-              <div class="text-base font-700">
-                最新單集
+          <li class="mt-16 pt-16 border-t border-gray-300 md:mt-24 md:pt-24">
+            <div class="flex flex-col gap-12 mx-auto md:flex-row md:items-center md:gap-32 md:max-w-1120">
+              <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+                ChannelInfo
               </div>
-              <div class="PodcastEpisodes h-238 border md:h-272">
-                PodcastEpisodes
+              <div class="min-w-0 flex-1">
+                <div class="text-base font-700">
+                  最新單集
+                </div>
+                <div class="PodcastEpisodes h-238 border md:h-272">
+                  PodcastEpisodes
+                </div>
               </div>
             </div>
           </li>
