@@ -1226,10 +1226,6 @@
 @screen xl {
   .Index {
     background-size: 100% 225px, 100% 630px, 100% auto;
-
-    .layout-container {
-      max-width: 1440px;
-    }
   }
 }
 </style>

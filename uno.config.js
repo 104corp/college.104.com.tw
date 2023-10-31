@@ -86,7 +86,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'layout-container': 'mx-auto max-w-full md:max-w-960 lg:max-w-1200 xl:max-w-1320',
+      'layout-container': 'mx-auto max-w-full md:max-w-960 lg:max-w-1200 xl:max-w-1440',
       'btn': 'inline-block rounded-4 cursor-pointer',
       'btn-primary': 'bg-orange-300 border-orange-300 text-white hover:(bg-orange-400 border-orange-400)'
     },
