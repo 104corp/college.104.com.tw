@@ -2,7 +2,7 @@ import { createTestingPinia } from '@pinia/testing'
 import { useInstagram } from '@/stores/Instagram'
 
 const pinia = createTestingPinia()
-const store = useInstagram(pinia)
+const store = useInstagram('Instagram', pinia)
 
 describe('computed - Instagram latestPost104student', () => {
   it('當 posts 為有效值時，需回傳第一筆資料', () => {

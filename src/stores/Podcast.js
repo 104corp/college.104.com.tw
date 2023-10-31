@@ -3,8 +3,8 @@ import {
   ref, computed 
 } from 'vue'
 
-export const usePodcast = () => {
-  return defineStore('Podcast', () => {
+export const usePodcast = (id = 'Podcast', pinia) => {
+  return defineStore(id, () => {
     const _channel104youth = ref(null)
   
     const channel104youth = computed(() => _channel104youth.value)
@@ -47,5 +47,5 @@ export const usePodcast = () => {
       latestPost104youth,
       getChannel104youth
     }
-  })()
+  })(pinia)
 }

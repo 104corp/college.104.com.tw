@@ -2,7 +2,7 @@ import { createTestingPinia } from '@pinia/testing'
 import { usePodcast } from '@/stores/Podcast'
 
 const pinia = createTestingPinia()
-const store = usePodcast(pinia)
+const store = usePodcast('Podcast', pinia)
 
 describe('computed - Podcast latestPost104youth', () => {
   it('當 episodes 為有效值時，需回傳第一筆資料', () => {

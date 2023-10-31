@@ -3,8 +3,8 @@ import {
   ref, computed 
 } from 'vue'
 
-export const useEvent = () => {
-  return defineStore('Event', () => {
+export const useEvent = (id = 'Event', pinia) => {
+  return defineStore(id, () => {
     const _list = ref([])
   
     const list = computed(() => _list.value)
@@ -44,5 +44,5 @@ export const useEvent = () => {
       latestPost,
       getList
     }
-  })()
+  })(pinia)
 }

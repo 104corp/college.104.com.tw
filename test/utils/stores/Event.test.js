@@ -2,7 +2,7 @@ import { createTestingPinia } from '@pinia/testing'
 import { useEvent } from '@/stores/Event'
 
 const pinia = createTestingPinia()
-const store = useEvent(pinia)
+const store = useEvent('Event', pinia)
 
 describe('computed - Event latestPost', () => {
   it('當 list 為有效值且長度大於1時，需回傳第一筆資料', () => {

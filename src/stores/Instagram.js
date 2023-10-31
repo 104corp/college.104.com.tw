@@ -3,8 +3,8 @@ import {
   ref, computed 
 } from 'vue'
 
-export const useInstagram = () => {
-  return defineStore('Instagram', () => {
+export const useInstagram = (id = 'Instagram', pinia) => {
+  return defineStore(id, () => {
     const _channel104student = ref(null)
   
     const channel104student = computed(() => _channel104student.value)
@@ -43,5 +43,5 @@ export const useInstagram = () => {
       latestPost104student,
       getChannel104student
     }
-  })()
+  })(pinia)
 }
