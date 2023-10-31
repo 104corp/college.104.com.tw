@@ -331,7 +331,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                     >
                       <div class="h-120">
                         <img
@@ -351,7 +351,7 @@
                           >
                         </div>
                         <div class="ml-12 mt-4 mb-8">
-                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
@@ -369,7 +369,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                     >
                       <div class="h-120">
                         <img
@@ -389,7 +389,7 @@
                           >
                         </div>
                         <div class="ml-12 mt-4 mb-8">
-                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
@@ -407,7 +407,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__resume__card overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
                     >
                       <div class="h-120">
                         <img
@@ -427,7 +427,7 @@
                           >
                         </div>
                         <div class="ml-12 mt-4 mb-8">
-                          <div class="Index__resume__card--name text-16 leading-24 font-700">梁小賢</div>
+                          <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
@@ -455,9 +455,9 @@
               <a
                 href=""
                 target="_blank"
-                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-example.svg"
                     alt="履歷範本"
@@ -466,16 +466,16 @@
                   >
                 </div>
                 <div>
-                  <div class="Index__resume__tool--name text-base font-700">履歷範本</div>
+                  <div class="text-base font-700 md:group-hover:text-orange-400">履歷範本</div>
                   <div class="text-12 text-gray-500 md:text-14">參考他人履歷</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-ai.svg"
                     alt="AI履歷健診"
@@ -484,16 +484,16 @@
                   >
                 </div>
                 <div>
-                  <div class="Index__resume__tool--name text-base font-700">AI履歷健診</div>
+                  <div class="text-base font-700 md:group-hover:text-orange-400">AI履歷健診</div>
                   <div class="text-12 text-gray-500 md:text-14">一鍵分析找優化方向</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-check.svg"
                     alt="真人履歷健診"
@@ -502,16 +502,16 @@
                   >
                 </div>
                 <div>
-                  <div class="Index__resume__tool--name text-base font-700">真人履歷健診</div>
+                  <div class="text-base font-700 md:group-hover:text-orange-400">真人履歷健診</div>
                   <div class="text-12 text-gray-500 md:text-14">一對一免費線上健診</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-article.svg"
                     alt="履歷面試教學"
@@ -520,16 +520,16 @@
                   >
                 </div>
                 <div>
-                  <div class="Index__resume__tool--name text-base font-700">履歷面試教學</div>
+                  <div class="text-base font-700 md:group-hover:text-orange-400">履歷面試教學</div>
                   <div class="text-12 text-gray-500 md:text-14">豐富的履歷教學文章</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__resume__tool flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
               >
-                <div class="Index__resume__tool--icon flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48">
+                <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
                     src="@/assets/img/Index/icons/icon-resume-tutorial.svg"
                     alt="求職衝刺班"
@@ -538,7 +538,7 @@
                   >
                 </div>
                 <div>
-                  <div class="Index__resume__tool--name text-base font-700">求職衝刺班</div>
+                  <div class="text-base font-700 md:group-hover:text-orange-400">求職衝刺班</div>
                   <div class="text-12 text-gray-500 md:text-14">履歷面試線上課程</div>
                 </div>
               </a>
@@ -565,7 +565,7 @@
               <a
                 href=""
                 target="_blank"
-                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:w-400 md:h-402"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -587,13 +587,13 @@
                 <div class="font-700 text-center">
                   <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
                   <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:w-400 md:h-402"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -615,13 +615,13 @@
                 <div class="font-700 text-center">
                   <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
                   <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:w-400 md:h-402"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -643,13 +643,13 @@
                 <div class="font-700 text-center">
                   <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
                   <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:w-400 md:h-402"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -671,13 +671,13 @@
                 <div class="font-700 text-center">
                   <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
                   <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
               </a>
               <a
                 href=""
                 target="_blank"
-                class="Index__story__card flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:w-400 md:h-402"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -699,7 +699,7 @@
                 <div class="font-700 text-center">
                   <div class="text-base text-gray-500">林怡瑄・Product Manager</div>
                   <div class="mx-auto my-8 w-20 border-b-2 border-lake-200"></div>
-                  <div class="Index__story__card--title text-18">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
+                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
                 </div>
               </a>
             </div>
@@ -748,11 +748,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -787,11 +787,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -826,11 +826,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -865,11 +865,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -904,11 +904,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -943,11 +943,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -982,11 +982,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -1021,11 +1021,11 @@
           <a
             href=""
             target="_blank"
-            class="Index__help__card flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="Index__help__card--title text-16 leading-24 font-700 text-overflow-1">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -1191,38 +1191,6 @@
   .Index {
     background-size: auto 225px, 100% 630px, 100% auto;
 
-    &__resume {
-      &__card {
-        &:hover {
-          .Index__resume__card--name {
-            --at-apply: 'text-orange-400';
-          }
-        }
-      }
-
-      &__tool {
-        &:hover {
-          .Index__resume__tool--icon {
-            --at-apply: 'bg-orange-100';
-          }
-
-          .Index__resume__tool--name {
-            --at-apply: 'text-orange-400';
-          }
-        }
-      }
-    }
-
-    &__story {
-      &__card {
-        &:hover {
-          .Index__story__card--title {
-            --at-apply: 'text-lake-200';
-          }
-        }
-      }
-    }
-
     &__help {
       .layout-container {
         a {
@@ -1242,14 +1210,6 @@
           &:nth-child(7),
           &:nth-child(8) {
             --at-apply: 'ml-100';
-          }
-        }
-      }
-
-      &__card {
-        &:hover {
-          .Index__help__card--title {
-            --at-apply: 'text-lake-200';
           }
         }
       }
