@@ -4,9 +4,9 @@ import {
 } from 'vue'
 import { profileUrl } from '@/common/domainConfig'
 
-export const useProfilePortfolio = (id = 'ProfilePortfolio') => {
+export const useProfilePortfolio = (id = 'ProfilePortfolio', pinia) => {
   return defineStore(id, () => {
-    const moreLink = `${ profileUrl }/portfolio`
+    const moreLink = `${ profileUrl }portfolio`
     const _list = ref([])
   
     const list = computed(() => _list.value)
@@ -44,5 +44,5 @@ export const useProfilePortfolio = (id = 'ProfilePortfolio') => {
       list,
       getList
     }
-  })()
+  })(pinia)
 }

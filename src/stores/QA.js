@@ -4,9 +4,9 @@ import {
 } from 'vue'
 import { giverUrl } from '@/common/domainConfig'
 
-export const useQA = (id = 'QA') => {
+export const useQA = (id = 'QA', pinia) => {
   return defineStore(id, () => {
-    const moreLink = `${ giverUrl }/questionList/0/tag/3wEeebVkeKqgd?orderType=latest&dn58=3wEeebVkeKqgd&tagType=0`
+    const moreLink = `${ giverUrl }questionList/0/tag/3wEeebVkeKqgd?orderType=latest&dn58=3wEeebVkeKqgd&tagType=0`
     const _list = ref([])
   
     const list = computed(() => _list.value)
@@ -45,5 +45,5 @@ export const useQA = (id = 'QA') => {
       list,
       getList
     }
-  })()
+  })(pinia)
 }

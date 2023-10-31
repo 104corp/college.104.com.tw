@@ -3,7 +3,7 @@ import {
   ref, computed 
 } from 'vue'
 
-export const useAnnouncement = (id = 'Announcement') => {
+export const useAnnouncement = (id = 'Announcement', pinia) => {
   return defineStore(id, () => {
     const _list = ref([])
   
@@ -36,5 +36,5 @@ export const useAnnouncement = (id = 'Announcement') => {
       list,
       getList
     }
-  })()
+  })(pinia)
 }

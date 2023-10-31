@@ -4,9 +4,9 @@ import {
 } from 'vue'
 import { blogUrl } from '@/common/domainConfig'
 
-export const useArticleNews = (id = 'ArticleNews') => {
+export const useArticleNews = (id = 'ArticleNews', pinia) => {
   return defineStore(id, () => {
-    const moreLink = `${ blogUrl }/category/topic/`
+    const moreLink = `${ blogUrl }category/topic/`
     const _list = ref([])
   
     const list = computed(() => _list.value)
@@ -38,5 +38,5 @@ export const useArticleNews = (id = 'ArticleNews') => {
       list,
       getList
     }
-  })()
+  })(pinia)
 }
