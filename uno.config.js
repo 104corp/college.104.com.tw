@@ -140,6 +140,15 @@ export default defineConfig({
           }
         }
       }
+    ],
+    [
+      /^bg-repeat-x-([0-9_]*)$/,
+      ([ , height ]) => {
+        return {
+          'background-repeat': 'repeat-x',
+          'background-size': `auto ${ height }px`,
+        }
+      }
     ]
   ]
 })

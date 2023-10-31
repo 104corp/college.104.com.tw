@@ -295,7 +295,7 @@
         ToolShowcase
       </div>
     </div>
-    <div class="Index__resume pt-60 -mt-60">
+    <div class="Index__resume bg-repeat-x-61 pt-60 -mt-60">
       <div class="pb-120 bg-lake-300">
         <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
           RESUME HELPER
@@ -547,7 +547,7 @@
         </div>
       </div>
     </div>
-    <div class="Index__story pt-60 -mt-60">
+    <div class="Index__story bg-repeat-x-61 pt-60 -mt-60">
       <div class="pb-120 bg-white">
         <div class="text-36 leading-44 family-Bungee text-lake-200 text-center">
           STORIES
@@ -729,7 +729,7 @@
         </div>
       </div>
     </div>
-    <div class="Index__help pt-60 -mt-60">
+    <div class="Index__help bg-repeat-x-61 pt-60 -mt-60">
       <div class="Index__help__wrapper pb-60 bg-lake-200">
         <div class="text-36 leading-44 family-Bungee text-yellow-200 text-center md:pt-20">
           GET HELP
@@ -1087,7 +1087,7 @@
         >更多產業新訊</a>
       </div>
     </div>
-    <div class="Index__follow md:pt-60 md:-mt-60">
+    <div class="Index__follow md:pt-60 md:-mt-60 md:bg-repeat-x-61">
       <div class="py-40 bg-lake-200 md:pt-0 md:pb-60">
         <div class="text-36 leading-44 family-Bungee text-yellow-200 text-center">
           FOLLOW US
@@ -1152,20 +1152,14 @@
 
   &__resume {
     background-image: url('@/assets/img/Index/bg-wave-blue.png');
-    background-repeat: repeat-x;
-    background-size: auto 61px;
   }
 
   &__story {
     background-image: url('@/assets/img/Index/bg-wave-white.png');
-    background-repeat: repeat-x;
-    background-size: auto 61px;
   }
 
   &__help {
     background-image: url('@/assets/img/Index/bg-wave-lake.png');
-    background-repeat: repeat-x;
-    background-size: auto 61px;
 
     &__wrapper {
       background-image: url('@/assets/img/Index/bg-qa.png');
@@ -1217,8 +1211,6 @@
 
     &__follow {
       background-image: url('@/assets/img/Index/bg-wave-lake.png');
-      background-repeat: repeat-x;
-      background-size: auto 61px;
     }
   }
 }
