@@ -18,7 +18,7 @@
     </div>
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
-        <div class="py-16 bg-white rounded-16 shadow-100 md:py-24">
+        <div class="py-16 bg-white rounded-16 shadow-0-2-34-0 shadow-color-gray-500-20 md:py-24">
           <div class="flex items-center gap-12 mx-16 md:gap-24 md:mx-32">
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
@@ -123,7 +123,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -140,7 +140,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -157,7 +157,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -174,7 +174,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -191,7 +191,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -208,7 +208,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-100"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -303,8 +303,8 @@
         <h2 class="text-20 font-700 text-gray-600 text-center">
           幫你做出好履歷
         </h2>
-        <div class="layout-container overflow-hidden mt-24 text-gray-600 bg-white rounded-16 shadow-100">
-          <div class="pt-24 md:flex md:items-center">
+        <div class="layout-container overflow-hidden mt-24 bg-white rounded-16 shadow-0-2-34-0 shadow-color-gray-500-20">
+          <div class="pt-24 text-gray-600 md:flex md:items-center">
             <div class="mx-16 md:flex-none md:ml-40 md:mr-32 md:w-240">
               <div class="text-20 font-700 md:text-24">
                 多種履歷版型<span class="md:hidden">，</span><br class="hidden md:block">為你增加亮點
@@ -331,7 +331,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-120">
                         <img
@@ -350,13 +350,13 @@
                             class="object-cover w-full h-full"
                           >
                         </div>
-                        <div class="ml-12 mt-4 mb-8">
+                        <div class="ml-12 mt-4 mb-8 text-gray-600">
                           <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-14 text-gray-600 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -369,7 +369,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-120">
                         <img
@@ -388,13 +388,13 @@
                             class="object-cover w-full h-full"
                           >
                         </div>
-                        <div class="ml-12 mt-4 mb-8">
+                        <div class="ml-12 mt-4 mb-8 text-gray-600">
                           <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-14 text-gray-600 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -407,7 +407,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-100"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
                     >
                       <div class="h-120">
                         <img
@@ -426,13 +426,13 @@
                             class="object-cover w-full h-full"
                           >
                         </div>
-                        <div class="ml-12 mt-4 mb-8">
+                        <div class="ml-12 mt-4 mb-8 text-gray-600">
                           <div class="text-16 leading-24 font-700 md:group-hover:text-orange-400">梁小賢</div>
                           <div class="text-14">數據分析師</div>
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-14 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-14 text-gray-600 text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-14 font-700 text-gray-500 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -447,7 +447,7 @@
               </div>
             </div>
           </div>
-          <div class="p-16 bg-yellow-200 bg-op-60 md:flex md:items-center md:gap-16 md:px-40">
+          <div class="p-16 text-gray-600 bg-yellow-200 bg-op-60 md:flex md:items-center md:gap-16 md:px-40">
             <div class="text-base font-700 text-gray-500 md:flex-none md:w-32">
               履歷工具
             </div>
@@ -705,10 +705,10 @@
             </div>
             <div class="hidden layout-container md:block md:absolute md:w-full xl:max-w-1200">
               <div class="flex justify-between">
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-0-0-8-0 shadow-color-gray-600-20">
                   <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
                 </button>
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-md">
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-0-0-8-0 shadow-color-gray-600-20">
                   <i class="i-icon:arrow text-gray-500"></i>
                 </button>
               </div>
@@ -748,11 +748,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -787,11 +787,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -826,11 +826,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -865,11 +865,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -904,11 +904,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -943,11 +943,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -982,11 +982,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -1021,11 +1021,11 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-md"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-16 leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-16 leading-24 font-700 text-gray-600 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
