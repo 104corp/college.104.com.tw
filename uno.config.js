@@ -54,9 +54,7 @@ export default defineConfig({
       },
       lake: {
         100: '#39C8D0',
-        200: '#00AFB8',
-        300: '#D1ECEA',
-        400: '#007A81'
+        200: '#00AFB8'
       },
       green: {
         100: '#92CF53',
@@ -64,12 +62,10 @@ export default defineConfig({
       },
       yellow: {
         100: '#FFC31B',
-        200: '#FFF1C1'
       },
       blue: {
         100: '#4E91FF',
-        200: '#1654B9',
-        300: '#F1F9F8'
+        200: '#1654B9'
       },
       purple: {
         100: '#78269F'

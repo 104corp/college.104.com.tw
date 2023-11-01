@@ -94,7 +94,7 @@
             >自由安排時間</a>
           </div>
           <div class="mx-16 mt-16 md:(flex gap-28 mx-32 mt-28)">
-            <div class="flex-1 pt-12 bg-blue-300 rounded-8 md:w-434 lg:w-auto">
+            <div class="flex-1 pt-12 bg-[#F1F9F8] rounded-8 md:w-434 lg:w-auto">
               <div class="flex items-center justify-between px-12">
                 <div class="rounded-24 bg-white border border-gray-200">
                   <button class="px-16 py-8 text-(14 white) font-700 bg-lake-200 rounded-24 md:py-4">
@@ -296,7 +296,7 @@
       </div>
     </div>
     <div class="Index__resume bg-repeat-x-61 pt-60 -mt-60">
-      <div class="pb-120 bg-lake-300">
+      <div class="pb-120 bg-[#D1ECEA]">
         <div class="text-(36 lake-200 center) leading-44 family-Bungee">
           RESUME HELPER
         </div>
@@ -447,7 +447,7 @@
               </div>
             </div>
           </div>
-          <div class="p-16 text-gray-600 bg-(yellow-200 op-60) md:(flex items-center gap-16 px-40)">
+          <div class="p-16 text-gray-600 bg-([#FFF1C1] op-60) md:(flex items-center gap-16 px-40)">
             <div class="text-(base gray-500) font-700 md:(flex-none w-32)">
               履歷工具
             </div>
@@ -731,7 +731,7 @@
     </div>
     <div class="Index__help bg-repeat-x-61 pt-60 -mt-60">
       <div class="Index__help__wrapper pb-60 bg-lake-200">
-        <div class="text-(36 yellow-200 center) leading-44 family-Bungee md:pt-20">
+        <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee md:pt-20">
           GET HELP
         </div>
         <h2 class="text-(20 white center) font-700">
@@ -748,9 +748,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -787,9 +787,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -826,9 +826,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -865,9 +865,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -904,9 +904,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -943,9 +943,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -982,9 +982,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -1021,9 +1021,9 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-lake-400-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
           >
-            <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
+            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
               <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -1089,7 +1089,7 @@
     </div>
     <div class="Index__follow md:(pt-60 -mt-60 bg-repeat-x-61)">
       <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
-        <div class="text-(36 yellow-200 center) leading-44 family-Bungee">
+        <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee">
           FOLLOW US
         </div>
         <h2 class="text-(20 white center) font-700">
