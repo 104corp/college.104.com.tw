@@ -3,6 +3,7 @@ import {
   createWebHistory 
 } from 'vue-router'
 import Index from '@/views/Index/index.vue'
+import Maintenance from '@/views/Maintenance/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,6 +12,12 @@ const router = createRouter({
       path: '/',
       name: 'index',
       component: Index
+    },
+    {
+      path: '/maintenance/',
+      name: 'maintenance',
+      component: Maintenance,
+      props: route => ({ time: route.query.time })
     },
     {
       path: '/:pathMatch(.*)*',

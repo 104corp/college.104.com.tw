@@ -5,9 +5,7 @@ useHead()
 </script>
 
 <template>
-  <section>
-    <RouterView></RouterView>
-  </section>
+  <RouterView></RouterView>
 </template>
 
 <style lang="scss">

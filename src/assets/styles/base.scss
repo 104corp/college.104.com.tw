@@ -9,6 +9,9 @@ body {
   font-family: Arial, 'Microsoft JhengHei Modify', '微軟正黑體', 'Microsoft JhengHei', Roboto, 'PingFangTC', sans-serif;
 }
 
-html {
-
+#app {
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  flex: 1 0 auto;
 }
