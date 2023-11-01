@@ -4,7 +4,7 @@ import {
   guideUrl, giverUrl, nabiUrl 
 } from '@/common/domainConfig'
 
-export const useTool = (id = 'Tool') => {
+export const useTool = (id = 'Tool', pinia) => {
   return defineStore(id, () => {
     const tool = [
       {
@@ -15,7 +15,7 @@ export const useTool = (id = 'Tool') => {
         buttons: [
           {
             text: '職業適性測驗',
-            link: `${ guideUrl }/personality/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ guideUrl }personality/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
@@ -28,7 +28,7 @@ export const useTool = (id = 'Tool') => {
         buttons: [
           {
             text: '升學就業地圖',
-            link: `${ guideUrl }/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ guideUrl }?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
@@ -41,7 +41,7 @@ export const useTool = (id = 'Tool') => {
         buttons: [
           {
             text: '前往工作世界',
-            link: `${ guideUrl }/wow/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ guideUrl }wow/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
@@ -54,7 +54,7 @@ export const useTool = (id = 'Tool') => {
         buttons: [
           {
             text: '前往職涯診所',
-            link: `${ giverUrl }/questionList/0/tag/3wEeebVkeKqgd?orderType=latest&dn58=3wEeebVkeKqgd&tagType=0?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ giverUrl }questionList/0/tag/3wEeebVkeKqgd?orderType=latest&dn58=3wEeebVkeKqgd&tagType=0?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
@@ -67,7 +67,7 @@ export const useTool = (id = 'Tool') => {
         buttons: [
           {
             text: '前往證照中心',
-            link: `${ nabiUrl }/certify?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ nabiUrl }certify?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
@@ -80,5 +80,5 @@ export const useTool = (id = 'Tool') => {
       tool,
       activeIndex
     }
-  })()
+  })(pinia)
 }
