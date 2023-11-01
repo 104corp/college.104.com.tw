@@ -1169,10 +1169,7 @@
 
     .layout-container {
       a {
-        &:nth-child(5),
-        &:nth-child(6),
-        &:nth-child(7),
-        &:nth-child(8) {
+        &:nth-child(n + 5) {
           --at-apply: 'hidden';
         }
       }
@@ -1192,17 +1189,13 @@
             --at-apply: 'flex';
           }
 
-          &:nth-child(1),
-          &:nth-child(2),
-          &:nth-child(5),
-          &:nth-child(6) {
+          &:nth-child(4n + 1),
+          &:nth-child(4n + 2) {
             --at-apply: 'mr-100';
           }
 
-          &:nth-child(3),
-          &:nth-child(4),
-          &:nth-child(7),
-          &:nth-child(8) {
+          &:nth-child(4n + 3),
+          &:nth-child(4n) {
             --at-apply: 'ml-100';
           }
         }
