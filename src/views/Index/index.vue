@@ -212,7 +212,7 @@
         ToolShowcase
       </div>
     </div>
-    <div class="Index__resume bg-repeat-x-61 pt-60 -mt-60">
+    <div class="Index__resume bg-([url(@/assets/img/Index/bg-wave-blue.png)] repeat-x) pt-60 -mt-60">
       <div class="pb-120 bg-[#D1ECEA]">
         <div class="text-(36 lake-200 center) leading-44 family-Bungee">
           RESUME HELPER
@@ -390,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div class="Index__story bg-repeat-x-61 pt-60 -mt-60">
+    <div class="Index__story bg-([url(@/assets/img/Index/bg-wave-white.png)] repeat-x) pt-60 -mt-60">
       <div class="pb-120 bg-white">
         <div class="text-(36 lake-200 center) leading-44 family-Bungee">
           STORIES
@@ -462,8 +462,8 @@
         </div>
       </div>
     </div>
-    <div class="Index__help bg-repeat-x-61 pt-60 -mt-60">
-      <div class="Index__help__wrapper pb-60 bg-lake-200">
+    <div class="Index__help bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x) pt-60 -mt-60">
+      <div class="bg-([url(@/assets/img/Index/bg-qa.png)] cover top repeat-y) pb-60 bg-lake-200">
         <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee md:pt-20">
           GET HELP
         </div>
@@ -549,7 +549,7 @@
         >更多產業新訊</a>
       </div>
     </div>
-    <div class="Index__follow md:(pt-60 -mt-60 bg-repeat-x-61)">
+    <div class="Index__follow md:(pt-60 -mt-60 bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x))">
       <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
         <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee">
           FOLLOW US
@@ -611,24 +611,6 @@
       --at-apply: 'hidden';
     }
   }
-
-  &__resume {
-    background-image: url('@/assets/img/Index/bg-wave-blue.png');
-  }
-
-  &__story {
-    background-image: url('@/assets/img/Index/bg-wave-white.png');
-  }
-
-  &__help {
-    background-image: url('@/assets/img/Index/bg-wave-lake.png');
-
-    &__wrapper {
-      background-image: url('@/assets/img/Index/bg-qa.png');
-      background-repeat: repeat-y;
-      background-size: 100% auto;
-    }
-  }
 }
 
 // xl | lg | md | sm
@@ -642,10 +624,6 @@
           box-shadow: 0px 2px 16px 0px rgba(0, 122, 129, .8);
         }
       }
-    }
-
-    &__follow {
-      background-image: url('@/assets/img/Index/bg-wave-lake.png');
     }
   }
 }
