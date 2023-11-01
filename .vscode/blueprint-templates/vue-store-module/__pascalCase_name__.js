@@ -3,7 +3,7 @@ import {
   ref, computed 
 } from 'vue'
 
-export const use{{ pascalCase name }} = (id = '{{ pascalCase name }}') => {
+export const use{{ pascalCase name }} = (id = '{{ pascalCase name }}', pinia) => {
   return defineStore(id, () => {
     const _{{$欄位名稱}} = ref({{$欄位初始值}})
   
@@ -20,5 +20,5 @@ export const use{{ pascalCase name }} = (id = '{{ pascalCase name }}') => {
       {{$欄位名稱}},
       {{$action}}
     }
-  })()
+  })(pinia)
 }
