@@ -4,6 +4,7 @@ import { createHead } from '@vueuse/head'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
 import { errorHandler } from '@/utils/errorHandler'
+import BaseImage from '@/components/BaseImage.vue'
 import * as Sentry from '@sentry/vue'
 import packageConfig from '../package.json'
 
@@ -16,6 +17,8 @@ const head = createHead()
 app.use(createPinia())
 app.use(router)
 app.use(head)
+
+app.component('BaseImage', BaseImage)
 
 Sentry.init({
   app,
