@@ -79,6 +79,10 @@ export default defineConfig({
       18: [ '18px', { 'line-height': '24px' } ],
       20: [ '20px', { 'line-height': '28px' } ],
       24: [ '24px', { 'line-height': '32px' } ]
+    },
+    boxShadow: {
+      'card-gray': '0px 2px 8px 0px rgba(126, 126, 126, 0.20)',
+      'button-gray': '0px 0px 8px 0px rgba(41, 41, 41, 0.20)'
     }
   },
   shortcuts: [
@@ -91,11 +95,6 @@ export default defineConfig({
       /^tag-primary-(.*)-(.*)$/, 
       ([ , color, level ]) => 
         `bg-transparent text-${ color }-${ level } border-${ color }-${ level } inline-block border rounded-12 py-2 px-7 text-14`
-    ],
-    [
-      /^shadow-color-(.*)-([0-9_]*)-([0-9_]*)$/, 
-      ([ , color, level, opacity ]) => 
-        `text-${ color }-${ level } text-op-${ opacity }`
     ]
   ],
   rules: [
@@ -106,14 +105,6 @@ export default defineConfig({
         return {
           'font-family': `${ name }, Arial, 'Microsoft JhengHei Modify', '微軟正黑體',
           'Microsoft JhengHei', Roboto, 'PingFangTC', sans-serif`,
-        }
-      }
-    ],
-    [ 
-      /^shadow-([0-9_]*)-([0-9_]*)-([0-9_]*)-([0-9_]*)$/,
-      ([ , x, y, blur, spread ]) => {
-        return {
-          'box-shadow': `${ x }px ${ y }px ${ blur }px ${ spread }px`
         }
       }
     ],

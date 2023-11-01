@@ -18,7 +18,7 @@
     </div>
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
-        <div class="py-16 bg-white rounded-16 shadow-(0-2-34-0 color-gray-500-20) md:py-24">
+        <div class="py-16 bg-white rounded-16 shadow-card-gray md:py-24">
           <div class="flex items-center gap-12 mx-16 md:(gap-24 mx-32)">
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
@@ -123,7 +123,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -140,7 +140,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -157,7 +157,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -174,7 +174,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -191,7 +191,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -208,7 +208,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -303,7 +303,7 @@
         <h2 class="text-(20 gray-600 center) font-700">
           幫你做出好履歷
         </h2>
-        <div class="layout-container overflow-hidden mt-24 bg-white rounded-16 shadow-(0-2-34-0 color-gray-500-20)">
+        <div class="layout-container overflow-hidden mt-24 bg-white rounded-16 shadow-card-gray">
           <div class="pt-24 text-gray-600 md:(flex items-center)">
             <div class="mx-16 md:(flex-none ml-40 mr-32 w-240)">
               <div class="text-20 font-700 md:text-24">
@@ -331,7 +331,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-120">
                         <img
@@ -369,7 +369,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-120">
                         <img
@@ -407,7 +407,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-card-gray)"
                     >
                       <div class="h-120">
                         <img
@@ -705,10 +705,10 @@
             </div>
             <div class="hidden layout-container md:(block absolute w-full) xl:max-w-1200">
               <div class="flex justify-between">
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-(0-0-8-0 color-gray-600-20)">
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
                   <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
                 </button>
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-(0-0-8-0 color-gray-600-20)">
+                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
                   <i class="i-icon:arrow text-gray-500"></i>
                 </button>
               </div>
@@ -748,7 +748,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -787,7 +787,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -826,7 +826,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -865,7 +865,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -904,7 +904,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -943,7 +943,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -982,7 +982,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -1021,7 +1021,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-(0-2-16-0 color-[#007A81]-80))"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16)"
           >
             <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -1197,6 +1197,10 @@
           &:nth-child(4n + 3),
           &:nth-child(4n) {
             --at-apply: 'ml-100';
+          }
+
+          &:hover {
+            box-shadow: 0px 2px 16px 0px rgba(0, 122, 129, .8);
           }
         }
       }
