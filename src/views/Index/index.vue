@@ -19,7 +19,7 @@
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
         <div class="py-16 bg-white rounded-16 shadow-0-2-34-0 shadow-color-gray-500-20 md:py-24">
-          <div class="flex items-center gap-12 mx-16 md:gap-24 md:mx-32">
+          <div class="flex items-center gap-12 mx-16 md:(gap-24 mx-32)">
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
                 <input
@@ -93,14 +93,14 @@
               class="flex-none tag-primary-green-200"
             >自由安排時間</a>
           </div>
-          <div class="mx-16 mt-16 md:flex md:gap-28 md:mx-32 md:mt-28">
+          <div class="mx-16 mt-16 md:(flex gap-28 mx-32 mt-28)">
             <div class="flex-1 pt-12 bg-blue-300 rounded-8 md:w-434 lg:w-auto">
               <div class="flex items-center justify-between px-12">
                 <div class="rounded-24 bg-white border border-gray-200">
                   <button class="px-16 py-8 text-14 font-700 text-white bg-lake-200 rounded-24 md:py-4">
                     打工職缺
                   </button>
-                  <button class="px-16 py-8 text-14 font-700 text-gray-500 rounded-24 md:hover:text-lake-200 md:py-4">
+                  <button class="px-16 py-8 text-14 font-700 text-gray-500 rounded-24 md:(py-4 hover:text-lake-200)">
                     實習機會
                   </button>
                 </div>
@@ -123,7 +123,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -140,7 +140,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -157,7 +157,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -174,7 +174,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -191,7 +191,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -208,7 +208,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-40 text-14 font-700 text-blue-200 text-overflow-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
@@ -226,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="hidden md:grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224">
+            <div class="hidden md:(grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224)">
               <a
                 href=""
                 target="_blank"
@@ -304,8 +304,8 @@
           幫你做出好履歷
         </h2>
         <div class="layout-container overflow-hidden mt-24 bg-white rounded-16 shadow-0-2-34-0 shadow-color-gray-500-20">
-          <div class="pt-24 text-gray-600 md:flex md:items-center">
-            <div class="mx-16 md:flex-none md:ml-40 md:mr-32 md:w-240">
+          <div class="pt-24 text-gray-600 md:(flex items-center)">
+            <div class="mx-16 md:(flex-none ml-40 mr-32 w-240)">
               <div class="text-20 font-700 md:text-24">
                 多種履歷版型<span class="md:hidden">，</span><br class="hidden md:block">為你增加亮點
               </div>
@@ -319,7 +319,7 @@
                 class="loading mt-16 h-358"
               ></div>
               <div v-else>
-                <div class="flex items-center justify-end mx-16 mt-16 md:ml-0 md:mr-40">
+                <div class="flex items-center justify-end mx-16 mt-16 md:(ml-0 mr-40)">
                   <a
                     href=""
                     target="_blank"
@@ -327,11 +327,11 @@
                   >更多履歷<i class="i-icon:arrow ml-4"></i></a>
                 </div>
                 <div class="overflow-x-scroll">
-                  <div class="flex gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:ml-0 md:mr-40">
+                  <div class="flex gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:(ml-0 mr-40)">
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-120">
                         <img
@@ -369,7 +369,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-120">
                         <img
@@ -407,7 +407,7 @@
                     <a
                       href=""
                       target="_blank"
-                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:shadow-0-2-34-0 md:hover:shadow-color-gray-500-20"
+                      class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-0-2-34-0 shadow-color-gray-500-20)"
                     >
                       <div class="h-120">
                         <img
@@ -447,15 +447,15 @@
               </div>
             </div>
           </div>
-          <div class="p-16 text-gray-600 bg-yellow-200 bg-op-60 md:flex md:items-center md:gap-16 md:px-40">
-            <div class="text-base font-700 text-gray-500 md:flex-none md:w-32">
+          <div class="p-16 text-gray-600 bg-yellow-200 bg-op-60 md:(flex items-center gap-16 px-40)">
+            <div class="text-base font-700 text-gray-500 md:(flex-none w-32)">
               履歷工具
             </div>
-            <div class="grid grid-cols-2 gap-16 mt-8 md:flex-1 md:grid-cols-3 md:gap-0 xl:grid-cols-5">
+            <div class="grid grid-cols-2 gap-16 mt-8 md:(flex-1 grid-cols-3 gap-0) xl:grid-cols-5">
               <a
                 href=""
                 target="_blank"
-                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
               >
                 <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
@@ -473,7 +473,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
               >
                 <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
@@ -491,7 +491,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
               >
                 <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
@@ -509,7 +509,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
               >
                 <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
@@ -527,7 +527,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex items-center gap-12 md:gap-16 md:px-12 md:h-96 md:rounded-16 md:hover:bg-white"
+                class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
               >
                 <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
                   <img
@@ -560,12 +560,12 @@
           class="loading mt-24 h-296 md:h-450"
         ></div>
         <div v-else>
-          <div class="overflow-x-scroll mt-24 md:overflow-hidden md:relative md:flex md:items-center justify-center">
+          <div class="overflow-x-scroll mt-24 md:(overflow-hidden relative flex items-center justify-center)">
             <div class="flex gap-24 min-w-0">
               <a
                 href=""
                 target="_blank"
-                class="group flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:(w-400 h-402)"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -593,7 +593,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:(w-400 h-402)"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -621,7 +621,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:(w-400 h-402)"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -649,7 +649,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:(w-400 h-402)"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -677,7 +677,7 @@
               <a
                 href=""
                 target="_blank"
-                class="group flex-none w-240 h-296 md:w-400 md:h-402"
+                class="group flex-none w-240 h-296 md:(w-400 h-402)"
               >
                 <div class="relative flex flex-col items-center pb-20">
                   <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -703,7 +703,7 @@
                 </div>
               </a>
             </div>
-            <div class="hidden layout-container md:block md:absolute md:w-full xl:max-w-1200">
+            <div class="hidden layout-container md:(block absolute w-full) xl:max-w-1200">
               <div class="flex justify-between">
                 <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-0-0-8-0 shadow-color-gray-600-20">
                   <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
@@ -714,7 +714,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden md:flex md:gap-4 md:justify-center md:mt-24 md:py-8">
+          <div class="hidden md:(flex gap-4 justify-center mt-24 py-8)">
             <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
             <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
             <button class="w-12 h-8 rounded-4 bg-gray-400 bg-op-30"></button>
@@ -743,12 +743,12 @@
         ></div>
         <div
           v-else
-          class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:grid-cols-2 md:gap-y-12 md:mt-32"
+          class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:(grid-cols-2 gap-y-12 mt-32)"
         >
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -787,7 +787,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -826,7 +826,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -865,7 +865,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -904,7 +904,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -943,7 +943,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -982,7 +982,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -1021,7 +1021,7 @@
           <a
             href=""
             target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:px-32 md:py-16 md:hover:shadow-0-2-16-0 md:hover:shadow-color-lake-400-80"
+            class="group flex gap-12 px-20 py-12 bg-white rounded-44 md:(px-32 py-16) md:hover:(shadow-0-2-16-0 shadow-color-lake-400-80)"
           >
             <div class="text-44 leading-52 text-lake-300 family-Bungee">Q</div>
             <div class="min-w-0">
@@ -1087,18 +1087,18 @@
         >更多產業新訊</a>
       </div>
     </div>
-    <div class="Index__follow md:pt-60 md:-mt-60 md:bg-repeat-x-61">
-      <div class="py-40 bg-lake-200 md:pt-0 md:pb-60">
+    <div class="Index__follow md:(pt-60 -mt-60 bg-repeat-x-61)">
+      <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
         <div class="text-36 leading-44 family-Bungee text-yellow-200 text-center">
           FOLLOW US
         </div>
         <h2 class="text-20 font-700 text-white text-center">
           關注動態
         </h2>
-        <ul class="layout-container mt-16 px-16 py-20 bg-white rounded-16 md:px-40 md:py-24">
+        <ul class="layout-container mt-16 px-16 py-20 bg-white rounded-16 md:(px-40 py-24)">
           <li>
-            <div class="flex flex-col gap-12 mx-auto md:flex-row md:items-center md:gap-32 md:max-w-1120">
-              <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+            <div class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)">
+              <div class="ChannelInfo h-112 border md:(w-300 h-312)">
                 ChannelInfo
               </div>
               <div class="min-w-0 flex-1">
@@ -1111,9 +1111,9 @@
               </div>
             </div>
           </li>
-          <li class="mt-16 pt-16 border-t border-gray-300 md:mt-24 md:pt-24">
-            <div class="flex flex-col gap-12 mx-auto md:flex-row md:items-center md:gap-32 md:max-w-1120">
-              <div class="ChannelInfo h-112 border md:w-300 md:h-312">
+          <li class="mt-16 pt-16 border-t border-gray-300 md:(mt-24 pt-24)">
+            <div class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)">
+              <div class="ChannelInfo h-112 border md:(w-300 h-312)">
                 ChannelInfo
               </div>
               <div class="min-w-0 flex-1">
