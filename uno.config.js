@@ -121,26 +121,6 @@ export default defineConfig({
         }
       }
     ],
-    [ 'shadow-100', { 'box-shadow': '0 2px 34px 0 rgba(126, 126, 126, 0.2)' } ],
-    [
-      /^text-overflow-([0-9_]*)$/,
-      ([ , line ]) => {
-        if (line > 1){
-          return {
-            'display': '-webkit-box',
-            '-webkit-line-clamp': line,
-            '-webkit-box-orient': 'vertical',
-            'overflow': 'hidden',
-          }
-        } else {
-          return {
-            'overflow': 'hidden',
-            'text-overflow': 'ellipsis',
-            'white-space': 'nowrap',
-          }
-        }
-      }
-    ],
     [
       /^bg-repeat-x-([0-9_]*)$/,
       ([ , height ]) => {

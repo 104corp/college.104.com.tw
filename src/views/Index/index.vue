@@ -125,7 +125,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -142,7 +142,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -159,7 +159,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -176,7 +176,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -193,7 +193,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -210,7 +210,7 @@
                       target="_blank"
                       class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-(0-2-34-0 color-gray-500-20))"
                     >
-                      <div class="h-40 text-(14 blue-200) font-700 text-overflow-2">
+                      <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
                         [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
                       </div>
                       <div class="flex gap-8 mt-4 text-12 font-700">
@@ -356,7 +356,7 @@
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-(14 gray-600) text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-(14 gray-600) line-clamp-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -394,7 +394,7 @@
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-(14 gray-600) text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-(14 gray-600) line-clamp-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -432,7 +432,7 @@
                         </div>
                       </div>
                       <div class="p-16 pt-8">
-                        <div class="text-(14 gray-600) text-overflow-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
+                        <div class="text-(14 gray-600) line-clamp-2">獨立開發的網頁，請參考：https://lefty.blog，後台其他技術，若有興趣了解...</div>
                         <ul class="flex flex-wrap gap-8 mt-8">
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">活動公關</li>
                           <li class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8">創投競賽第三名</li>
@@ -752,7 +752,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -791,7 +791,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -830,7 +830,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -869,7 +869,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -908,7 +908,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -947,7 +947,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -986,7 +986,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
@@ -1025,7 +1025,7 @@
           >
             <div class="text-(44 lake-300) leading-52 family-Bungee">Q</div>
             <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 text-overflow-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
+              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
               <div class="flex items-center gap-4 flex-wrap mt-4">
                 <div class="flex">
                   <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
