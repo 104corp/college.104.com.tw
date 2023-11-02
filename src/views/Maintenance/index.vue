@@ -1,6 +1,6 @@
 <template>
   <div class="Maintenance flex-1 pt-44 bg-white md:pt-94 md:pb-48 md:bg-gray-100">
-    <div class="fixed top-0 flex items-center justify-center w-full h-44 bg-white border-b border-gray-200 md:justify-start md:h-70 md:shadow-0-2-8-0 md:shadow-color-gray-600-20">
+    <div class="fixed top-0 flex items-center justify-center w-full h-44 bg-white border-b border-gray-200 md:justify-start md:h-70 md:shadow-card-gray">
       <a
         :href="mainUrl"
         class="layout-container md:w-full"
