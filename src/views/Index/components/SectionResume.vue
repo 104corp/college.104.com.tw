@@ -31,13 +31,13 @@
                 >更多履歷<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll">
-                <div class="grid grid-cols-3 gap-16 mt-16 mb-24 mx-16 w-full min-w-848 max-w-1088 md:(mx-0 pr-40) xl:pr-0">
+                <div class="flex gap-16 mt-16 mb-24 mx-16 float-left md:(mx-0 pr-40)">
                   <a
                     v-for="profileResume in profileResumeStore.list"
                     :key="profileResume.name"
                     :href="addQuery(profileResume.url, utm)"
                     target="_blank"
-                    class="group overflow-hidden rounded-8 border border-gray-300 md:hover:(shadow-card-gray)"
+                    class="group flex-shrink-0 overflow-hidden w-272 rounded-8 border border-gray-300 md:hover:(shadow-card-gray) lg:w-352"
                   >
                     <div class="h-120">
                       <BaseImage
