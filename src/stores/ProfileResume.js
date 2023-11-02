@@ -29,6 +29,15 @@ export const useProfileResume = (id = 'ProfileResume', pinia) => {
           bio: 'I am a frontend developer with a passion for creating beautiful and responsive web applications.',
           hashTags: [ 'react', 'css', 'html' ],
           url: 'https://janesmith.com'
+        },
+        {
+          name: 'Bob Johnson',
+          jobTitle: 'Full Stack Developer',
+          avatar: 'https://randomuser.me/api/portraits/men/2.jpg',
+          coverImage: 'https://picsum.photos/id/239/200/300',
+          bio: 'I am a full stack developer with experience in both frontend and backend development.',
+          hashTags: [ 'javascript', 'react', 'nodejs', 'mongodb' ],
+          url: 'https://bobjohnson.com'
         }
       ]
 
