@@ -5,3 +5,5 @@ export const giverUrl = `https://giver.${ import.meta.env.VITE_MAIN_DOMAIN }/`
 export const guideUrl = `https://guide.${ import.meta.env.VITE_MAIN_DOMAIN }/`
 export const nabiUrl = `https://nabi.${ import.meta.env.VITE_MAIN_DOMAIN }/`
 export const beCollegeUrl = `https://be.college.${ import.meta.env.VITE_MAIN_DOMAIN }/`
+export const collegeUrl = `https://college.${ import.meta.env.VITE_MAIN_DOMAIN }/`
+export const studentUrl = `https://student.${ import.meta.env.VITE_MAIN_DOMAIN }/`
