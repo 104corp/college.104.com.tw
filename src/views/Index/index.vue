@@ -3,9 +3,7 @@
     <div class="GlobalHeader h-45 border">
       GlobalHeader
     </div>
-    <div class="NavBar h-56 border">
-      NavBar
-    </div>
+    <NavBar></NavBar>
     <div class="Index__title pt-20">
       <div class="ScrollingTitle h-32 text-16 border">
         ScrollingTitle
@@ -198,9 +196,13 @@
         CardEvent
       </div>
     </div>
-    <div class="SideBar mt-12 h-44 border">
-      SideBar
-    </div>
+    <SideBar
+      :list="sectionList"
+    ></SideBar>
+    <div
+      ref="$anchor_bestTool"
+      class="-top-90 relative md:top-unset"
+    ></div>
     <div class="Index__tool pb-120">
       <div class="mt-32 text-(36 lake-200 center) leading-44 family-Bungee">
         BEST TOOLS
@@ -212,6 +214,10 @@
         ToolShowcase
       </div>
     </div>
+    <div
+      ref="$anchor_resumeHelper"
+      class="-top-90 relative md:top-unset"
+    ></div>
     <div class="Index__resume bg-([url(@/assets/img/Index/bg-wave-blue.png)] repeat-x) pt-60 -mt-60">
       <div class="pb-120 bg-[#D1ECEA]">
         <div class="text-(36 lake-200 center) leading-44 family-Bungee">
@@ -462,6 +468,10 @@
         </div>
       </div>
     </div>
+    <div
+      ref="$anchor_getHelp"
+      class="-top-90 relative md:top-unset"
+    ></div>
     <div class="Index__help bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x) pt-60 -mt-60">
       <div class="bg-([url(@/assets/img/Index/bg-qa.png)] cover top repeat-y) pb-60 bg-lake-200">
         <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee md:pt-20">
@@ -529,6 +539,10 @@
         </div>
       </div>
     </div>
+    <div
+      ref="$anchor_news"
+      class="-top-90 relative md:top-unset"
+    ></div>
     <div class="Index__news pt-40 pb-100 bg-white md:pb-120">
       <div class="text-(36 lake-200 center) leading-44 family-Bungee">
         NEWS
@@ -595,8 +609,41 @@
 </template>
 
 <script setup>
-// const props = defineProps({})
-// const emit = defineEmits([])
+import {
+  ref, computed 
+} from 'vue'
+import { useElementBounding } from '@vueuse/core'
+import SideBar from './components/SideBar.vue'
+import NavBar from './components/NavBar.vue'
+
+const $anchor_bestTool = ref(null)
+const $anchor_resumeHelper = ref(null)
+const $anchor_getHelp = ref(null)
+const $anchor_news = ref(null)
+
+const { top: bestToolsTop } = useElementBounding($anchor_bestTool)
+const { top: resumeHelperTop } = useElementBounding($anchor_resumeHelper)
+const { top: getHelpTop } = useElementBounding($anchor_getHelp)
+const { top: newsTop } = useElementBounding($anchor_news)
+
+const sectionList = computed(() => [
+  {
+    text: '工具介紹',
+    anchorTop: bestToolsTop.value
+  },
+  {
+    text: '履歷幫手',
+    anchorTop: resumeHelperTop.value
+  },
+  {
+    text: '職場問答',
+    anchorTop: getHelpTop.value
+  },
+  {
+    text: '產業新訊',
+    anchorTop: newsTop.value
+  }
+])
 </script>
 
 <style lang="scss">
