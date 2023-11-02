@@ -207,78 +207,7 @@
       class="-top-90 relative md:top-unset"
     ></div>
     <SectionResume></SectionResume>
-    <div class="Index__story bg-([url(@/assets/img/Index/bg-wave-white.png)] repeat-x) pt-60 -mt-60">
-      <div class="pb-120 bg-white">
-        <div class="text-(36 lake-200 center) leading-44 family-Bungee">
-          STORIES
-        </div>
-        <h2 class="text-(20 gray-600 center) font-700">
-          看看他們在職場的故事
-        </h2>
-        <div
-          v-if="false"
-          class="loading mt-24 h-296 md:h-450"
-        ></div>
-        <div v-else>
-          <div class="overflow-x-scroll mt-24 md:(overflow-hidden relative flex items-center justify-center)">
-            <div class="flex gap-24 min-w-0">
-              <a
-                v-for="n in 5"
-                :key="n"
-                href=""
-                target="_blank"
-                class="group flex-none w-240 h-296 md:(w-400 h-402)"
-              >
-                <div class="relative flex flex-col items-center pb-20">
-                  <div class="overflow-hidden aspect-ratio-4/3 border border-gray-200 rounded-8">
-                    <img
-                      src="@/assets/img/default-img.png"
-                      alt="故事"
-                      draggable="false"
-                    >
-                  </div>
-                  <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
-                    <img
-                      src="@/assets/img/default-img.png"
-                      alt="頭貼"
-                      draggable="false"
-                      class="object-cover w-full h-full"
-                    >
-                  </div>
-                </div>
-                <div class="font-700 text-center">
-                  <div class="text-(base gray-500)">林怡瑄・Product Manager</div>
-                  <div class="mx-auto my-8 w-20 border-(b-2 lake-200)"></div>
-                  <div class="text-18 md:group-hover:text-lake-200">Shopee 蝦皮實習，扎實的數據分析與商業訓練</div>
-                </div>
-              </a>
-            </div>
-            <div class="hidden layout-container md:(block absolute w-full) xl:max-w-1200">
-              <div class="flex justify-between">
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
-                  <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
-                </button>
-                <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
-                  <i class="i-icon:arrow text-gray-500"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:(flex gap-4 justify-center mt-24 py-8)">
-            <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
-            <button class="w-12 h-8 rounded-4 bg-(gray-400 op-30)"></button>
-            <button class="w-12 h-8 rounded-4 bg-(gray-400 op-30)"></button>
-          </div>
-        </div>
-        <div class="flex justify-center mt-24">
-          <a
-            href=""
-            target="_blank"
-            class="inline-block px-16 text-(base lake-200) font-700 border border-lake-200 rounded-4 md:px-32"
-          >更多他人經驗</a>
-        </div>
-      </div>
-    </div>
+    <SectionStories></SectionStories>
     <div
       ref="$anchor_getHelp"
       class="-top-90 relative md:top-unset"
@@ -306,6 +235,7 @@ import SectionGetHelp from './components/SectionGetHelp.vue'
 import SectionTool from './components/SectionTool.vue'
 import SectionArticle from './components/SectionArticle.vue'
 import SectionFollowUs from './components/SectionFollowUs.vue'
+import SectionStories from './components/SectionStories.vue'
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)

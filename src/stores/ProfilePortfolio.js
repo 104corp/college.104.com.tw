@@ -29,8 +29,38 @@ export const useProfilePortfolio = (id = 'ProfilePortfolio', pinia) => {
             avatar: 'https://randomuser.me/api/portraits/women/1.jpg'
           },
           title: 'Designing the Future',
-          cover: 'https://picsum.photos/800/600',
+          cover: 'https://picsum.photos/200/600',
           url: 'https://example.com/designing-the-future'
+        },
+        {
+          author: {
+            name: 'Bob Johnson',
+            jobTitle: 'Software Engineer',
+            avatar: 'https://randomuser.me/api/portraits/men/2.jpg'
+          },
+          title: 'Building the Next Big Thing',
+          cover: 'https://picsum.photos/1000/600',
+          url: 'https://example.com/building-the-next-big-thing'
+        },
+        {
+          author: {
+            name: 'Alice Lee',
+            jobTitle: 'Product Manager',
+            avatar: 'https://randomuser.me/api/portraits/women/2.jpg'
+          },
+          title: 'Creating a Better User Experience',
+          cover: 'https://picsum.photos/900/600',
+          url: 'https://example.com/creating-a-better-user-experience'
+        },
+        {
+          author: {
+            name: 'David Kim',
+            jobTitle: 'Data Scientist',
+            avatar: 'https://randomuser.me/api/portraits/men/3.jpg'
+          },
+          title: 'Analyzing Big Data',
+          cover: 'https://picsum.photos/100/600',
+          url: 'https://example.com/analyzing-big-data'
         }
       ]
 
