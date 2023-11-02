@@ -295,73 +295,7 @@
       ref="$anchor_getHelp"
       class="-top-90 relative md:top-unset"
     ></div>
-    <div class="Index__help bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x) pt-60 -mt-60">
-      <div class="bg-([url(@/assets/img/Index/bg-qa.png)] cover top repeat-y) pb-60 bg-lake-200">
-        <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee md:pt-20">
-          GET HELP
-        </div>
-        <h2 class="text-(20 white center) font-700">
-          有職場疑問？我們為你解答
-        </h2>
-        <div
-          v-if="false"
-          class="loading mt-24 h-328 md:h-372"
-        ></div>
-        <div
-          v-else
-          class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:(grid-cols-2 gap-y-12 mt-32)"
-        >
-          <a
-            v-for="n in 8"
-            :key="n"
-            href=""
-            target="_blank"
-            class="group flex gap-12 px-20 py-12 bg-white rounded-44 [&:nth-child(n+5)]:hidden md:(px-32 py-16 [&:nth-child(n+5)]:flex [&:nth-child(4n+1)]:mr-100 [&:nth-child(4n+2)]:mr-100 [&:nth-child(4n+3)]:ml-100 [&:nth-child(4n)]:ml-100)"
-          >
-            <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
-            <div class="min-w-0">
-              <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">讀到的科系沒錢途怎麼辦？</div>
-              <div class="flex items-center gap-4 flex-wrap mt-4">
-                <div class="flex">
-                  <div class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-3">
-                    <img
-                      src="@/assets/img/default-img.png"
-                      alt="頭貼"
-                      draggable="false"
-                      class="object-cover w-full h-full"
-                    >
-                  </div>
-                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-2">
-                    <img
-                      src="@/assets/img/default-img.png"
-                      alt="頭貼"
-                      draggable="false"
-                      class="object-cover w-full h-full"
-                    >
-                  </div>
-                  <div class="-ml-8 w-24 aspect-1 overflow-hidden border border-white rounded-1/2 z-1">
-                    <img
-                      src="@/assets/img/default-img.png"
-                      alt="頭貼"
-                      draggable="false"
-                      class="object-cover w-full h-full"
-                    >
-                  </div>
-                </div>
-                <div class="text-(14 gray-500)">11 回答<span class="ml-10">觀看1,974</span></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="flex justify-center mt-24">
-          <a
-            href=""
-            target="_blank"
-            class="inline-block px-16 text-(base white) font-700 border border-white rounded-4 md:px-32"
-          >更多職場問答</a>
-        </div>
-      </div>
-    </div>
+    <SectionGetHelp></SectionGetHelp>
     <div
       ref="$anchor_news"
       class="-top-90 relative md:top-unset"
@@ -440,6 +374,7 @@ import { useElementBounding } from '@vueuse/core'
 import SideBar from './components/SideBar.vue'
 import NavBar from './components/NavBar.vue'
 import SectionResume from './components/SectionResume.vue'
+import SectionGetHelp from './components/SectionGetHelp.vue'
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)
@@ -489,14 +424,6 @@ const sectionList = computed(() => [
 @screen md {
   .Index {
     background-size: auto 225px, 100% 630px, 100% auto;
-
-    &__help {
-      .layout-container {
-        a:hover {
-          box-shadow: 0px 2px 16px 0px rgba(0, 122, 129, .8);
-        }
-      }
-    }
   }
 }
 
