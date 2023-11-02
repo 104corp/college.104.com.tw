@@ -36,7 +36,7 @@ const links = [
 
 const activeName = computed(() => {
   const currentDomain = window.location.hostname
-  return links.find(link => new URL(link.url).hostname === currentDomain).name
+  return links.find(link => new URL(link.url).hostname === currentDomain)?.name
 })
 
 const props = defineProps({
