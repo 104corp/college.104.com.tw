@@ -203,17 +203,7 @@
       ref="$anchor_bestTool"
       class="-top-90 relative md:top-unset"
     ></div>
-    <div class="Index__tool pb-120">
-      <div class="mt-32 text-(36 lake-200 center) leading-44 family-Bungee">
-        BEST TOOLS
-      </div>
-      <h2 class="text-(20 gray-600 center) font-700">
-        大學生必用神器介紹
-      </h2>
-      <div class="ToolShowcase mt-24 h-548 text-16 border">
-        ToolShowcase
-      </div>
-    </div>
+    <SectionTool></SectionTool>
     <div
       ref="$anchor_resumeHelper"
       class="-top-90 relative md:top-unset"
@@ -375,6 +365,7 @@ import SideBar from './components/SideBar.vue'
 import NavBar from './components/NavBar.vue'
 import SectionResume from './components/SectionResume.vue'
 import SectionGetHelp from './components/SectionGetHelp.vue'
+import SectionTool from './components/SectionTool.vue'
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)
