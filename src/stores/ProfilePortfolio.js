@@ -61,6 +61,106 @@ export const useProfilePortfolio = (id = 'ProfilePortfolio', pinia) => {
           title: 'Analyzing Big Data',
           cover: 'https://picsum.photos/100/600',
           url: 'https://example.com/analyzing-big-data'
+        },
+        {
+          author: {
+            name: 'Emily Chen',
+            jobTitle: 'Frontend Developer',
+            avatar: 'https://randomuser.me/api/portraits/women/3.jpg'
+          },
+          title: 'Building a Responsive Website',
+          cover: 'https://picsum.photos/800/600',
+          url: 'https://example.com/building-a-responsive-website'
+        },
+        {
+          author: {
+            name: 'Michael Brown',
+            jobTitle: 'Backend Developer',
+            avatar: 'https://randomuser.me/api/portraits/men/4.jpg'
+          },
+          title: 'Scaling a Web Application',
+          cover: 'https://picsum.photos/1200/600',
+          url: 'https://example.com/scaling-a-web-application'
+        },
+        {
+          author: {
+            name: 'Olivia Davis',
+            jobTitle: 'UX Designer',
+            avatar: 'https://randomuser.me/api/portraits/women/4.jpg'
+          },
+          title: 'Designing for Accessibility',
+          cover: 'https://picsum.photos/600/600',
+          url: 'https://example.com/designing-for-accessibility'
+        },
+        {
+          author: {
+            name: 'William Garcia',
+            jobTitle: 'Full Stack Developer',
+            avatar: 'https://randomuser.me/api/portraits/men/5.jpg'
+          },
+          title: 'Creating a RESTful API',
+          cover: 'https://picsum.photos/700/600',
+          url: 'https://example.com/creating-a-restful-api'
+        },
+        {
+          author: {
+            name: 'Sophia Hernandez',
+            jobTitle: 'UI/UX Designer',
+            avatar: 'https://randomuser.me/api/portraits/women/5.jpg'
+          },
+          title: 'Designing a Mobile App',
+          cover: 'https://picsum.photos/500/600',
+          url: 'https://example.com/designing-a-mobile-app'
+        },
+        {
+          author: {
+            name: 'James Lee',
+            jobTitle: 'Software Engineer',
+            avatar: 'https://randomuser.me/api/portraits/men/6.jpg'
+          },
+          title: 'Building a Machine Learning Model',
+          cover: 'https://picsum.photos/900/600',
+          url: 'https://example.com/building-a-machine-learning-model'
+        },
+        {
+          author: {
+            name: 'Ava Martinez',
+            jobTitle: 'Frontend Developer',
+            avatar: 'https://randomuser.me/api/portraits/women/6.jpg'
+          },
+          title: 'Creating a Single Page Application',
+          cover: 'https://picsum.photos/1000/600',
+          url: 'https://example.com/creating-a-single-page-application'
+        },
+        {
+          author: {
+            name: 'Ethan Nguyen',
+            jobTitle: 'Full Stack Developer',
+            avatar: 'https://randomuser.me/api/portraits/men/7.jpg'
+          },
+          title: 'Building a Real-Time Chat Application',
+          cover: 'https://picsum.photos/800/600',
+          url: 'https://example.com/building-a-real-time-chat-application'
+        },
+        {
+          author: {
+            name: 'Isabella Perez',
+            jobTitle: 'UI Designer',
+            avatar: 'https://randomuser.me/api/portraits/women/7.jpg'
+          },
+          title: 'Designing a Landing Page',
+          cover: 'https://picsum.photos/600/600',
+          url: 'https://example.com/designing-a-landing-page'
+        },
+        {
+          author: {
+            name: 'Daniel Rodriguez',
+            jobTitle: 'Backend Developer',
+            avatar: 'https://randomuser.me/api/portraits/men/8.jpg'
+          },
+          title: 'Optimizing Database Performance',
+          cover: 'https://picsum.photos/1200/600',
+          url: 'https://example.com/optimizing-database-performance'
         }
       ]
 

@@ -12,14 +12,17 @@
         class="loading mt-24 h-296 md:h-450"
       ></div>
       <div v-else>
-        <div class="overflow-x-scroll mt-24 md:(overflow-hidden relative flex items-center justify-center)">
-          <div class="flex gap-24 min-w-0">
+        <div class="overflow-x-hidden mt-24 md:(overflow-hidden relative flex items-center justify-start)">
+          <div
+            class="flex float-left transform transition-transform duration-500"
+            :style="{ 'transform': `translateX(${positionX}px)` }"
+          >
             <a
               v-for="profilePortfolio in profilePortfolioStore.list"
               :key="profilePortfolio.author"
               :href="addQuery(profilePortfolio.url, utm)"
               target="_blank"
-              class="group flex-shrink-0 w-240 h-296 md:(w-400 h-402)"
+              class="group flex-shrink-0 mx-12 w-240 h-296 md:(w-400 h-402)"
             >
               <div class="relative flex flex-col items-center pb-20">
                 <div class="overflow-hidden w-full aspect-ratio-4/3 border border-gray-200 rounded-8">
@@ -50,21 +53,33 @@
               </div>
             </a>
           </div>
-          <div class="hidden layout-container md:(block absolute w-full) xl:max-w-1200">
+          <div class="hidden layout-container md:(block absolute left-1/2 transform -translate-x-1/2 w-full) xl:max-w-1200">
             <div class="flex justify-between">
-              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
+              <button
+                class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
+                @click="move(page - 1)"
+              >
                 <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
               </button>
-              <button class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray">
+              <button
+                class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
+                @click="move(page + 1)"
+              >
                 <i class="i-icon:arrow text-gray-500"></i>
               </button>
             </div>
           </div>
         </div>
         <div class="hidden md:(flex gap-4 justify-center mt-24 py-8)">
-          <button class="w-24 h-8 rounded-4 bg-lake-200"></button>
-          <button class="w-12 h-8 rounded-4 bg-(gray-400 op-30)"></button>
-          <button class="w-12 h-8 rounded-4 bg-(gray-400 op-30)"></button>
+          <button
+            v-for="(n, pageIndex) in totalPage"
+            :key="n"
+            class="w-12 h-8 rounded-4 transition-width duration-500"
+            :class="{
+              'w-24 bg-(lake-200 op-100)': pageIndex === page,
+              'bg-(gray-400 op-30)': pageIndex !== page,
+            }"
+          ></button>
         </div>
       </div>
       <div class="flex justify-center mt-24">
@@ -80,13 +95,17 @@
 
 <script setup>
 import {
-  ref, onMounted 
+  ref, onMounted, computed
 } from 'vue'
+import { useWindowSize } from '@vueuse/core'
 import { addQuery } from '@/utils/urlHandler.js'
 import { useProfilePortfolio } from '@/stores/ProfilePortfolio.js'
 
-const loading = ref(false)
 const profilePortfolioStore = useProfilePortfolio()
+const { width: windowWidth } = useWindowSize()
+
+const loading = ref(false)
+const index = ref(0)
 
 const utm = {
   utm_source: 'cweb_studentmainpage',
@@ -97,8 +116,41 @@ const moreUtm = {
   utm_medium: 'university_toolbox_seemore'
 }
 
+const pageSetCount = computed(() => {
+  return windowWidth.value > 1024 ? 3 : 1
+})
+
+const totalPage = computed(() => {
+  return Math.ceil(profilePortfolioStore.list.length / pageSetCount.value)
+})
+
+const page = computed(() => {
+  return Math.floor(index.value / pageSetCount.value)
+})
+
+const positionX = computed(() => {
+  const slideWidth = windowWidth.value > 1024 ? 424 : 264
+  const bodyWidth = document.body.clientWidth
+  return -(index.value + 0.5) * slideWidth + bodyWidth / 2
+})
+
+function move (toPage) {
+  if (toPage < 0) {
+    index.value = 1 + (totalPage.value - 1) * pageSetCount.value
+  } else if (toPage > totalPage.value - 1) {
+    index.value = windowWidth.value > 1024 ? 1 : 0
+  } else {
+    const offsetNum = windowWidth.value > 1024 ? 1 : 0
+    index.value = offsetNum + toPage * pageSetCount.value
+  }
+}
+
 onMounted(async () => {
   await profilePortfolioStore.getList()
+  index.value = windowWidth.value > 1024 ? 1 : 0
+  setInterval(() => {
+    move(page.value + 1)
+  }, 3000)
 })
 </script>
 
