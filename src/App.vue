@@ -6,6 +6,7 @@ useHead()
 
 <template>
   <RouterView></RouterView>
+  <GlobalFooter></GlobalFooter>
 </template>
 
 <style lang="scss">

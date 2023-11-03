@@ -605,6 +605,7 @@
         </ul>
       </div>
     </div>
+    <GoTop></GoTop>
   </div>
 </template>
 
