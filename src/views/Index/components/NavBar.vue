@@ -30,7 +30,7 @@ const links = [
   },
   {
     name: '新鮮人',
-    url: `${ mainUrl }/jobs/main/freshman`
+    url: `${ mainUrl }jobs/main/freshman`
   }
 ]
 
