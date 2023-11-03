@@ -11,6 +11,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import fs from 'fs'
 import unocss from 'unocss/vite'
+import federation from '@originjs/vite-plugin-federation'
 
 export default defineConfig(({
   command, mode 
@@ -35,6 +36,19 @@ export default defineConfig(({
     plugins: [ 
       vue(),
       unocss(),
+      federation({
+        name: 'college',
+        filename: 'remoteEntry.js',
+        mode: 'production',
+        exposes: {
+          './test': './src/views/Index/index.vue',
+          './goTop': './src/components/GoTop.vue'
+        },
+        shared: [ 'vue', 'unocss', 'fs', 'url', 'module', 'path' ],
+        remotes: {
+          remote_app: 'https://student.104-dev.com.tw/assets/remoteEntry.js'
+        }
+      }),
       AutoImport({
         resolvers: [ ElementPlusResolver() ],
       }),
