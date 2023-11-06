@@ -15,13 +15,14 @@
         <div class="overflow-x-hidden mt-24 md:(overflow-hidden relative flex items-center justify-start)">
           <ul
             ref="$slider"
-            class="flex float-left transform transition-transform duration-500"
-            :style="{ 'transform': `translateX(${positionX}px)` }"
-            @transitionend="resume"
+            class="flex float-left transition-transform duration-500"
+            :style="{ 'transform': `translateX(${ positionX }px)`,
+                      'transition-property': isTransitionEnd ? 'none' : 'transform' }"
+            @transitionend="setCurrentPage"
           >
             <li
-              v-for="profilePortfolio in profilePortfolioStore.list"
-              :key="profilePortfolio.author"
+              v-for="(profilePortfolio, slideIndex) in duplicateList"
+              :key="slideIndex"
               class="flex-shrink-0 box-content px-12 w-240 h-296 md:(w-400 h-402)"
             >
               <a
@@ -115,6 +116,7 @@ const { width: windowWidth } = useWindowSize()
 
 const loading = ref(false)
 const index = ref(0)
+const isTransitionEnd = ref(true)
 
 const $slider = ref(null)
 const { width: slideWidth } = useElementSize($slider)
@@ -129,16 +131,27 @@ const moreUtm = {
   utm_medium: 'university_toolbox_seemore'
 }
 
-const startIndex = computed(() => {
-  return windowWidth.value > 1024 ? 1 : 0
-})
-
 const pageSetCount = computed(() => {
   return windowWidth.value > 1024 ? 3 : 1
 })
 
+const duplicateCount = computed(() => {
+  return pageSetCount.value * 2
+})
+
+const duplicateList = computed(() => {
+  const prepend = profilePortfolioStore.list.slice(-duplicateCount.value)
+  const append = profilePortfolioStore.list.slice(0, duplicateCount.value)
+  return [ ...prepend, ...profilePortfolioStore.list, ...append ]
+})
+
+const startIndex = computed(() => {
+  const start = windowWidth.value > 1024 ? 1 : 0
+  return start + duplicateCount.value
+})
+
 const page = computed(() => {
-  return Math.floor(index.value / pageSetCount.value)
+  return Math.floor((index.value - duplicateCount.value) / pageSetCount.value)
 })
 
 const totalPage = computed(() => {
@@ -146,20 +159,28 @@ const totalPage = computed(() => {
 })
 
 const positionX = computed(() => {
-  const listLength = profilePortfolioStore.list.length
+  const listLength = duplicateList.value.length
   return -(index.value + 0.5) / listLength * slideWidth.value + bodyWidth.value / 2
 })
 
-function move (toPage) {
-  pause()
-  
-  if (toPage < 0) {
-    index.value = startIndex.value + (totalPage.value - 1) * pageSetCount.value
-  } else if (toPage > totalPage.value - 1) {
-    index.value = startIndex.value
-  } else {
-    index.value = startIndex.value + toPage * pageSetCount.value
+const setCurrentPage = () => {
+  isTransitionEnd.value = true
+
+  if (index.value < startIndex.value) {
+    index.value += profilePortfolioStore.list.length
+  } else if (index.value > duplicateCount.value + profilePortfolioStore.list.length - 1) {
+    index.value -= profilePortfolioStore.list.length
   }
+
+  resume()
+}
+
+const move = (toPage) => {
+  if (!isTransitionEnd.value) return
+  pause()
+
+  isTransitionEnd.value = false
+  index.value = startIndex.value + toPage * pageSetCount.value
 }
 
 const {
