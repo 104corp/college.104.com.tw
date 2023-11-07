@@ -5,38 +5,27 @@
         <li
           v-for="(item, index) in props.list"
           :key="index"
-          class="SectionTool__item md:(p-20 transition-all duration-200 ease-linear)"
-          :class="{ 'md:(relative bg-[#FFF7D9] rounded-16) md:before:(content-empty absolute w-0 h-0 top-1/2 -right-14 transform -translate-y-1/2 border-(y-15 r-0 l-14 transparent l-[#fff7d9]))': isActiveIndex(index) }"
-          @mouseover="changeActiveIndex(index)"
+          class="group md:(p-20 transition-all duration-200 ease-linear)"
+          :class="{ 'active md:(relative bg-[#FFF7D9] rounded-16) md:before:(content-empty absolute w-0 h-0 top-1/2 -right-14 transform -translate-y-1/2 border-(y-15 r-0 l-14 transparent l-[#fff7d9]))': activeIndex === index }"
+          @mouseover="activeIndex = index"
         >
           <div class="flex items-center relative mb-12 text-18 font-700 overflow-visible md:(static mb-0)">
             <span
-              class="mr-12 text-24 leading-28 font-700 text-lake-200 family-Bungee md:(mr-20 text-(32 gray-400) leading-38)"
-              :class="{ 'md:text-lake-200': isActiveIndex(index) }"
+              class="mr-12 text-24 leading-28 font-700 text-lake-200 family-Bungee md:(mr-20 text-(32 gray-400) leading-38) md:group-[.active]-text-lake-200"
             >0{{ index + 1 }}</span>
-            <div
-              class="text-18 text-gray-500 text-nowrap md:(text-(20 gray-600))"
-              :class="{ 'text-gray-600': isActiveIndex(index) }"
-            >
+            <div class="text-18 text-gray-500 text-nowrap group-[.active]-text-gray-600 md:(text-(20 gray-600))">
               {{ item.title }}
             </div>
             <div class="i-icon:arrow hidden ml-4 text-16 md:block"></div>
           </div>
-          <div
-            class="relative pl-28 mx-16 mb-8 z-1 before:(content-empty absolute top-0 left-0 w-3 h-full bg-lake-200 rounded-2) md:(pl-64 m-0 max-w-none h-auto before:hidden)"
-            :class="{ 'h-372': isActiveIndex(index) }"
-          >
+          <div class="relative pl-28 mx-16 mb-8 z-1 before:(content-empty absolute top-0 left-0 w-3 h-full bg-lake-200 rounded-2) group-[.active]-h-372 md:(pl-64 m-0 max-w-none before:hidden) md:group-[.active]-h-unset">
             <div
-              v-show="isActiveIndex(index)"
+              v-show="activeIndex === index"
               class="text-base"
             >
               {{ item.content }}
             </div>
-            <div
-              class="hidden flex-col items-start gap-12 mt-12 md:(flex flex-row gap-16)"
-              :class="{ 'inline-flex md:mt-12': isActiveIndex(index),
-                        'md:mt-4': !isActiveIndex(index) }"
-            >
+            <div class="hidden flex-col items-start gap-12 mt-12 group-[.active]-inline-flex md:(flex flex-row gap-16 mt-4) md:group-[.active]-mt-12">
               <a
                 v-for="button in item.buttons"
                 :key="button.text"
@@ -73,7 +62,7 @@
             <TransitionGroup name="animate-fade">
               <BaseImage
                 v-for="(item, index) in props.list"
-                v-show="isActiveIndex(index)"
+                v-show="activeIndex === index"
                 :key="index"
                 :src="item.image"
                 :alt="item.title"
@@ -101,13 +90,11 @@ const props = defineProps({
         content: 'string',
         image: 'string',
         icon: 'string',
-        buttons: [
-          {
-            text: 'string',
-            link: 'string',
-            target: 'string'
-          }
-        ]
+        buttons: [ {
+          text: 'string',
+          link: 'string',
+          target: 'string'
+        } ]
       } ]
       return checkDataType(dataType, value)
     }
@@ -119,14 +106,6 @@ const props = defineProps({
 })
 
 const activeIndex = ref(0)
-
-const isActiveIndex = (index) => {
-  return activeIndex.value === index
-}
-
-const changeActiveIndex = (index) => {
-  activeIndex.value = index
-}
 </script>
 
 <style lang="scss">
