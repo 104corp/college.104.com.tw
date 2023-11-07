@@ -1,8 +1,6 @@
 <template>
   <div class="Index text-(16 gray-600)">
-    <div class="GlobalHeader h-45 border">
-      GlobalHeader
-    </div>
+    <GlobalHeader></GlobalHeader>
     <NavBar></NavBar>
     <div class="Index__title pt-20">
       <div class="ScrollingTitle h-32 text-16 border">

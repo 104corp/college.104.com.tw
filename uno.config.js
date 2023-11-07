@@ -2,8 +2,8 @@ import {
   defineConfig, 
   transformerDirectives, 
   transformerVariantGroup,
+  presetUno,
   presetIcons,
-  presetWind,
   presetAttributify
 } from 'unocss'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
@@ -14,8 +14,8 @@ export default defineConfig({
     transformerVariantGroup()
   ],
   presets: [
-    presetWind(),
     presetAttributify(),
+    presetUno(),
     presetIcons({
       collections: {
         icon: FileSystemIconLoader(
