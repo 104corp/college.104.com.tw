@@ -9,10 +9,14 @@
       </h2>
       <div
         v-if="loading"
-        class="loading mt-24 h-296 md:h-450"
+        class="loading mt-24 h-296"
+        md="h-450"
       ></div>
       <div v-else>
-        <div class="overflow-x-hidden mt-24 md:(overflow-hidden relative flex items-center justify-start)">
+        <div
+          class="overflow-x-hidden mt-24"
+          md="overflow-hidden relative flex items-center justify-start"
+        >
           <ul
             ref="$slider"
             class="flex float-left transition-transform duration-500"
@@ -23,7 +27,8 @@
             <li
               v-for="(profilePortfolio, slideIndex) in duplicateList"
               :key="slideIndex"
-              class="flex-shrink-0 box-content px-12 w-240 h-296 md:(w-400 h-402)"
+              class="flex-shrink-0 box-content px-12 w-240 h-296"
+              md="w-400 h-402"
             >
               <a
                 :href="addQuery(profilePortfolio.url, utm)"
@@ -53,14 +58,21 @@
                     {{ profilePortfolio.author.name }}・{{ profilePortfolio.author.jobTitle }}
                   </div>
                   <div class="mx-auto my-8 w-20 border-(b-2 lake-200)"></div>
-                  <div class="text-18 md:group-hover:text-lake-200 line-clamp-1">
+                  <div
+                    class="text-18 line-clamp-1"
+                    md="group-hover:text-lake-200"
+                  >
                     {{ profilePortfolio.title }}
                   </div>
                 </div>
               </a>
             </li>
           </ul>
-          <div class="hidden layout-container md:(block absolute left-1/2 transform -translate-x-1/2 w-full) xl:max-w-1200">
+          <div
+            class="hidden layout-container"
+            md="block absolute left-1/2 transform -translate-x-1/2 w-full"
+            xl="max-w-1200"
+          >
             <div class="flex justify-between">
               <button
                 class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
@@ -77,7 +89,10 @@
             </div>
           </div>
         </div>
-        <div class="hidden md:(flex gap-4 justify-center mt-24 py-8)">
+        <div
+          class="hidden"
+          md="flex gap-4 justify-center mt-24 py-8"
+        >
           <button
             v-for="(n, pageIndex) in totalPage"
             :key="n"
@@ -94,7 +109,8 @@
         <a
           :href="addQuery(profilePortfolioStore.moreLink, moreUtm)"
           target="_blank"
-          class="inline-block px-16 text-(base lake-200) font-700 border border-lake-200 rounded-4 md:px-32"
+          class="inline-block px-16 text-(base lake-200) font-700 border border-lake-200 rounded-4"
+          md="px-32"
         >更多他人經驗</a>
       </div>
     </div>
