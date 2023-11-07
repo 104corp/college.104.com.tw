@@ -49,7 +49,7 @@
             class="top-44 w-full bg-white border-t border-gray-200
             before:(hidden content-[''] absolute bg-white shadow-button-gray w-12 h-12 -top-6 right-10 scale-80 rotate-45)
             after:(hidden content-[''] absolute top-0 bg-white w-20 h-12 right-6)"
-            md="top-32 absolute right-0 bg-white w-240 rounded shadow-button-gray z-30 before:block after:block"
+            md="top-32 absolute right-0 bg-white w-240 rounded-4 shadow-button-gray z-30 before:block after:block"
           >
             <a
               v-for="moreLink in moreLinks"
@@ -106,7 +106,7 @@
               after:(content-[''] bg-white z-31 absolute w-12 h-12 -top-6 right-26 scale-80 rotate-45)"
               md="right-9 absolute w-240 h-auto before:right-10 after:right-10"
             >
-              <div class="h-full relative bg-white rounded shadow-button-gray z-31">
+              <div class="h-full relative bg-white rounded-4 shadow-button-gray z-31">
                 <a
                   :href="storeUser.logoutUrl"
                   class="p-16 block text-left text-14 font-700 relative"
