@@ -94,14 +94,14 @@
           md="flex gap-4 justify-center mt-24 py-8"
         >
           <button
-            v-for="(n, pageIndex) in totalPage"
-            :key="n"
+            v-for="pageNum in totalPage"
+            :key="pageNum"
             class="w-12 h-8 rounded-4 transition-width duration-500"
             :class="{
-              'w-24 bg-(lake-200 op-100)': pageIndex === page,
-              'bg-(gray-400 op-30)': pageIndex !== page,
+              'w-24 bg-(lake-200 op-100)': (pageNum - 1) === page,
+              'bg-(gray-400 op-30)': (pageNum - 1) !== page,
             }"
-            @click="move(pageIndex)"
+            @click="move(pageNum - 1)"
           ></button>
         </div>
       </div>
