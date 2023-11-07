@@ -288,26 +288,7 @@
       ref="$anchor_news"
       class="-top-90 relative md:top-unset"
     ></div>
-    <div class="Index__news pt-40 pb-100 bg-white md:pb-120">
-      <div class="text-(36 lake-200 center) leading-44 family-Bungee">
-        NEWS
-      </div>
-      <h2 class="text-(20 gray-600 center) font-700">
-        產業新訊
-      </h2>
-      <div class="mt-20 md:mt-32">
-        <div class="ArticleGallery h-720 text-16 border">
-          ArticleGallery
-        </div>
-      </div>
-      <div class="flex justify-center mt-24 md:mt-32">
-        <a
-          href=""
-          target="_blank"
-          class="inline-block px-16 text-(base lake-200) font-700 border border-lake-200 rounded-4 md:px-32"
-        >更多產業新訊</a>
-      </div>
-    </div>
+    <SectionArticle></SectionArticle>
     <div class="Index__follow md:(pt-60 -mt-60 bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x))">
       <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
         <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee">
@@ -364,6 +345,7 @@ import NavBar from './components/NavBar.vue'
 import SectionResume from './components/SectionResume.vue'
 import SectionGetHelp from './components/SectionGetHelp.vue'
 import SectionTool from './components/SectionTool.vue'
+import SectionArticle from './components/SectionArticle.vue'
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)
