@@ -1,5 +1,8 @@
 <template>
-  <div class="SectionTool pb-92 md:pb-168">
+  <div
+    class="SectionTool pb-92"
+    md="pb-168"
+  >
     <div class="mt-32 text-(36 lake-200 center) leading-44 family-Bungee">
       BEST TOOLS
     </div>
