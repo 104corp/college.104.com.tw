@@ -48,7 +48,7 @@
               :image="storePodcast.channel104youth.image"
               :name="storePodcast.channel104youth.name"
               :description="storePodcast.channel104youth.description"
-              :link="storePodcast.channel104youth.link"
+              :link="addQuery(storePodcast.channel104youth.link, utm)"
               type="podcast"
             ></ChannelInfo>
             <div class="min-w-0 flex-1">
@@ -56,7 +56,7 @@
                 最新單集
               </div>
               <PodcastEpisodes
-                :list="storePodcast.channel104youth.episodes"
+                :list="episodes"
                 class="mt-8"
               ></PodcastEpisodes>
             </div>
@@ -69,17 +69,32 @@
 
 <script setup>
 import {
-  ref, onMounted 
+  ref, computed, onMounted 
 } from 'vue'
+import { addQuery } from '@/utils/urlHandler.js'
 import { useInstagram } from '@/stores/Instagram.js'
 import { usePodcast } from '@/stores/Podcast.js'
 import ChannelInfo from './ChannelInfo.vue'
 import PostGallery from './PostGallery.vue'
 import PodcastEpisodes from './PodcastEpisodes.vue'
 
+const utm = {
+  utm_source: 'cweb_studentmainpage',
+  utm_medium: 'university_toolbox'
+}
+
 const loading = ref(false)
 const storeInstagram = useInstagram()
 const storePodcast = usePodcast()
+
+const episodes = computed(() => {
+  return storePodcast.channel104youth.episodes.map((episode) => {
+    return {
+      ...episode,
+      link: addQuery(episode.link, utm)
+    }
+  })
+})
 
 onMounted(async () => {
   await storeInstagram.getChannel104student()
