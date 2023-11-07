@@ -1,15 +1,21 @@
 <template>
   <div class="PostGallery">
-    <ul class="flex gap-16 overflow-x-scroll md:(gap-24 overflow-hidden) lg:gap-16">
+    <ul
+      class="flex gap-16 overflow-x-scroll"
+      md="gap-24 overflow-hidden"
+      lg="gap-16"
+    >
       <li
         v-for="(post, index) in props.list"
         :key="index"
-        class="flex-1 min-w-180 md:min-w-250"
+        class="flex-1 min-w-180"
+        md="min-w-250"
       >
         <a
           :href="post.link"
           target="_blank"
-          class="PostGallery__item block overflow-hidden aspect-ratio-1 border border-gray-200 rounded-8 md:hover:shadow-card-gray"
+          class="PostGallery__item block overflow-hidden aspect-ratio-1 border border-gray-200 rounded-8"
+          md="hover:shadow-card-gray"
         >
           <BaseImage
             :src="post.image"

@@ -1,21 +1,35 @@
 <template>
-  <div class="SectionFollowUs md:(pt-60 -mt-60 bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x))">
-    <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
+  <div
+    class="SectionFollowUs"
+    md="pt-60 -mt-60 bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x)"
+  >
+    <div
+      class="py-40 bg-lake-200"
+      md="pt-0 pb-60"
+    >
       <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee">
         FOLLOW US
       </div>
       <h2 class="text-(20 white center) font-700">
         關注動態
       </h2>
-      <ul class="layout-container mt-16 px-16 py-4 bg-white rounded-16 md:(px-40 py-0)">
-        <li class="py-16 md:py-24">
+      <ul
+        class="layout-container mt-16 px-16 py-4 bg-white rounded-16"
+        md="px-40 py-0"
+      >
+        <li
+          class="py-16"
+          md="py-24"
+        >
           <div
             v-if="loading"
-            class="loading h-372 md:h-360"
+            class="loading h-372"
+            md="h-360"
           ></div>
           <div
             v-else-if="storeInstagram.channel104student"
-            class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)"
+            class="flex flex-col gap-12 mx-auto"
+            md="flex-row items-center gap-32 max-w-1120"
           >
             <ChannelInfo
               :image="storeInstagram.channel104student.image"
@@ -35,14 +49,19 @@
             </div>
           </div>
         </li>
-        <li class="py-16 border-(t gray-300) md:py-24">
+        <li
+          class="py-16 border-(t gray-300)"
+          md="py-24"
+        >
           <div
             v-if="loading"
-            class="loading h-422 md:h-360"
+            class="loading h-422"
+            md="h-360"
           ></div>
           <div
             v-else-if="storePodcast.channel104youth"
-            class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)"
+            class="flex flex-col gap-12 mx-auto"
+            md="flex-row items-center gap-32 max-w-1120"
           >
             <ChannelInfo
               :image="storePodcast.channel104youth.image"
