@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { checkType } from '@/utils/typeChecker.js'
+import { checkDataType } from '@/utils/typeChecker.js'
 import * as Sentry from '@sentry/vue'
 
 /**
@@ -108,11 +108,11 @@ export const useError = defineStore('Error', () => {
   const add = ({
     errors = {}, registerName = '', defaultError = null
   }) => {
-    if (!checkType('object', errors)) {
+    if (!checkDataType('object', errors)) {
       console.error('errors: 應為物件型別')
       return errorMap.value
     }
-    if (!checkType('string', registerName)) {
+    if (!checkDataType('string', registerName)) {
       console.error('registerName: 應為字串型別')
       return errorMap.value
     }

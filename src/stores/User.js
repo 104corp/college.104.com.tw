@@ -4,44 +4,31 @@ import {
 } from 'vue'
 import defaultAvatar from '@/assets/img/headDef.png'
 import { beCollegeUrl } from '@/common/domainConfig'
+import apiService from '@/apis/index.js'
 
 export const useUser = (id = 'User', pinia) => {
-  return defineStore(id, () => {
-    const _profile = ref(null)
-    const loading = {
-      getProfile: ref(false)
-    }
+  const _profile = ref(null)
+  const loading = {
+    getProfile: ref(false)
+  }
 
-    const loginUrl = `${ beCollegeUrl }auth/login`
-    const logoutUrl = `${ beCollegeUrl }auth/logout`
+  const loginUrl = `${ beCollegeUrl }auth/login`
+  const logoutUrl = `${ beCollegeUrl }auth/logout`
  
-    const profile = computed(() => _profile.value)
-    const avatar = computed(() => {
-      if (_profile.value && _profile.value.avatar) {
-        return _profile.value.avatar
-      } else {
-        return defaultAvatar
-      }
-    })
-    const isLogin = computed(() => {
-      if (profile.value === null) {
-        return false
-      } else {
-        return true
-      }
-    })
-    const getProfile = async () => {
-      const result = {
-        familyName: 'Doe',
-        firstName: 'John',
-        avatar: defaultAvatar
-      }
-
+  const profile = computed(() => _profile.value)
+  const avatar = computed(() => _profile.value?.avatar ?? defaultAvatar)
+  const isLogin = computed(() => profile.value !== null)
+  const getProfile = async () => {
+    loading.getProfile.value = true
+    try {
+      const result = await apiService.getProfile()
       _profile.value = result
-
       return result
+    } finally {
+      loading.getProfile.value = false
     }
-
+  }
+  return defineStore(id, () => {
     return {
       profile,
       avatar,
