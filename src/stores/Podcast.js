@@ -16,23 +16,30 @@ export const usePodcast = (id = 'Podcast', pinia) => {
     const getChannel104youth = async () => {
       const result = {
         name: 'My Podcast',
-        description: 'This is a podcast about...',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at imperdiet nibh. Sed luctus orci quis nibh elementum congue. Curabitur bibendum lectus nec diam consequat hendrerit. Aliquam commodo eros orci, ut posuere urna dictum eget. Etiam nec consectetur elit. Curabitur ornare enim leo, ac laoreet nibh cursus a. Curabitur tincidunt.',
         link: 'https://example.com',
-        image: 'https://example.com/image.jpg',
+        image: 'https://picsum.photos/550/600',
         episodes: [
           {
-            title: 'Episode 1',
+            title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at imperdiet nibh. Sed luctus orci quis nibh elementum congue. Curabitur bibendum lectus nec diam consequat hendrerit. Aliquam commodo eros orci, ut posuere urna dictum eget. Etiam nec consectetur elit. Curabitur ornare enim leo, ac laoreet nibh cursus a. Curabitur tincidunt.',
             content: 'In this episode we talk about...',
             link: 'https://example.com/episode1',
-            image: 'https://example.com/episode1.jpg',
-            releaseDate: new Date('2022-01-01T00:00:00Z')
+            image: 'https://picsum.photos/870/600',
+            releaseDate: 1699327684
           },
           {
             title: 'Episode 2',
             content: 'In this episode we talk about...',
             link: 'https://example.com/episode2',
-            image: 'https://example.com/episode2.jpg',
-            releaseDate: new Date('2021-12-30T00:00:00Z')
+            image: 'https://picsum.photos/890/600',
+            releaseDate: 1699327684
+          },
+          {
+            title: 'Episode 3',
+            content: 'In this episode we talk about...',
+            link: 'https://example.com/episode2',
+            image: 'https://picsum.photos/898/600',
+            releaseDate: 1699327684
           }
         ]
       }
