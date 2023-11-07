@@ -86,7 +86,7 @@ const props = defineProps({
         link: 'string',
         isPinned: 'boolean'
       } ]
-      return checkDataType(dataType, value)
+      return checkDataType(dataType, value, true)
     }
   },
   categoryName: {
