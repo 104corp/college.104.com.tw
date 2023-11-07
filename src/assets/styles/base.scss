@@ -46,3 +46,21 @@ body {
     animation: animate-rotate 1s infinite linear;
   }
 }
+
+// v-transition
+
+// fade
+.animate-fade-enter-from,
+.animate-fade-leave-to {
+  opacity: 0;
+}
+
+.animate-fade-enter-to,
+.animate-fade-leave-from {
+  opacity: 1;
+}
+
+.animate-fade-enter-active,
+.animate-fade-leave-active {
+  transition: opacity .5s ease;
+}

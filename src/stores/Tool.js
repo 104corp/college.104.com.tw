@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
 import {
   guideUrl, giverUrl, nabiUrl 
 } from '@/common/domainConfig'
@@ -73,12 +72,9 @@ export const useTool = (id = 'Tool', pinia) => {
         ]
       },
     ]
-    
-    const activeIndex = ref(0)
   
     return {
-      tool,
-      activeIndex
+      tool
     }
   })(pinia)
 }
