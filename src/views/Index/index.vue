@@ -289,48 +289,7 @@
       class="-top-90 relative md:top-unset"
     ></div>
     <SectionArticle></SectionArticle>
-    <div class="Index__follow md:(pt-60 -mt-60 bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x))">
-      <div class="py-40 bg-lake-200 md:(pt-0 pb-60)">
-        <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee">
-          FOLLOW US
-        </div>
-        <h2 class="text-(20 white center) font-700">
-          關注動態
-        </h2>
-        <ul class="layout-container mt-16 px-16 py-20 bg-white rounded-16 md:(px-40 py-24)">
-          <li>
-            <div class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)">
-              <div class="ChannelInfo h-112 border md:(w-300 h-312)">
-                ChannelInfo
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="text-base font-700">
-                  最新貼文
-                </div>
-                <div class="PostGallery h-188 border md:h-250">
-                  PostGallery
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mt-16 pt-16 border-(t gray-300) md:(mt-24 pt-24)">
-            <div class="flex flex-col gap-12 mx-auto md:(flex-row items-center gap-32 max-w-1120)">
-              <div class="ChannelInfo h-112 border md:(w-300 h-312)">
-                ChannelInfo
-              </div>
-              <div class="min-w-0 flex-1">
-                <div class="text-base font-700">
-                  最新單集
-                </div>
-                <div class="PodcastEpisodes h-238 border md:h-272">
-                  PodcastEpisodes
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <SectionFollowUs></SectionFollowUs>
     <GoTop></GoTop>
   </div>
 </template>
@@ -346,6 +305,7 @@ import SectionResume from './components/SectionResume.vue'
 import SectionGetHelp from './components/SectionGetHelp.vue'
 import SectionTool from './components/SectionTool.vue'
 import SectionArticle from './components/SectionArticle.vue'
+import SectionFollowUs from './components/SectionFollowUs.vue'
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)

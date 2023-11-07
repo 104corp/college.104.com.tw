@@ -18,16 +18,21 @@ export const useInstagram = (id = 'Instagram', pinia) => {
         name: 'Channel 104 Student',
         description: 'This is a student-run channel that provides information and updates about the school.',
         link: 'https://www.instagram.com/channel104student/',
-        image: 'https://www.example.com/channel104student.jpg',
+        image: 'https://picsum.photos/100/600',
         posts: [
           {
             content: 'Check out our latest post about the upcoming school event!',
-            image: 'https://www.example.com/post1.jpg',
+            image: 'https://picsum.photos/500/600',
             link: 'https://www.instagram.com/p/1234567890/'
           },
           {
             content: 'Don\'t forget to submit your assignments on time!',
-            image: '',
+            image: 'https://picsum.photos/900/600',
+            link: 'https://www.instagram.com/p/0987654321/'
+          },
+          {
+            content: 'Don\'t forget to submit your assignments on time!',
+            image: 'https://picsum.photos/990/600',
             link: 'https://www.instagram.com/p/0987654321/'
           }
         ]
