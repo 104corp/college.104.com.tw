@@ -7,8 +7,8 @@
       <h2 class="text-(20 white center) font-700">
         關注動態
       </h2>
-      <ul class="layout-container mt-16 px-16 py-20 bg-white rounded-16 md:(px-40 py-24)">
-        <li>
+      <ul class="layout-container mt-16 px-16 py-4 bg-white rounded-16 md:(px-40 py-0)">
+        <li class="py-16 md:py-24">
           <div
             v-if="loading"
             class="loading h-372 md:h-360"
@@ -28,11 +28,14 @@
               <div class="text-base font-700">
                 最新貼文
               </div>
-              <PostGallery :list="storeInstagram.channel104student.posts"></PostGallery>
+              <PostGallery
+                :list="storeInstagram.channel104student.posts"
+                class="mt-8"
+              ></PostGallery>
             </div>
           </div>
         </li>
-        <li class="mt-16 pt-16 border-(t gray-300) md:(mt-24 pt-24)">
+        <li class="py-16 border-(t gray-300) md:py-24">
           <div
             v-if="loading"
             class="loading h-422 md:h-360"
@@ -52,7 +55,10 @@
               <div class="text-base font-700">
                 最新單集
               </div>
-              <PodcastEpisodes :list="storePodcast.channel104youth.episodes"></PodcastEpisodes>
+              <PodcastEpisodes
+                :list="storePodcast.channel104youth.episodes"
+                class="mt-8"
+              ></PodcastEpisodes>
             </div>
           </div>
         </li>

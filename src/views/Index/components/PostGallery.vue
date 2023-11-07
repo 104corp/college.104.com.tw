@@ -1,6 +1,6 @@
 <template>
   <div class="PostGallery">
-    <ul class="flex gap-16 overflow-x-scroll mt-8 md:(gap-24 overflow-hidden) lg:gap-16">
+    <ul class="flex gap-16 overflow-x-scroll md:(gap-24 overflow-hidden) lg:gap-16">
       <li
         v-for="(post, index) in props.list"
         :key="index"

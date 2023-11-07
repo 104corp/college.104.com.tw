@@ -4,12 +4,12 @@
       <li
         v-for="(episode, index) in props.list"
         :key="index"
-        class="not-first:(border-t border-gray-300)"
+        class="py-8 first:pt-0 last:pb-0 not-first:(border-(t gray-300))"
       >
         <a
           :href="episode.link"
           target="_blank"
-          class="PodcastEpisodes__item group flex items-start gap-8 py-8 md:(items-center gap-16)"
+          class="PodcastEpisodes__item group flex items-start gap-8 md:(items-center gap-16)"
         >
           <div class="PodcastEpisodes__item__img flex-shrink-0 overflow-hidden w-48 aspect-ratio-1 border border-gray-200 rounded-4 md:(w-80 rounded-6)">
             <BaseImage
