@@ -1,6 +1,6 @@
 import { createTestingPinia } from '@pinia/testing'
 import { useUser } from '@/stores/User.js'
-import defaultAvatar from '@/assets/image/headDef.png'
+import defaultAvatar from '@/assets/img/headDef.png'
 
 const pinia = createTestingPinia()
 const store = useUser('User', pinia)
