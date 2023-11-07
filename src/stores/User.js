@@ -2,12 +2,15 @@ import { defineStore } from 'pinia'
 import {
   ref, computed 
 } from 'vue'
-import defaultAvatar from '@/assets/image/headDef.png'
+import defaultAvatar from '@/assets/img/headDef.png'
 import { beCollegeUrl } from '@/common/domainConfig'
 
 export const useUser = (id = 'User', pinia) => {
   return defineStore(id, () => {
     const _profile = ref(null)
+    const loading = {
+      getProfile: ref(false)
+    }
 
     const loginUrl = `${ beCollegeUrl }auth/login`
     const logoutUrl = `${ beCollegeUrl }auth/logout`
@@ -45,6 +48,7 @@ export const useUser = (id = 'User', pinia) => {
       isLogin,
       loginUrl,
       logoutUrl,
+      loading,
       getProfile
     }
   })(pinia)
