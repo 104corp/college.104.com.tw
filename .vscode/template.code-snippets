@@ -3,9 +3,14 @@
 		"prefix": "store-api",
 		"body": [
 			"// import apiService from '@/apis/index.js'",
-			"const result = await apiService.$__serviceName.$__get()",
-			"$__value = result",    
-			"return result",
+			"loading.$__actionName.value = true",
+			"try {",
+			"	const result = await apiService.$__serviceName()",
+			"	$__value.value = result",
+			"	return result",
+			"  } finally {",
+			"	loading.$__actionName.value = false",
+			" }"
 		]
 	}
 }
