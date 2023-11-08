@@ -76,13 +76,13 @@
                     md="py-4"
                     :class="{ 'text-white bg-lake-200': typeBtn.id === storeJob.currentType,
                               'text-gray-500 md:hover:text-lake-200': typeBtn.id !== storeJob.currentType }"
-                    @click="storeJob.currentType = typeBtn.id"
+                    @click="changeJobType(typeBtn.id)"
                   >
                     {{ typeBtn.text }}
                   </button>
                 </div>
                 <a
-                  href=""
+                  :href="moreLink"
                   target="_blank"
                   class="inline-flex items-center text-(14 gray-500) font-700"
                   md="hover:text-orange-400"
@@ -182,7 +182,9 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import {
+  onMounted, computed 
+} from 'vue'
 import { useAnnouncement } from '@/stores/Announcement.js'
 import { useJob } from '@/stores/Job.js'
 import { useEvent } from '@/stores/Event.js'
@@ -211,6 +213,17 @@ const titleList = [
 const utm = {
   utm_source: 'cweb_studentmainpage',
   utm_medium: 'university_activity'
+}
+
+const moreLink = computed(() => {
+  const jobSource = {
+    jobsource: `college_${ storeJob.currentType }`
+  }
+  return addQuery(storeJob.typeLink, jobSource)
+})
+
+const changeJobType = (type) => {
+  storeJob.currentType = type
 }
 
 const getJob = async () => {
