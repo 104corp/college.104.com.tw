@@ -14,8 +14,14 @@
     ></ScrollingAnnouncement>
     <div class="Index__job mt-16">
       <div class="layout-container mx-auto">
-        <div class="py-16 bg-white rounded-16 shadow-card-gray md:py-24">
-          <div class="flex items-center gap-12 mx-16 md:(gap-24 mx-32)">
+        <div
+          class="py-16 bg-white rounded-16 shadow-card-gray"
+          md="py-24"
+        >
+          <div
+            class="flex items-center gap-12 mx-16"
+            md="gap-24 mx-32"
+          >
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
               <div class="p-12 w-1/2">
                 <input
@@ -34,76 +40,52 @@
             <a
               href=""
               target="_blank"
-              class="btn btn-primary px-12 py-10 md:px-77"
+              class="btn btn-primary px-12 py-10"
+              md="px-77"
             >搜尋</a>
           </div>
-          <div class="flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26 md:px-32">
+          <div
+            class="flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26"
+            md="px-32"
+          >
             <a
-              href=""
+              v-for="tag in storeJob.tags"
+              :key="tag.name"
+              :href="tag.url"
               target="_blank"
-              class="flex-none tag-primary-lake-200"
-            >短期現領</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-lake-200"
-            >假日工讀</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-lake-200"
-            >彈性打工</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-lake-200"
-            >飲料手搖</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-lake-200"
-            >適合學生</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-green-200"
-            >自由安排時間</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-green-200"
-            >遠端打工</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-green-200"
-            >內外場兼職</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-green-200"
-            >門市銷售菁英</a>
-            <a
-              href=""
-              target="_blank"
-              class="flex-none tag-primary-green-200"
-            >自由安排時間</a>
+              class="flex-shrink-0"
+              :class="{ 'tag-primary-lake-200': tag.type === 'parttime',
+                        'tag-primary-green-200': tag.type === 'intern' }"
+            >{{ tag.name }}</a>
           </div>
-          <div class="mx-16 mt-16 md:(flex gap-28 mx-32 mt-28)">
-            <div class="flex-1 pt-12 bg-[#F1F9F8] rounded-8 md:w-434 lg:w-auto">
+          <div
+            class="mx-16 mt-16"
+            md="flex gap-28 mx-32 mt-28"
+          >
+            <div
+              class="flex-1 pt-12 bg-[#F1F9F8] rounded-8"
+              md="w-434"
+              lg="w-auto"
+            >
               <div class="flex items-center justify-between px-12">
                 <div class="rounded-24 bg-white border border-gray-200">
-                  <button class="px-16 py-8 text-(14 white) font-700 bg-lake-200 rounded-24 md:py-4">
-                    打工職缺
-                  </button>
-                  <button class="px-16 py-8 text-(14 gray-500) font-700 rounded-24 md:(py-4 hover:text-lake-200)">
-                    實習機會
+                  <button
+                    v-for="typeBtn in storeJob.listedType"
+                    :key="typeBtn.id"
+                    class="px-16 py-8 text-14 font-700 rounded-24"
+                    md="py-4"
+                    :class="{ 'text-white bg-lake-200': typeBtn.id === storeJob.currentType,
+                              'text-gray-500 md:hover:text-lake-200': typeBtn.id !== storeJob.currentType }"
+                    @click="storeJob.currentType = typeBtn.id"
+                  >
+                    {{ typeBtn.text }}
                   </button>
                 </div>
                 <a
                   href=""
                   target="_blank"
-                  class="inline-flex items-center text-(14 gray-500) font-700 md:hover:text-orange-400"
+                  class="inline-flex items-center text-(14 gray-500) font-700"
+                  md="hover:text-orange-400"
                 >更多<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll px-12 pt-8 pb-12">
@@ -117,72 +99,41 @@
                     class="grid grid-cols-3 gap-8"
                   >
                     <a
-                      v-for="n in 6"
-                      :key="n"
-                      href=""
+                      v-for="job in storeJob.typeJobs"
+                      :key="job.link"
+                      :href="job.link"
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 md:hover:(shadow-card-gray)"
+                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 [&:nth-child(n+7)]:hidden"
+                      md="hover:shadow-card-gray"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
-                        [日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!
+                        {{ job.title }}
                       </div>
-                      <div class="flex gap-8 mt-4 text-12 font-700">
-                        <div class="text-gray-500">
-                          新北市新店區
-                        </div>
-                        <div class="text-orange-400">
-                          時薪176~180元
-                        </div>
+                      <div class="mt-4 min-w-0 text-12 font-700 text-gray-500 line-clamp-1">
+                        <span>{{ job.area }}</span>
+                        <span class="ml-8 text-orange-400">
+                          {{ job.salary }}
+                        </span>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hidden md:(grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224)">
+            <div
+              class="hidden"
+              md="grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224"
+            >
               <a
-                href=""
+                v-for="advertise in storeJob.advertises"
+                :key="advertise.link"
+                :href="advertise.link"
                 target="_blank"
               >
-                <img
-                  src="@/assets/img/default-img.png"
-                  alt="無經驗可"
-                  draggable="false"
+                <BaseImage
+                  :src="advertise.image"
                   class="object-cover w-full h-full rounded-8"
-                >
-              </a>
-              <a
-                href=""
-                target="_blank"
-              >
-                <img
-                  src="@/assets/img/default-img.png"
-                  alt="暑期打工"
-                  draggable="false"
-                  class="object-cover w-full h-full rounded-8"
-                >
-              </a>
-              <a
-                href=""
-                target="_blank"
-              >
-                <img
-                  src="@/assets/img/default-img.png"
-                  alt="時間彈性"
-                  draggable="false"
-                  class="object-cover w-full h-full rounded-8"
-                >
-              </a>
-              <a
-                href=""
-                target="_blank"
-              >
-                <img
-                  src="@/assets/img/default-img.png"
-                  alt="短期任務"
-                  draggable="false"
-                  class="object-cover w-full h-full rounded-8"
-                >
+                ></BaseImage>
               </a>
             </div>
           </div>
@@ -233,6 +184,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useAnnouncement } from '@/stores/Announcement.js'
+import { useJob } from '@/stores/Job.js'
 import { useEvent } from '@/stores/Event.js'
 import { useInstagram } from '@/stores/Instagram.js'
 import { usePodcast } from '@/stores/Podcast.js'
@@ -245,6 +197,7 @@ import ScrollingAnnouncement from './ScrollingAnnouncement.vue'
 import CardEvent from './CardEvent.vue'
 
 const storeAnnouncement = useAnnouncement()
+const storeJob = useJob()
 const storeEvent = useEvent()
 const storeInstagram = useInstagram()
 const storePodcast = usePodcast()
@@ -260,11 +213,22 @@ const utm = {
   utm_medium: 'university_activity'
 }
 
-onMounted(async () => {
-  await storeAnnouncement.getList()
+const getJob = async () => {
+  await storeJob.getAllJobs()
+  await storeJob.getAdvertises()
+  await storeJob.getTags()
+}
+
+const getActivities = async () => {
   await storeEvent.getList()
   await storeInstagram.getChannel104student()
   await storePodcast.getChannel104youth()
+}
+
+onMounted(async () => {
+  await storeAnnouncement.getList()
+  await getJob()
+  await getActivities()
 })
 </script>
 
