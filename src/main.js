@@ -7,6 +7,9 @@ import { errorHandler } from '@/utils/errorHandler'
 import BaseImage from '@/components/BaseImage.vue'
 import * as Sentry from '@sentry/vue'
 import packageConfig from '../package.json'
+import {
+  useError
+} from '@/stores/Error.js'
 
 import App from './App.vue'
 import router from './router'
@@ -38,5 +41,15 @@ app.config.errorHandler = (error, instance, info) => {
     error, errorEnvironment: `vueError: ${ instance.$options.__file }, at hook: ${ info }`
   })
 }
+
+const storeError = useError()
+storeError.add({
+  errors: {
+    '503': () => {
+      router.push({ name: 'maintenance' })
+    }
+  },
+  defaultError: () => {}
+})
   
 app.mount('#app')
