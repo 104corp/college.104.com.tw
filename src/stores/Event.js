@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import {
   ref, computed 
 } from 'vue'
+import apiService from '@/apis/index.js'
 
 export const useEvent = (id = 'Event', pinia) => {
   return defineStore(id, () => {
@@ -12,36 +13,25 @@ export const useEvent = (id = 'Event', pinia) => {
       return list.value?.length > 0 ? list.value[0] : null
     })
 
+    const loading = {
+      getList: ref(false)
+    }
+
     const getList = async () => {
-      const result = [
-        {
-          title: 'Event 1',
-          description: 'This is the first event',
-          link: 'https://example.com/event1',
-          image: 'https://picsum.photos/110/600'
-        },
-        {
-          title: 'Event 2',
-          description: 'This is the second event',
-          link: 'https://example.com/event2',
-          image: 'https://picsum.photos/118/600'
-        },
-        {
-          title: 'Event 3',
-          description: 'This is the third event',
-          link: 'https://example.com/event3',
-          image: 'https://picsum.photos/320/600'
-        }
-      ]
-
-      _list.value = result
-
-      return result
+      loading.getList.value = true
+      try {
+        const result = await apiService.getEventList()
+        _list.value = result
+        return result
+      } finally {
+        loading.getList.value = false
+      }
     }
   
     return {
       list,
       latestPost,
+      loading,
       getList
     }
   })(pinia)

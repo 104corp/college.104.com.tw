@@ -168,7 +168,7 @@
       md="gap-20 overflow-auto justify-center mt-12 px-0 py-16"
     >
       <CardEvent
-        :is-loading="false"
+        :is-loading="storeEvent.loading.getList"
         type-name="活動"
         :title="storeEvent.latestPost?.title"
         :content="storeEvent.latestPost?.description"
