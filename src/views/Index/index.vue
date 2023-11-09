@@ -36,7 +36,9 @@
 import {
   ref, computed 
 } from 'vue'
+import { useHead } from '@vueuse/head'
 import { useElementBounding } from '@vueuse/core'
+import { collegeUrl } from '@/common/domainConfig.js'
 import SideBar from './components/SideBar.vue'
 import NavBar from './components/NavBar.vue'
 import SectionCover from './components/SectionCover.vue'
@@ -46,6 +48,42 @@ import SectionTool from './components/SectionTool.vue'
 import SectionArticle from './components/SectionArticle.vue'
 import SectionFollowUs from './components/SectionFollowUs.vue'
 import SectionStories from './components/SectionStories.vue'
+
+useHead({
+  title: '104Campus－大學生涯、打工、實習入口',
+  meta: [
+    {
+      name: 'description',
+      content: '104Campus是一個提供大學生打工兼職、未來發展職涯準備的平台。想要找兼職、打工或實習的同學，系統會推薦適合的打工和實習機會；或用搜尋找到符合條件的兼職工作或實習。想探索職涯的同學，可以透過探索服務去找到自己有興趣或個性適合的工作；對於職涯或職場技能有疑問不知道怎麼準備，也可以看看履歷範本，或在職涯診所發問或去證照中心找到需要的證照資訊。104Campus提供了一個統整你需要的服務平台。'
+    },
+    {
+      property: 'og:title',
+      content: '104Campus－大學生涯、打工、實習入口'
+    },
+    {
+      property: 'og:description',
+      content: '104Campus是一個提供大學生打工兼職、未來發展職涯準備的平台。想要找兼職、打工或實習的同學，系統會推薦適合的打工和實習機會；或用搜尋找到符合條件的兼職工作或實習。想探索職涯的同學，可以透過探索服務去找到自己有興趣或個性適合的工作；對於職涯或職場技能有疑問不知道怎麼準備，也可以看看履歷範本，或在職涯診所發問或去證照中心找到需要的證照資訊。104Campus提供了一個統整你需要的服務平台。'
+    },
+    {
+      property: 'og:image',
+      content: new URL('../../assets/img/og-college.png', import.meta.url).href
+    },
+    {
+      property: 'og:url',
+      content: collegeUrl
+    },
+    {
+      property: 'og:site_name',
+      content: '104Campus－大學生涯、打工、實習入口'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: collegeUrl
+    }
+  ]
+})
 
 const $anchor_bestTool = ref(null)
 const $anchor_resumeHelper = ref(null)
