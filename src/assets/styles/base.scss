@@ -64,3 +64,22 @@ body {
 .animate-fade-leave-active {
   transition: opacity .5s ease;
 }
+
+// scrolling
+.animate-scrolling-enter-from {
+  transform: translateY(100%);
+}
+
+.animate-scrolling-enter-to,
+.animate-scrolling-leave-from {
+  transform: translateY(0%);
+}
+
+.animate-scrolling-leave-to {
+  transform: translateY(-100%);
+}
+
+.animate-scrolling-leave-active,
+.animate-scrolling-enter-active {
+  transition: transform 1s ease;
+}

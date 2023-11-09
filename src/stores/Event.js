@@ -18,19 +18,19 @@ export const useEvent = (id = 'Event', pinia) => {
           title: 'Event 1',
           description: 'This is the first event',
           link: 'https://example.com/event1',
-          image: 'https://example.com/event1.jpg'
+          image: 'https://picsum.photos/110/600'
         },
         {
           title: 'Event 2',
           description: 'This is the second event',
           link: 'https://example.com/event2',
-          image: 'https://example.com/event2.jpg'
+          image: 'https://picsum.photos/118/600'
         },
         {
           title: 'Event 3',
           description: 'This is the third event',
           link: 'https://example.com/event3',
-          image: 'https://example.com/event3.jpg'
+          image: 'https://picsum.photos/320/600'
         }
       ]
 

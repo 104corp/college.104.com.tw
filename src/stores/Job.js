@@ -46,6 +46,18 @@ export const useJob = (id = 'Job', pinia) => {
         salary: '80k',
         area: 'New York',
         link: 'https://example.com/job2'
+      },
+      {
+        title: '[日商] 咖樂迪咖啡農場 京站 小碧潭店 門市兼職人員 _時薪176元～180元(歡迎學生打工、二度就業!!)強力招募中!!',
+        salary: '時薪176~180元',
+        area: '新北市新店區',
+        link: 'https://example.com/job2'
+      },
+      {
+        title: '網頁設計師',
+        salary: '月薪 40,000 至 60,000 元',
+        area: '台北市信義區',
+        link: 'https://example.com/job8'
       }
     ]
 
@@ -58,12 +70,20 @@ export const useJob = (id = 'Job', pinia) => {
   const getAdvertises = async () => {
     const result = [
       {
-        image: 'https://example.com/image1',
+        image: 'https://picsum.photos/104/100',
         link: 'https://example.com/link1'
       },
       {
-        image: 'https://example.com/image2',
+        image: 'https://picsum.photos/104/200',
         link: 'https://example.com/link2'
+      },
+      {
+        image: 'https://picsum.photos/104/300',
+        link: 'https://example.com/link3'
+      },
+      {
+        image: 'https://picsum.photos/104/400',
+        link: 'https://example.com/link4'
       }
     ]
 
