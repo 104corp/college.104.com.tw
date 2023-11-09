@@ -21,8 +21,7 @@ export default {
       {
         type: 'string',
         title: 'string',
-        link: 'string',
-        owner: 'string'
+        link: 'string'
       }
     ]
       

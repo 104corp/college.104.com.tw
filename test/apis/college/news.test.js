@@ -5,8 +5,7 @@ describe('formatter-data', () => {
       {
         type: 'type',
         title: 'title',
-        link: 'link',
-        owner: 'owner'
+        link: 'link'
       }
     ]
 
