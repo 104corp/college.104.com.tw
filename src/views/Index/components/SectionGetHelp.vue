@@ -1,7 +1,10 @@
 <template>
   <div class="SectionGetHelp bg-([url(@/assets/img/Index/bg-wave-lake.png)] repeat-x) pt-60 -mt-60">
     <div class="bg-([url(@/assets/img/Index/bg-qa.png)] cover top repeat-y) pb-60 bg-lake-200">
-      <div class="text-(36 [#FFF1C1] center) leading-44 family-Bungee md:pt-20">
+      <div
+        class="text-(36 [#FFF1C1] center) leading-44 family-Bungee"
+        md="pt-20"
+      >
         GET HELP
       </div>
       <h2 class="text-(20 white center) font-700">
@@ -9,22 +12,28 @@
       </h2>
       <div
         v-if="QAStore.loading.getList"
-        class="loading mt-24 h-328 md:h-372"
+        class="loading mt-24 h-328"
+        md="mt-32 h-372"
       ></div>
       <div
         v-else
-        class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16 md:(grid-cols-2 gap-y-12 mt-32)"
+        class="layout-container grid grid-cols-1 gap-y-8 mt-24 px-16"
+        md="grid-cols-2 gap-y-12 mt-32"
       >
         <a
           v-for="qa in QAStore.list"
           :key="qa.question"
           :href="addQuery(qa.link, picUtm)"
           target="_blank"
-          class="group flex gap-12 px-20 py-12 bg-white rounded-44 [&:nth-child(n+5)]:hidden md:(px-32 py-16 [&:nth-child(n+5)]:flex [&:nth-child(4n+1)]:mr-100 [&:nth-child(4n+2)]:mr-100 [&:nth-child(4n+3)]:ml-100 [&:nth-child(4n)]:ml-100)"
+          class="group flex gap-12 px-20 py-12 bg-white rounded-44 [&:nth-child(n+5)]:hidden"
+          md="px-32 py-16 [&:nth-child(n+5)]:flex [&:nth-child(4n+1)]:mr-100 [&:nth-child(4n+2)]:mr-100 [&:nth-child(4n+3)]:ml-100 [&:nth-child(4n)]:ml-100"
         >
           <div class="text-(44 [#D1ECEA]) leading-52 family-Bungee">Q</div>
           <div class="min-w-0">
-            <div class="text-(16 gray-600) leading-24 font-700 line-clamp-1 md:group-hover:text-lake-200">
+            <div
+              class="text-(16 gray-600) leading-24 font-700 line-clamp-1"
+              md="group-hover:text-lake-200"
+            >
               {{ qa.question }}
             </div>
             <div class="flex items-center gap-4 flex-wrap mt-4">
@@ -53,7 +62,8 @@
         <a
           :href="addQuery(QAStore.moreLink, utm)"
           target="_blank"
-          class="inline-block px-16 text-(base white) font-700 border border-white rounded-4 md:px-32"
+          class="inline-block px-16 text-(base white) font-700 border border-white rounded-4"
+          md="px-32"
         >更多職場問答</a>
       </div>
     </div>
