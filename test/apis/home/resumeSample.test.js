@@ -1,4 +1,4 @@
-import { formatter } from '@/apis/home/ResumeSample'
+import { formatter } from '@/apis/home/resumeSample'
 describe('formatter-data', () => {
   it('如果回應資料正確，應該回傳格式化後的物件', () => {
     const data = [
