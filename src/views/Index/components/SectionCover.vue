@@ -11,6 +11,7 @@
       class="mx-12 mt-12"
       md="mt-16"
       :list="storeAnnouncement.list"
+      :is-loading="storeAnnouncement.loading.getList"
     ></ScrollingAnnouncement>
     <div class="mt-16">
       <div class="layout-container mx-auto">

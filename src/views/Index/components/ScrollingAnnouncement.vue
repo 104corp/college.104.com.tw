@@ -4,7 +4,14 @@
       class="relative overflow-hidden mx-auto max-w-360 h-36 text-14 bg-white border border-[#D1ECEA] rounded-22"
       md="max-w-600 h-44 text-16"
     >
-      <div class="relative overflow-hidden h-full">
+      <div
+        v-if="props.isLoading"
+        class="loading w-full h-full"
+      ></div>
+      <div
+        v-else
+        class="relative overflow-hidden h-full"
+      >
         <TransitionGroup
           name="animate-scrolling"
           tag="ul"
@@ -76,6 +83,10 @@ const props = defineProps({
       } ]
       return checkDataType(dataType, value)
     }
+  },
+  isLoading: {
+    type: Boolean,
+    default: false
   }
 })
 
