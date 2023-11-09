@@ -62,6 +62,7 @@
             >搜尋</a>
           </div>
           <div
+            v-if="storeJob.tags?.length > 0"
             class="flex gap-8 mt-12 px-16 overflow-x-scroll w-full h-26"
             md="px-32"
           >
@@ -81,7 +82,7 @@
           >
             <div
               class="flex-1 pt-12 bg-[#F1F9F8] rounded-8"
-              md="w-434"
+              md="min-w-434"
               lg="w-auto"
             >
               <div class="flex items-center justify-between px-12">
@@ -112,7 +113,7 @@
                     class="loading mt-8 h-164"
                   ></div>
                   <div
-                    v-else
+                    v-else-if="storeJob.typeJobs?.length > 0"
                     class="grid grid-cols-3 gap-8"
                   >
                     <a
@@ -138,6 +139,7 @@
               </div>
             </div>
             <div
+              v-if="storeJob.advertises?.length > 0"
               class="hidden"
               md="grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224"
             >
@@ -146,6 +148,7 @@
                 :key="advertise.link"
                 :href="advertise.link"
                 target="_blank"
+                class="[&:nth-child(n+5)]:hidden"
               >
                 <BaseImage
                   :src="advertise.image"
@@ -246,10 +249,12 @@ const searchLink = computed(() => {
   return addQuery(storeJob.typeLink, queries)
 })
 const moreLink = computed(() => {
-  const jobSource = {
-    jobsource: `college_${ storeJob.currentType }`
+  const queries = {
+    jobsource: `college_${ storeJob.currentType }`,
+    utm_source: 'cweb_studentmainpage',
+    utm_medium: 'university_partime_seemore',
   }
-  return addQuery(storeJob.typeLink, jobSource)
+  return addQuery(storeJob.typeLink, queries)
 })
 
 const openCategoryPicker = () => {
