@@ -1,7 +1,8 @@
 import { createTestingPinia } from '@pinia/testing'
 import { useEvent } from '@/stores/Event'
+import apiService from '@/apis/index'
 
-const pinia = createTestingPinia()
+const pinia = createTestingPinia({ stubActions: false })
 const store = useEvent('Event', pinia)
 
 describe('computed - Event latestPost', () => {
@@ -67,5 +68,16 @@ describe('computed - Event latestPost', () => {
     }
 
     expect(store.latestPost).toEqual(result)
+  })
+})
+
+describe('Event - function', () => {
+  it('getList：執行api Service 並更新 store.list', async () => {
+    store.list = undefined
+    const spyService = vi.spyOn(apiService, 'getEventList').mockResolvedValue('formatted response')
+    await store.getList()
+
+    expect(store.list).toEqual('formatted response')
+    expect(spyService).toHaveBeenCalled()
   })
 })

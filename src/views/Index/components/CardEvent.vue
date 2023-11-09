@@ -44,7 +44,7 @@
               </p>
               <p
                 class="hidden text-14 text-gray-600"
-                md="inline-block line-clamp-2"
+                md="line-clamp-2"
               >
                 {{ props.content }}
               </p>
