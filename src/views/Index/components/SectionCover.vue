@@ -12,7 +12,7 @@
       md="mt-16"
       :list="storeAnnouncement.list"
     ></ScrollingAnnouncement>
-    <div class="SectionCover__job mt-16">
+    <div class="mt-16">
       <div class="layout-container mx-auto">
         <div
           class="py-16 bg-white rounded-16 shadow-card-gray"
@@ -45,7 +45,7 @@
                   v-if="area?.length > 0"
                   class="line-clamp-1"
                 >
-                  {{ area.map((item) => item.des).join('、') }}
+                  {{ selectedArea }}
                 </span>
                 <span
                   v-else
@@ -240,6 +240,9 @@ const utm = {
 
 const keyword = ref('')
 const area = ref([])
+const selectedArea = computed(() => {
+  return area.value.map((item) => item.des).join('、')
+})
 
 const searchLink = computed(() => {
   const queries = {
@@ -276,6 +279,10 @@ const changeJobType = (type) => {
   storeJob.currentType = type
 }
 
+const getAnnouncement = async () => {
+  await storeAnnouncement.getList()
+}
+
 const getJob = async () => {
   await storeJob.getAllJobs()
   await storeJob.getAdvertises()
@@ -289,7 +296,7 @@ const getActivities = async () => {
 }
 
 onMounted(async () => {
-  await storeAnnouncement.getList()
+  await getAnnouncement()
   await getJob()
   await getActivities()
 })
