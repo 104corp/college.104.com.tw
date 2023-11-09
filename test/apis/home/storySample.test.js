@@ -1,14 +1,11 @@
-import { formatter } from '@/apis/home/resumeSample'
+import { formatter } from '@/apis/home/storySample'
 describe('formatter-data', () => {
   it('如果回應資料正確，應該回傳格式化後的物件', () => {
     const data = [
       {
         name: 'name',
         job: 'job',
-        instruction: 'instruction',
-        tags: [
-          'tag'
-        ],
+        title: 'title',
         url: 'url',
         head: 'head',
         background: 'background'
@@ -17,15 +14,18 @@ describe('formatter-data', () => {
 
     const result = formatter.data(data)
 
-    expect(result).toEqual([ {
-      name: 'name',
-      jobTitle: 'job',
-      avatar: 'head',
-      coverImage: 'background',
-      bio: 'instruction',
-      hashTags: [ 'tag' ],
-      url: 'url'
-    } ])
+    expect(result).toEqual([
+      {
+        author: {
+          name: 'name',
+          jobTitle: 'job',
+          avatar: 'head'
+        },
+        title: 'title',
+        cover: 'background',
+        url: 'url'
+      }  
+    ])
   })
 
   it('如果資料為[]，應該回傳 []', () => {
