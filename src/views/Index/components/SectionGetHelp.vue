@@ -8,7 +8,7 @@
         有職場疑問？我們為你解答
       </h2>
       <div
-        v-if="loading"
+        v-if="QAStore.loading.getList"
         class="loading mt-24 h-328 md:h-372"
       ></div>
       <div
@@ -32,7 +32,7 @@
                 <li
                   v-for="avatar in qa.answerAvatars"
                   :key="avatar"
-                  class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 [&:nth-child(n+2)]:-ml-8 [&:nth-child(1)]:z-3 [&:nth-child(2)]:z-2 [&:nth-child(3)]:z-1"
+                  class="w-24 aspect-1 overflow-hidden border border-white rounded-1/2 [&:nth-child(n+2)]:-ml-8 [&:nth-child(1)]:z-3 [&:nth-child(2)]:z-2 [&:nth-child(3)]:z-1 [&:nth-child(n+4)]:hidden"
                 >
                   <BaseImage
                     :src="avatar"
@@ -61,13 +61,10 @@
 </template>
 
 <script setup>
-import {
-  ref, onMounted 
-} from 'vue'
+import { onMounted } from 'vue'
 import { addQuery } from '@/utils/urlHandler.js'
 import { useQA } from '@/stores/QA.js'
 
-const loading = ref(false)
 const QAStore = useQA()
 
 const utm = {
