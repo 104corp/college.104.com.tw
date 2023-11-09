@@ -107,13 +107,16 @@
                 >更多<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll px-12 pt-8 pb-12">
-                <div class="min-w-676">
+                <div
+                  v-if="false"
+                  class="loading h-164"
+                ></div>
+                <div
+                  v-else
+                  class="min-w-676"
+                >
                   <div
-                    v-if="false"
-                    class="loading mt-8 h-164"
-                  ></div>
-                  <div
-                    v-else-if="storeJob.typeJobs?.length > 0"
+                    v-if="storeJob.typeJobs?.length > 0"
                     class="grid grid-cols-3 gap-8"
                   >
                     <a
