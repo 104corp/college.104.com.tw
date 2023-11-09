@@ -12,7 +12,7 @@
       md="mt-16"
       :list="storeAnnouncement.list"
     ></ScrollingAnnouncement>
-    <div class="Index__job mt-16">
+    <div class="SectionCover__job mt-16">
       <div class="layout-container mx-auto">
         <div
           class="py-16 bg-white rounded-16 shadow-card-gray"
@@ -23,22 +23,39 @@
             md="gap-24 mx-32"
           >
             <div class="flex-1 flex items-center h-44 border border-orange-400 rounded-4">
-              <div class="p-12 w-1/2">
+              <div class="relative flex items-center p-12 w-1/2">
                 <input
+                  v-model="keyword"
                   type="text"
                   placeholder="工作關鍵字"
                   maxLength="100"
                   class="w-full text-14 focus:outline-none caret-orange-400"
                 >
+                <button
+                  v-show="keyword"
+                  class="i-icon:plus absolute right-12 text-(16 gray-600) transform rotate-45"
+                  @click="keyword = ''"
+                ></button>
               </div>
-              <button class="flex items-center gap-12 pr-12 py-12 w-1/2">
-                <span class="w-1 h-12 bg-gray-400"></span>
-                <span class="flex-1 text-(14 gray-400 left nowrap)">地區</span>
-                <i class="i-icon:arrow text-gray-400 transform rotate-90"></i>
+              <button
+                class="relative flex items-center gap-12 pl-12 pr-40 py-12 w-1/2 text-(14 left) before:(content-empty absolute left-0 w-1 h-12 bg-gray-400)"
+                @click="openCategoryPicker"
+              >
+                <span
+                  v-if="area?.length > 0"
+                  class="line-clamp-1"
+                >
+                  {{ area.map((item) => item.des).join('、') }}
+                </span>
+                <span
+                  v-else
+                  class="text-gray-400 text-nowrap"
+                >地區</span>
+                <i class="i-icon:arrow absolute right-12 text-gray-400 transform rotate-90"></i>
               </button>
             </div>
             <a
-              href=""
+              :href="searchLink"
               target="_blank"
               class="btn btn-primary px-12 py-10"
               md="px-77"
@@ -103,7 +120,7 @@
                       :key="job.link"
                       :href="job.link"
                       target="_blank"
-                      class="Index__job__card p-8 w-full h-78 bg-white border border-gray-200 rounded-8 [&:nth-child(n+7)]:hidden"
+                      class="p-8 w-full h-78 bg-white border border-gray-200 rounded-8 [&:nth-child(n+7)]:hidden"
                       md="hover:shadow-card-gray"
                     >
                       <div class="h-40 text-(14 blue-200) font-700 line-clamp-2">
@@ -183,7 +200,7 @@
 
 <script setup>
 import {
-  onMounted, computed 
+  onMounted, computed, ref
 } from 'vue'
 import { useAnnouncement } from '@/stores/Announcement.js'
 import { useJob } from '@/stores/Job.js'
@@ -215,12 +232,37 @@ const utm = {
   utm_medium: 'university_activity'
 }
 
+const keyword = ref('')
+const area = ref([])
+
+const searchLink = computed(() => {
+  const queries = {
+    keyword: `${ keyword.value }`,
+    area: `${ area.value.map((item) => item.no).join(',') }`,
+    jobsource: `college_${ storeJob.currentType }_btn`,
+    utm_source: 'cweb_studentmainpage',
+    utm_medium: `${ storeJob.currentType }_keyword`
+  }
+  return addQuery(storeJob.typeLink, queries)
+})
 const moreLink = computed(() => {
   const jobSource = {
     jobsource: `college_${ storeJob.currentType }`
   }
   return addQuery(storeJob.typeLink, jobSource)
 })
+
+const openCategoryPicker = () => {
+  window.categoryPicker.open({
+    dataSource: 'Area',
+    theme: 'customer-theme',
+    maxSelectedNumber: 10,
+    selectedItems: area.value.map((item) => ({ no: item.no })),
+    onSubmit: async (value) => {
+      area.value = value.selectedItems
+    }
+  })
+}
 
 const changeJobType = (type) => {
   storeJob.currentType = type
