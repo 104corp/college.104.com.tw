@@ -8,7 +8,7 @@
         看看他們在職場的故事
       </h2>
       <div
-        v-if="loading"
+        v-if="profilePortfolioStore.loading.getList"
         class="loading mt-24 h-296"
         md="h-450"
       ></div>
@@ -130,7 +130,6 @@ import { useProfilePortfolio } from '@/stores/ProfilePortfolio.js'
 const profilePortfolioStore = useProfilePortfolio()
 const { width: windowWidth } = useWindowSize()
 
-const loading = ref(false)
 const index = ref(0)
 const isTransitionEnd = ref(true)
 
