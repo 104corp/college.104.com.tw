@@ -180,7 +180,7 @@
         :data-gtm-index="`活動板位-${storeEvent.latestPost?.title}`"
       ></CardEvent>
       <CardEvent
-        :is-loading="false"
+        :is-loading="storeInstagram.loading.getChannel104student"
         type-name="IG"
         :title="storeInstagram.latestPost104student?.content"
         :content="''"
@@ -191,7 +191,7 @@
         data-gtm-index="活動板位-IG"
       ></CardEvent>
       <CardEvent
-        :is-loading="false"
+        :is-loading="storePodcast.loading.getChannel104youth"
         type-name="播客"
         :title="storePodcast.latestPost104youth?.title"
         :content="storePodcast.latestPost104youth?.content"
