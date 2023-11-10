@@ -1,7 +1,8 @@
 import { createTestingPinia } from '@pinia/testing'
 import { usePodcast } from '@/stores/Podcast'
+import apiService from '@/apis'
 
-const pinia = createTestingPinia()
+const pinia = createTestingPinia({ stubActions: false })
 const store = usePodcast('Podcast', pinia)
 
 describe('computed - Podcast latestPost104youth', () => {
@@ -81,5 +82,16 @@ describe('computed - Podcast latestPost104youth', () => {
     }
 
     expect(store.latestPost104youth).toEqual(result)
+  })
+})
+
+describe('Podcast - function', () => {
+  it('getChannel104youth：執行api Service 並更新 store.channel104youth', async () => {
+    store.channel104youth = undefined
+    const spyService = vi.spyOn(apiService, 'getPodcastChannel').mockResolvedValue('formatted response')
+    await store.getChannel104youth()
+
+    expect(store.channel104youth).toEqual('formatted response')
+    expect(spyService).toHaveBeenCalled()
   })
 })
