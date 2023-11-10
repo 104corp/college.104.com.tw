@@ -1,7 +1,8 @@
 import { createTestingPinia } from '@pinia/testing'
 import { useInstagram } from '@/stores/Instagram'
+import apiService from '@/apis'
 
-const pinia = createTestingPinia()
+const pinia = createTestingPinia({ stubActions: false })
 const store = useInstagram('Instagram', pinia)
 
 describe('computed - Instagram latestPost104student', () => {
@@ -71,5 +72,16 @@ describe('computed - Instagram latestPost104student', () => {
     }
 
     expect(store.latestPost104student).toEqual(result)
+  })
+})
+
+describe('Instagram - function', () => {
+  it('getChannel104student：執行api Service 並更新 store.channel104student', async () => {
+    store.channel104student = undefined
+    const spyService = vi.spyOn(apiService, 'getIgChannel').mockResolvedValue('formatted response')
+    await store.getChannel104student()
+
+    expect(store.channel104student).toEqual('formatted response')
+    expect(spyService).toHaveBeenCalled()
   })
 })
