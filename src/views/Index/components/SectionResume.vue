@@ -93,6 +93,7 @@
               :key="tool.name"
               :href="tool.link"
               target="_blank"
+              :data-gtm-index="`推薦工具-${ tool.name }`"
               class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
             >
               <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">

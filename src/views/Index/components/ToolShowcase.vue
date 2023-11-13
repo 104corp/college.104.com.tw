@@ -54,6 +54,7 @@
                 :key="button.text"
                 :href="button.link"
                 :target="button.target"
+                :data-gtm-index="`工具介紹-${ button.text }`"
                 class="btn flex-shrink-0 px-32 py-6 text-(base lake-200 center) font-700 border border-lake-200 rounded-4"
                 md="px-16 py-2"
               >{{ button.text }}</a>
