@@ -72,6 +72,7 @@
               :key="tag.name"
               :href="tag.url"
               target="_blank"
+              :data-gtm-index="`關鍵字-${ tag.type === 'parttime' ? '藍色' : '綠色' }-${ tag.name }`"
               class="flex-shrink-0"
               :class="{ 'tag-primary-lake-200': tag.type === 'parttime',
                         'tag-primary-green-200': tag.type === 'intern' }"
@@ -121,10 +122,11 @@
                     class="grid grid-cols-3 gap-8"
                   >
                     <a
-                      v-for="job in storeJob.typeJobs"
+                      v-for="(job, index) in storeJob.typeJobs"
                       :key="job.link"
                       :href="job.link"
                       target="_blank"
+                      :data-gtm-index="`推薦職缺-${ storeJob.currentType === 'parttime' ? '打工職缺' : '實習機會' }${ index + 1 }`"
                       class="p-8 w-full h-78 bg-white border border-gray-200 rounded-8 [&:nth-child(n+7)]:hidden"
                       md="hover:shadow-card-gray"
                     >
