@@ -14,7 +14,7 @@
       md="mt-32 px-0"
     >
       <div
-        v-if="loading"
+        v-if="storeArticleNews.loading.getList"
         class="loading w-full h-860"
         md="h-415"
       ></div>
@@ -55,7 +55,6 @@ const moreUtm = {
   utm_medium: 'university_toolbox_seemore',
 }
 
-const loading = ref(false)
 const storeArticleNews = useArticleNews()
 
 const currentArticles = computed(() => {
