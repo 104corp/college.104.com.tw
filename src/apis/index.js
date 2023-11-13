@@ -6,6 +6,7 @@ import Home_GiverQaList from './home/giverQaList.js'
 import Home_EventList from './home/eventList.js'
 import Home_PodcastList from './home/podcastList'
 import Ig_Article_List from './ig/article/list.js'
+import Home_Blogs from './home/blogs.js'
 
 export default {
   getProfile: Auth_GetStatusInfo.get,
@@ -15,5 +16,6 @@ export default {
   getGiverQaList: Home_GiverQaList.get,
   getEventList: Home_EventList.get,
   getPodcastChannel: Home_PodcastList.get,
-  getIgChannel: Ig_Article_List.get
+  getIgChannel: Ig_Article_List.get,
+  getArticle: Home_Blogs.get
 }
