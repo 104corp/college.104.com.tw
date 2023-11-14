@@ -2,20 +2,21 @@ import { defineStore } from 'pinia'
 import {
   ref, computed 
 } from 'vue'
-import { mainUrl } from '@/common/domainConfig'
 import apiService from '@/apis/index'
 
 export const useJob = (id = 'Job', pinia) => {
   const _typeMap = ref({
     parttime: {
       name: '打工職缺',
-      jobs: [],
-      link: `${ mainUrl }jobs/main/students/?tab=parttime&ro=2`
+      keyword: '打工',
+      jobsource: 'college_pt',
+      jobs: []
     },
     intern: {
       name: '實習機會',
-      jobs: [],
-      link: `${ mainUrl }jobs/main/students/?tab=intern&ro=2&rostatus=1024`
+      keyword: '實習',
+      jobsource: 'college_intern',
+      jobs: []
     }
   })
 
@@ -26,7 +27,9 @@ export const useJob = (id = 'Job', pinia) => {
   const tags = computed(() => _tags.value)
   const advertises = computed(() => _advertises.value)
   const typeJobs = computed(() => _typeMap.value[currentType.value]?.jobs)
-  const typeLink = computed(() => _typeMap.value[currentType.value]?.link)
+  const typeKeyword = computed(() => _typeMap.value[currentType.value]?.keyword)
+  const typeJobSource = computed(() => _typeMap.value[currentType.value]?.jobsource)
+  const typeName = computed(() => _typeMap.value[currentType.value]?.name)
   const listedType = computed(() => [ 'parttime', 'intern' ].map((type) => {
     return {
       id: type,
@@ -86,7 +89,9 @@ export const useJob = (id = 'Job', pinia) => {
       advertises,
       listedType,
       typeJobs,
-      typeLink,
+      typeKeyword,
+      typeJobSource,
+      typeName,
       loading,
       getAllJobs,
       getAdvertises,
