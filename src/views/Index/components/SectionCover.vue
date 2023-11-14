@@ -110,7 +110,7 @@
               </div>
               <div class="overflow-x-scroll px-12 pt-8 pb-12">
                 <div
-                  v-if="false"
+                  v-if="storeJob.loading.getAllJobs"
                   class="loading h-164"
                 ></div>
                 <div
