@@ -25,7 +25,7 @@
               md="mr-20 text-(32 gray-400) leading-38 group-[.active]-text-lake-200"
             >0{{ index + 1 }}</span>
             <div
-              class="text-18 text-gray-500 text-nowrap group-[.active]-text-gray-600"
+              class="text-18 text-gray-500 nowrap group-[.active]-text-gray-600"
               md="text-(20 gray-600)"
             >
               {{ item.title }}

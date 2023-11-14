@@ -50,7 +50,7 @@
                 </span>
                 <span
                   v-else
-                  class="text-gray-400 text-nowrap"
+                  class="text-gray-400 nowrap"
                 >地區</span>
                 <i class="i-icon:arrow absolute right-12 text-gray-400 transform rotate-90"></i>
               </button>
