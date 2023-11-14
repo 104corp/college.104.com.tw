@@ -68,11 +68,11 @@
             md="px-32"
           >
             <a
-              v-for="tag in storeJob.tags"
+              v-for="(tag,index) in storeJob.tags"
               :key="tag.name"
               :href="tag.url"
               target="_blank"
-              :data-gtm-index="`關鍵字-${ tag.type === 'parttime' ? '藍色' : '綠色' }-${ tag.name }`"
+              :data-gtm-index="`關鍵字-${ index+1 }-${ tag.name }`"
               class="flex-shrink-0"
               :class="{ 'tag-primary-lake-200': tag.type === 'parttime',
                         'tag-primary-green-200': tag.type === 'intern' }"
@@ -124,9 +124,11 @@
                     <a
                       v-for="(job, index) in storeJob.typeJobs"
                       :key="job.link"
-                      :href="job.link"
+                      :href="addQuery(job.link,{ 
+                        jobsource: `${ jobSourcePrefix.value }${ storeJob.typeJobSource }` 
+                      })"
                       target="_blank"
-                      :data-gtm-index="`推薦職缺-${ storeJob.currentType === 'parttime' ? '打工職缺' : '實習機會' }${ index + 1 }`"
+                      :data-gtm-index="`推薦職缺-${ storeJob.typeName }${ index + 1 }`"
                       class="p-8 w-full h-78 bg-white border border-gray-200 rounded-8 [&:nth-child(n+7)]:hidden"
                       md="hover:shadow-card-gray"
                     >
@@ -211,6 +213,9 @@
 import {
   onMounted, computed, ref
 } from 'vue'
+import ScrollingTitle from './ScrollingTitle.vue'
+import ScrollingAnnouncement from './ScrollingAnnouncement.vue'
+import CardEvent from './CardEvent.vue'
 import { useAnnouncement } from '@/stores/Announcement.js'
 import { useJob } from '@/stores/Job.js'
 import { useEvent } from '@/stores/Event.js'
@@ -218,11 +223,9 @@ import { useInstagram } from '@/stores/Instagram.js'
 import { usePodcast } from '@/stores/Podcast.js'
 import { addQuery } from '@/utils/urlHandler.js'
 import {
-  meetUrl, blogUrl 
+  meetUrl, blogUrl, mainUrl 
 } from '@/common/domainConfig.js'
-import ScrollingTitle from './ScrollingTitle.vue'
-import ScrollingAnnouncement from './ScrollingAnnouncement.vue'
-import CardEvent from './CardEvent.vue'
+import useUserAgentInfo from '@/utils/useUserAgentInfo.js'
 
 const storeAnnouncement = useAnnouncement()
 const storeJob = useJob()
@@ -247,23 +250,29 @@ const selectedArea = computed(() => {
   return area.value.map((item) => item.des).join('、')
 })
 
+const { isMobile } = useUserAgentInfo()
+
+const jobLink = `${ mainUrl }jobs/main/students/?ro=2&rostatus=1024`
+const jobSourcePrefix = computed(() => isMobile ? 'm_' : '')
+
 const searchLink = computed(() => {
   const queries = {
-    keyword: `${ keyword.value }`,
-    area: `${ area.value.map((item) => item.no).join(',') }`,
-    jobsource: `college_${ storeJob.currentType }_btn`,
+    keyword: keyword.value,
+    area: area.value.map((item) => item.no).join(','),
+    jobsource: `${ jobSourcePrefix.value }college_pt_btn`,
     utm_source: 'cweb_studentmainpage',
-    utm_medium: `${ storeJob.currentType }_keyword`
+    utm_medium: 'college_parttime_btn'
   }
-  return addQuery(storeJob.typeLink, queries)
+  return addQuery(jobLink, queries)
 })
 const moreLink = computed(() => {
   const queries = {
-    jobsource: `college_${ storeJob.currentType }`,
+    keyword: storeJob.typeKeyword,
+    jobsource: `${ jobSourcePrefix.value }${ storeJob.typeJobSource }`,
     utm_source: 'cweb_studentmainpage',
-    utm_medium: 'university_partime_seemore',
+    utm_medium: `${ storeJob.currentType }_seemore`,
   }
-  return addQuery(storeJob.typeLink, queries)
+  return addQuery(jobLink, queries)
 })
 
 const openCategoryPicker = () => {
