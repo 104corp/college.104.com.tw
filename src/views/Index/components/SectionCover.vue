@@ -68,11 +68,11 @@
             md="px-32"
           >
             <a
-              v-for="tag in storeJob.tags"
+              v-for="(tag,index) in storeJob.tags"
               :key="tag.name"
               :href="tag.url"
               target="_blank"
-              :data-gtm-index="`關鍵字-${ tag.type === 'parttime' ? '藍色' : '綠色' }-${ tag.name }`"
+              :data-gtm-index="`關鍵字-${ index+1 }-${ tag.name }`"
               class="flex-shrink-0"
               :class="{ 'tag-primary-lake-200': tag.type === 'parttime',
                         'tag-primary-green-200': tag.type === 'intern' }"
