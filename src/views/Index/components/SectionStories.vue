@@ -20,7 +20,7 @@
           <ul
             ref="$slider"
             class="flex float-left transition-transform duration-500"
-            :style="{ 'transform': `translateX(${ positionX }px)`,
+            :style="{ 'transform': `translateX(${ finalPositionX }px)`,
                       'transition-property': isTransitionEnd ? 'none' : 'transform' }"
             @transitionend="setCurrentPage"
           >
@@ -119,10 +119,10 @@
 
 <script setup>
 import {
-  ref, onMounted, computed
+  ref, onMounted, computed, watch
 } from 'vue'
 import {
-  useWindowSize, useElementSize, useIntervalFn
+  useWindowSize, useElementSize, useIntervalFn, useSwipe
 } from '@vueuse/core'
 import { addQuery } from '@/utils/urlHandler.js'
 import { useProfilePortfolio } from '@/stores/ProfilePortfolio.js'
@@ -145,6 +145,26 @@ const moreUtm = {
   utm_source: 'cweb_studentmainpage',
   utm_medium: 'university_toolbox_seemore'
 }
+
+// swipe
+const {
+  isSwiping, lengthX
+} = useSwipe($slider)
+
+const SWIPE_THRESHOLD = 100
+
+const handleSwipe = (length, currentPage) => {
+  if (length >= SWIPE_THRESHOLD) {
+    move(currentPage + 1)
+  } else if (length <= -SWIPE_THRESHOLD) {
+    move(currentPage - 1)
+  }
+}
+
+watch(isSwiping, () => {
+  isSwiping.value ? pause() : resume()
+  handleSwipe(lengthX.value, page.value)
+})
 
 const pageSetCount = computed(() => {
   return windowWidth.value > 1024 ? 3 : 1
@@ -173,10 +193,12 @@ const totalPage = computed(() => {
   return Math.ceil(profilePortfolioStore.list.length / pageSetCount.value)
 })
 
-const positionX = computed(() => {
+const basePositionX = computed(() => {
   const listLength = duplicateList.value.length
   return -(index.value + 0.5) / listLength * slideWidth.value + bodyWidth.value / 2
 })
+
+const finalPositionX = computed(() => isSwiping.value ? basePositionX.value - lengthX.value : basePositionX.value)
 
 const setCurrentPage = () => {
   isTransitionEnd.value = true
