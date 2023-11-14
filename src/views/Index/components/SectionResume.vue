@@ -8,12 +8,25 @@
         幫你做出好履歷
       </h2>
       <div class="layout-container overflow-hidden mt-24 bg-white rounded-16 shadow-card-gray">
-        <div class="pt-24 text-gray-600 md:(flex items-center)">
-          <div class="mx-16 md:(flex-none ml-40 mr-32 w-240)">
-            <div class="text-20 font-700 md:text-24">
-              多種履歷版型<span class="md:hidden">，</span><br class="hidden md:block">為你增加亮點
+        <div
+          class="pt-24 text-gray-600"
+          xl="flex items-center"
+        >
+          <div
+            class="mx-16"
+            md="mx-40"
+            xl="flex-none ml-40 mr-32 w-240"
+          >
+            <div
+              class="text-20 font-700"
+              md="text-24"
+            >
+              多種履歷版型<span class="xl:hidden">，</span><br class="hidden xl:block">為你增加亮點
             </div>
-            <div class="mt-4 text-base md:mt-24">
+            <div
+              class="mt-4 text-base"
+              xl="mt-24"
+            >
               自訂內容更多元的呈現自我
             </div>
           </div>
@@ -23,21 +36,31 @@
               class="loading mt-16 h-358"
             ></div>
             <div v-else>
-              <div class="flex items-center justify-end mx-16 mt-16 md:(ml-0 mr-40)">
+              <div
+                class="flex items-center justify-end mx-16 mt-16"
+                md="ml-0 mr-40"
+              >
                 <a
                   :href="addQuery(profileUrl, moreUtm)"
                   target="_blank"
-                  class="inline-flex items-center text-(14 gray-500) font-700 md:hover:text-orange-400"
+                  class="inline-flex items-center text-(14 gray-500) font-700"
+                  md="hover:text-orange-400"
                 >更多履歷<i class="i-icon:arrow ml-4"></i></a>
               </div>
               <div class="overflow-x-scroll">
-                <div class="flex gap-16 mt-16 mb-24 mx-16 float-left md:(mx-0 pr-40)">
+                <div
+                  class="flex gap-16 mt-16 mb-24 mx-16"
+                  md="justify-center"
+                  xl="mx-0 pr-40"
+                >
                   <a
                     v-for="profileResume in profileResumeStore.list"
                     :key="profileResume.name"
                     :href="addQuery(profileResume.url, utm)"
                     target="_blank"
-                    class="group flex-shrink-0 overflow-hidden w-272 rounded-8 border border-gray-300 md:hover:(shadow-card-gray) lg:w-352"
+                    class="group flex-shrink-0 overflow-hidden w-272 rounded-8 border border-gray-300"
+                    md="hover:shadow-card-gray"
+                    lg="w-352"
                   >
                     <div class="h-120">
                       <BaseImage
@@ -57,7 +80,10 @@
                         ></BaseImage>
                       </div>
                       <div class="ml-12 mt-4 mb-8 text-gray-600">
-                        <div class="text-16 leading-24 font-700 line-clamp-1 md:group-hover:text-orange-400">
+                        <div
+                          class="text-16 leading-24 font-700 line-clamp-1"
+                          md="group-hover:text-orange-400"
+                        >
                           {{ profileResume.name }}
                         </div>
                         <div class="text-14 line-clamp-1">
@@ -83,32 +109,52 @@
             </div>
           </div>
         </div>
-        <div class="p-16 text-gray-600 bg-([#FFF1C1] op-60) md:(flex items-center gap-16 px-40)">
-          <div class="text-(base gray-500) font-700 md:(flex-none w-32)">
+        <div
+          class="p-16 text-gray-600 bg-([#FFF1C1] op-60)"
+          md="flex items-center gap-16 px-40"
+        >
+          <div
+            class="text-(base gray-500) font-700"
+            md="flex-none w-32"
+          >
             履歷工具
           </div>
-          <div class="grid grid-cols-2 gap-16 mt-8 md:(flex-1 grid-cols-3 gap-0) xl:grid-cols-5">
+          <div
+            class="grid grid-cols-2 gap-16 mt-8"
+            md="flex-1 grid-cols-3 gap-0"
+            xl="grid-cols-5"
+          >
             <a
               v-for="tool in toolList"
               :key="tool.name"
               :href="tool.link"
               target="_blank"
               :data-gtm-index="`推薦工具-${ tool.name }`"
-              class="group flex items-center gap-12 md:(gap-16 px-12 h-96 rounded-16) md:hover:bg-white"
+              class="group flex items-center gap-12"
+              md="gap-16 px-12 h-96 rounded-16 hover:bg-white"
             >
-              <div class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200 md:w-48 md:group-hover:bg-orange-100">
+              <div
+                class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200"
+                md="w-48 group-hover:bg-orange-100"
+              >
                 <BaseImage
                   :src="tool.icon"
                   :alt="tool.name"
-                  draggable="false"
-                  class="w-16 md:w-24"
+                  class="w-16"
+                  md="w-24"
                 ></BaseImage>
               </div>
               <div>
-                <div class="text-base font-700 md:group-hover:text-orange-400">
+                <div
+                  class="text-base font-700"
+                  md="group-hover:text-orange-400"
+                >
                   {{ tool.name }}
                 </div>
-                <div class="text-(12 gray-500) md:text-14">
+                <div
+                  class="text-(12 gray-500)"
+                  md="text-14"
+                >
                   {{ tool.slogan }}
                 </div>
               </div>
