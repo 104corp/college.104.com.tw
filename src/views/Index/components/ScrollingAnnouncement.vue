@@ -28,7 +28,7 @@
               md="px-16"
             >
               <p
-                class="overflow-hidden flex justify-end w-28 text-nowrap"
+                class="overflow-hidden flex justify-end w-28 nowrap"
                 md="w-64"
               >
                 {{ item.type }}
