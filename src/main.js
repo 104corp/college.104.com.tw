@@ -23,9 +23,12 @@ app.use(head)
 
 app.component('BaseImage', BaseImage)
 
+const sentryDsn_production = 'https://59e4d737b6ecb7d4c70affa7ea728068@sentry.events.104.com.tw/11'
+const sentryDsn_lab = 'https://59e4d737b6ecb7d4c70affa7ea728068@sentry.events.104-dev.com.tw/7'
+
 Sentry.init({
   app,
-  dsn: 'https://59e4d737b6ecb7d4c70affa7ea728068@sentry.events.104.com.tw/11',
+  dsn: import.meta.env.VITE_NODE_ENV === 'production' ? sentryDsn_production : sentryDsn_lab,
   integrations: [
     new Sentry.BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router)

@@ -11,6 +11,7 @@ then
     echo "Find mkcert $MKCERT_PATH"
     cd "$(dirname "$0")"
     echo "Start generate key"
+    mkdir ../.devcontainer/cert
     mkcert -install --key-file ../.devcontainer/cert/wildcard.104-dev.com.tw-key.pem  --cert-file ../.devcontainer/cert/wildcard.104-dev.com.tw.pem '*.104-dev.com.tw' localhost 127.0.0.1 ::1
     echo "Finish generate key"
 
