@@ -32,7 +32,7 @@
           </div>
           <div class="flex-1 min-w-0">
             <div
-              v-if="loading"
+              v-if="storeProfileResume.loading.getList"
               class="loading mt-16 h-358"
             ></div>
             <div v-else>
@@ -54,7 +54,7 @@
                   xl="mx-0 pr-40"
                 >
                   <a
-                    v-for="profileResume in profileResumeStore.list"
+                    v-for="profileResume in storeProfileResume.list"
                     :key="profileResume.name"
                     :href="addQuery(profileResume.url, utm)"
                     target="_blank"
@@ -167,17 +167,14 @@
 </template>
 
 <script setup>
-import {
-  ref, onMounted 
-} from 'vue'
+import { onMounted } from 'vue'
 import { addQuery } from '@/utils/urlHandler.js'
 import {
   profileUrl, resumeClinicUrl, blogUrl, meetUrl
 } from '@/common/domainConfig.js'
 import { useProfileResume } from '@/stores/ProfileResume.js'
 
-const loading = ref(false)
-const profileResumeStore = useProfileResume()
+const storeProfileResume = useProfileResume()
 
 const utm = {
   utm_source: 'cweb_studentmainpage',
@@ -222,7 +219,7 @@ const toolList = [
 ]
 
 onMounted(async () => {
-  await profileResumeStore.getList()
+  await storeProfileResume.getList()
 })
 </script>
 
