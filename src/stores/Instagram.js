@@ -18,7 +18,11 @@ export const useInstagram = (id = 'Instagram', pinia) => {
       getChannel104student: ref(true)
     }
 
-    const getChannel104student = async () => {
+    const getChannel104student = async ({ forceRefresh = false } = {}) => {
+      if (!forceRefresh && channel104student.value !== null) {
+        return channel104student.value
+      }
+
       loading.getChannel104student.value = true
       try {
         const result = await apiService.getIgChannel('college')

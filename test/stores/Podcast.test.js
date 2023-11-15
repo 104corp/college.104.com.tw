@@ -85,13 +85,31 @@ describe('computed - Podcast latestPost104youth', () => {
   })
 })
 
-describe('Podcast - function', () => {
-  it('getChannel104youth：執行api Service 並更新 store.channel104youth', async () => {
+describe('Podcast - getChannel104youth', () => {
+  it('執行api Service 並更新 store.channel104youth', async () => {
     store.channel104youth = undefined
     const spyService = vi.spyOn(apiService, 'getPodcastChannel').mockResolvedValue('formatted response')
     await store.getChannel104youth()
 
     expect(store.channel104youth).toEqual('formatted response')
+    expect(spyService).toHaveBeenCalled()
+  })
+
+  it('forceRefresh為false, channel104youth有資料, 不執行api', async () => {
+    store.channel104youth = 'some data'
+    const spyService = vi.spyOn(apiService, 'getPodcastChannel').mockResolvedValue('formatted response')
+    const result = await store.getChannel104youth({ forceRefresh: false })
+
+    expect(result).toEqual('some data')
+    expect(spyService).not.toHaveBeenCalled()
+  })
+
+  it('forceRefresh為true, channel104youth有資料, 執行api', async () => {
+    store.channel104youth = 'some data'
+    const spyService = vi.spyOn(apiService, 'getPodcastChannel').mockResolvedValue('formatted response')
+    const result = await store.getChannel104youth({ forceRefresh: true })
+
+    expect(result).toEqual('formatted response')
     expect(spyService).toHaveBeenCalled()
   })
 })

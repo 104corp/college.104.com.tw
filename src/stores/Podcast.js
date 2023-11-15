@@ -18,7 +18,11 @@ export const usePodcast = (id = 'Podcast', pinia) => {
       getChannel104youth: ref(true)
     }
   
-    const getChannel104youth = async () => {
+    const getChannel104youth = async ({ forceRefresh = false } = {}) => {
+      if (!forceRefresh && channel104youth.value !== null) {
+        return channel104youth.value 
+      }
+
       loading.getChannel104youth.value = true
       try {
         const result = await apiService.getPodcastChannel()
