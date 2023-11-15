@@ -3,14 +3,14 @@ import {
   ref, computed 
 } from 'vue'
 import apiService from '@/apis/index.js'
-
+import { tanjiUrl } from '@/common/domainConfig'
 export const useAnnouncement = (id = 'Announcement', pinia) => {
   return defineStore(id, () => {
     const _list = ref([ 
       {
-        type: '',
-        title: '大學生頁 【打工兼職】打工賺生活費&零用錢💰短期、彈性排班、無經驗可',
-        link: 'https://tanji.104.com.tw/list/?utm_source=cweb_studentmainpage&utm_medium=university_newsbar'
+        type: '打工兼職',
+        title: '【打工兼職】打工賺生活費&零用錢💰短期、彈性排班、無經驗可',
+        url: `${ tanjiUrl }list/?utm_source=cweb_studentmainpage&utm_medium=university_newsbar`
       } 
     ])
 
