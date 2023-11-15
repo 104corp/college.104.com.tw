@@ -38,9 +38,9 @@ export const useJob = (id = 'Job', pinia) => {
   }))
 
   const loading = {
-    getAllJobs: ref(false),
-    getTags: ref(false),
-    getAdvertises: ref(false)
+    getAllJobs: ref(true),
+    getTags: ref(true),
+    getAdvertises: ref(true)
   }
 
   const getAllJobs = async () => {

@@ -15,7 +15,7 @@ export const usePodcast = (id = 'Podcast', pinia) => {
     })
 
     const loading = {
-      getChannel104youth: ref(false)
+      getChannel104youth: ref(true)
     }
   
     const getChannel104youth = async () => {

@@ -15,7 +15,7 @@ export const useInstagram = (id = 'Instagram', pinia) => {
     })
 
     const loading = {
-      getChannel104student: ref(false)
+      getChannel104student: ref(true)
     }
 
     const getChannel104student = async () => {
