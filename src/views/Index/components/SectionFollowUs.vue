@@ -22,7 +22,7 @@
           md="py-24"
         >
           <div
-            v-if="loading"
+            v-if="storeInstagram.loading.getChannel104student"
             class="loading h-372"
             md="h-360"
           ></div>
@@ -54,7 +54,7 @@
           md="py-24"
         >
           <div
-            v-if="loading"
+            v-if="storeInstagram.loading.getChannel104youth"
             class="loading h-422"
             md="h-360"
           ></div>
@@ -102,7 +102,6 @@ const utm = {
   utm_medium: 'university_toolbox'
 }
 
-const loading = ref(false)
 const storeInstagram = useInstagram()
 const storePodcast = usePodcast()
 

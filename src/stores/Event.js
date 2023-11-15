@@ -14,7 +14,7 @@ export const useEvent = (id = 'Event', pinia) => {
     })
 
     const loading = {
-      getList: ref(false)
+      getList: ref(true)
     }
 
     const getList = async () => {

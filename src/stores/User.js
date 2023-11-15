@@ -9,7 +9,7 @@ import apiService from '@/apis/index.js'
 export const useUser = (id = 'User', pinia) => {
   const _profile = ref(null)
   const loading = {
-    getProfile: ref(false)
+    getProfile: ref(true)
   }
 
   const loginUrl = `${ beCollegeUrl }auth/login`

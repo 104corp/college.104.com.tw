@@ -11,7 +11,7 @@ export const useProfileResume = (id = 'ProfileResume', pinia) => {
     const _list = ref([])
   
     const loading = {
-      getList: ref(false)
+      getList: ref(true)
     }
 
     const list = computed(() => _list.value)

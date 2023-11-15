@@ -12,7 +12,7 @@ export const useArticleNews = (id = 'ArticleNews', pinia) => {
     const list = computed(() => _list.value)
     
     const loading = {
-      getList: ref(false)
+      getList: ref(true)
     }
 
     const getList = async () => {

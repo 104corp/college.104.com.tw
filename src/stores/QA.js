@@ -11,7 +11,7 @@ export const useQA = (id = 'QA', pinia) => {
     const _list = ref([])
 
     const loading = {
-      getList: ref(false)
+      getList: ref(true)
     }
   
     const list = computed(() => _list.value)

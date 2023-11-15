@@ -40,7 +40,7 @@
 
 <script setup>
 import {
-  ref, computed, onMounted 
+  computed, onMounted 
 } from 'vue'
 import { addQuery } from '@/utils/urlHandler.js'
 import { useArticleNews } from '@/stores/ArticleNews.js'
