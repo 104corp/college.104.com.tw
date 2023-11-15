@@ -75,13 +75,31 @@ describe('computed - Instagram latestPost104student', () => {
   })
 })
 
-describe('Instagram - function', () => {
-  it('getChannel104student：執行api Service 並更新 store.channel104student', async () => {
+describe('Instagram - getChannel104student', () => {
+  it('執行api Service 並更新 store.channel104student', async () => {
     store.channel104student = undefined
     const spyService = vi.spyOn(apiService, 'getIgChannel').mockResolvedValue('formatted response')
     await store.getChannel104student()
 
     expect(store.channel104student).toEqual('formatted response')
+    expect(spyService).toHaveBeenCalled()
+  })
+
+  it('forceRefresh為false, channel104student有資料, 不執行api', async () => {
+    store.channel104student = 'some data'
+    const spyService = vi.spyOn(apiService, 'getIgChannel').mockResolvedValue('formatted response')
+    const result = await store.getChannel104student({ forceRefresh: false })
+
+    expect(result).toEqual('some data')
+    expect(spyService).not.toHaveBeenCalled()
+  })
+
+  it('forceRefresh為true, channel104student有資料, 執行api', async () => {
+    store.channel104student = 'some data'
+    const spyService = vi.spyOn(apiService, 'getIgChannel').mockResolvedValue('formatted response')
+    const result = await store.getChannel104student({ forceRefresh: true })
+
+    expect(result).toEqual('formatted response')
     expect(spyService).toHaveBeenCalled()
   })
 })
