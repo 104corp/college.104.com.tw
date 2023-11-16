@@ -30,9 +30,8 @@
           <div class="pl-16 pr-12 py-8 border-l border-gray-200">
             <div class="grid gap-8">
               <p
-                class="font-700 line-clamp-3"
-                md="leading-24 line-clamp-2 group-hover:text-orange-400"
-                :class="{ 'md:line-clamp-4': !props.content }"
+                class="font-700 line-clamp-3 break-all"
+                :md="`leading-24 group-hover:text-orange-400 ${props.content ? 'line-clamp-2' : 'line-clamp-4'}`"
               >
                 <span
                   class="align-top inline-block py-2 mr-2 w-32 text-12 text-white text-center bg-lake-200 rounded-4"
