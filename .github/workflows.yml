@@ -1,0 +1,34 @@
+name: Jira Merge Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, review_requested]
+
+jobs:
+  jira-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check Jira Ticket Status
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+      run: |
+        PR_TITLE="${{ github.event.pull_request.title }}"
+        TICKET_REGEX='[A-Z]+-[0-9]+'
+        if [[ $PR_TITLE =~ $TICKET_REGEX ]]; then
+          echo "Found Jira ticket ID: ${BASH_REMATCH[0]}"
+          echo "::set-output name=ticket_id::${BASH_REMATCH[0]}"
+        else
+          echo "No Jira ticket ID found in PR title"
+          exit 1
+        fi
+
+    - name: Check Jira Ticket Status
+  run: |
+    TICKET_ID=${{ steps.extract_ticket.outputs.ticket_id }}
+    # 使用 TICKET_ID 與 Jira API 進行交互，檢查票據狀態
+
+      
