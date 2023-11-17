@@ -27,7 +27,7 @@ export const useTool = (id = 'Tool', pinia) => {
         buttons: [
           {
             text: '升學就業地圖',
-            link: `${ guideUrl }?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
+            link: `${ guideUrl }career/?utm_source=cweb_studentmainpage&utm_medium=university_toolbox`,
             target: '_blank'
           }
         ]
