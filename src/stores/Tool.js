@@ -8,7 +8,7 @@ export const useTool = (id = 'Tool', pinia) => {
     const tool = [
       {
         title: '分析職場性格優勢找工作',
-        content: '用3分鐘進行生涯興趣測驗，告訴你適合的學群，和你適合的職業，讓你更認識自己的興趣所在～',
+        content: '想知道自己的性格最適合從事什麼工作？分析你的性格優勢，推薦跟你個性最速配的工作！',
         image: new URL('../assets/img/Index/Tool/tool-personality.gif', import.meta.url).href,
         icon: new URL('../assets/img/Index/Tool/icon-personality.png', import.meta.url).href,
         buttons: [
