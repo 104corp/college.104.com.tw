@@ -75,13 +75,13 @@
           >
             <div class="flex justify-between">
               <button
-                class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
+                class="flex items-center justify-center w-56 text-24 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
                 @click="move(page - 1)"
               >
                 <i class="i-icon:arrow text-gray-500 transform rotate-180"></i>
               </button>
               <button
-                class="flex items-center justify-center w-32 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
+                class="flex items-center justify-center w-56 text-24 aspect-ratio-1 bg-white rounded-1/2 shadow-button-gray"
                 @click="move(page + 1)"
               >
                 <i class="i-icon:arrow text-gray-500"></i>
