@@ -58,7 +58,7 @@
                     :key="profileResume.name"
                     :href="addQuery(profileResume.url, utm)"
                     target="_blank"
-                    class="group flex-shrink-0 overflow-hidden w-272 rounded-8 border border-gray-300"
+                    class="flex-shrink-0 overflow-hidden w-272 rounded-8 border border-gray-300"
                     md="hover:shadow-card-gray"
                     lg="w-352"
                   >
@@ -80,10 +80,7 @@
                         ></BaseImage>
                       </div>
                       <div class="ml-12 mt-4 mb-8 text-gray-600">
-                        <div
-                          class="text-16 leading-24 font-700 line-clamp-1"
-                          md="group-hover:text-orange-400"
-                        >
+                        <div class="text-16 leading-24 font-700 line-clamp-1">
                           {{ profileResume.name }}
                         </div>
                         <div class="text-14 line-clamp-1">
@@ -99,7 +96,7 @@
                         <li
                           v-for="tag in profileResume.hashTags"
                           :key="tag"
-                          class="px-8 text-(14 gray-500) font-700 bg-gray-200 rounded-8"
+                          class="px-8 text-(14 gray-500) bg-gray-200 rounded-10"
                         >{{ tag }}</li>
                       </ul>
                     </div>
@@ -131,23 +128,23 @@
               target="_blank"
               :data-gtm-index="`推薦工具-${ tool.name }`"
               class="group flex items-center gap-12"
-              md="gap-16 px-12 h-96 rounded-16 hover:bg-white"
+              md="gap-16 px-12 h-96 rounded-16 transition-all duration-300 hover:bg-white"
             >
               <div
                 class="flex items-center justify-center w-32 aspect-ratio-1 overflow-hidden rounded-1/2 bg-white border border-gray-200"
-                md="w-48 group-hover:bg-orange-100"
+                md="w-48 transition-all duration-300 group-hover:bg-orange-100"
               >
                 <BaseImage
                   :src="tool.icon"
                   :alt="tool.name"
                   class="w-16"
-                  md="w-24"
+                  md="w-24 transition-all duration-300 group-hover:w-28 group-hover:h-28"
                 ></BaseImage>
               </div>
               <div>
                 <div
                   class="text-base font-700"
-                  md="group-hover:text-orange-400"
+                  md="transition-all duration-300 group-hover:text-orange-400"
                 >
                   {{ tool.name }}
                 </div>

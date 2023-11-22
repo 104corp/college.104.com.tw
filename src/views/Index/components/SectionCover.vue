@@ -13,7 +13,10 @@
       :list="storeAnnouncement.list"
       :is-loading="storeAnnouncement.loading.getList"
     ></ScrollingAnnouncement>
-    <div class="mt-16">
+    <div
+      class="mt-16"
+      md="mt-32"
+    >
       <div class="layout-container mx-auto">
         <div
           class="py-16 bg-white rounded-16 shadow-card-gray"

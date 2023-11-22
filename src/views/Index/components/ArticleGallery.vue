@@ -2,7 +2,7 @@
   <div
     v-if="props.list.slice(0, 1).length"
     class="ArticleGallery flex flex-col mt-8"
-    md="flex-row justify-center gap-48 mt-0"
+    md="flex-row justify-center items-center gap-48 mt-0"
   >
     <a
       v-for="article in props.list.slice(0, 1)"
@@ -10,7 +10,7 @@
       :href="article.link"
       target="_blank"
       class="group flex flex-col gap-12 pb-12 border-(b gray-300)"
-      md="w-420 border-none"
+      md="w-420 border-none pb-0"
     >
       <div class="flex overflow-hidden border border-gray-200 rounded-16">
         <BaseImage
@@ -53,6 +53,7 @@
         :href="article.link"
         target="_blank"
         class="group flex flex-row-reverse items-center justify-between gap-20 py-12 border-(b gray-300)"
+        md="py-16"
       >
         <div
           class="flex flex-shrink-0 overflow-hidden w-144 border border-gray-200 rounded-11"
