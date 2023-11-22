@@ -28,7 +28,7 @@
               v-for="(profilePortfolio, slideIndex) in duplicateList"
               :key="slideIndex"
               class="flex-shrink-0 box-content px-12 w-240 h-296"
-              md="w-400 h-402"
+              md="w-400 h-402 px-20"
             >
               <a
                 :href="addQuery(profilePortfolio.url, utm)"
@@ -42,6 +42,7 @@
                       :alt="profilePortfolio.title"
                       draggable="false"
                       class="object-cover w-full h-full"
+                      md="transition-transform duration-300 group-hover:scale-110"
                     ></BaseImage>
                   </div>
                   <div class="absolute bottom-0 overflow-hidden w-40 aspect-ratio-1 rounded-1/2 border border-white">
