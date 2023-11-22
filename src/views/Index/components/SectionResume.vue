@@ -96,7 +96,7 @@
                         <li
                           v-for="tag in profileResume.hashTags"
                           :key="tag"
-                          class="px-8 text-(14 gray-500) bg-gray-200 rounded-8"
+                          class="px-8 text-(14 gray-500) bg-gray-200 rounded-10"
                         >{{ tag }}</li>
                       </ul>
                     </div>
