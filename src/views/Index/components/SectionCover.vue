@@ -255,7 +255,7 @@ const selectedArea = computed(() => {
 
 const { isMobile } = useUserAgentInfo()
 
-const jobLink = `${ mainUrl }jobs/main/students/?ro=2&rostatus=1024`
+const jobLink = `${ mainUrl }jobs/main/students/?ro=2`
 const jobSourcePrefix = computed(() => isMobile ? 'm_' : '')
 
 const searchLink = computed(() => {
@@ -274,6 +274,7 @@ const moreLink = computed(() => {
     jobsource: `${ jobSourcePrefix.value }${ storeJob.typeJobSource }`,
     utm_source: 'cweb_studentmainpage',
     utm_medium: `${ storeJob.currentType }_seemore`,
+    ...(storeJob.currentType === 'intern' ? { rostatus: 1024 } : {})
   }
   return addQuery(jobLink, queries)
 })
