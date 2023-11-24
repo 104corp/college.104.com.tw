@@ -6,8 +6,8 @@
         :key="link.name"
         :href="addQuery(link.url, props.utm)"
         target="_blank"
-        class="flex-1 py-12 text-16 leading-28 font-700 text-center"
-        :class="{ 'text-orange-400 border-b-4 border-orange-400': link.name === activeName }"
+        class="flex-1 py-12 text-16 leading-28 font-700 text-center border-b-4"
+        :class="link.name === activeName?'text-orange-400 border-orange-400':'border-white'"
       >{{ link.name }}</a>
     </div>
   </div>

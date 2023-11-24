@@ -136,7 +136,7 @@ const sectionList = computed(() => [
   }
 }
 
-@screen xl {
+@screen lg {
   .Index {
     background-size: 100% 225px, 100% 630px, 100% auto;
   }

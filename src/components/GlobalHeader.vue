@@ -136,7 +136,7 @@ import {
 } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 import {
-  studentUrl, mainUrl, guideUrl, tanjiUrl 
+  profileUrl, mainUrl, guideUrl, nabiUrl, giverUrl
 } from '@/common/domainConfig.js'
 import { addQuery } from '@/utils/urlHandler.js'
 import { useUser } from '@/stores/User'
@@ -153,19 +153,19 @@ const props = defineProps({
       return [ 
         {
           name: '人力銀行',
-          url: `${ mainUrl }`
-        },
-        {
-          name: '學生打工',
-          url: `${ tanjiUrl }list`
+          url: `${ mainUrl }jobs/main/?v=2`
         },
         {
           name: '興趣測驗',
           url: `${ guideUrl }interest/`
         },
         {
-          name: '學習歷程',
-          url: `${ studentUrl }epf`
+          name: '升學就業地圖',
+          url: `${ guideUrl }career/`
+        },
+        {
+          name: '學習精靈',
+          url: nabiUrl
         }
       ]
     },
@@ -183,20 +183,20 @@ const props = defineProps({
     default: () => {
       return [ 
         {
-          name: '升學就業地圖',
-          url: `${ guideUrl }career/`
+          name: '職業適性測驗',
+          url: `${ guideUrl }personality/`
         },
         {
           name: '工作世界',
           url: `${ guideUrl }wow/`
         },
         {
-          name: '職涯導航',
-          url: `${ guideUrl }`
+          name: '職涯診所',
+          url: `${ giverUrl }questionList?orderType=recommend`
         },
         {
-          name: '落點分析',
-          url: `${ studentUrl }hs/`
+          name: '個人品牌',
+          url: profileUrl
         },
         {
           name: '所有服務',
