@@ -128,7 +128,7 @@
                       v-for="(job, index) in storeJob.typeJobs"
                       :key="job.link"
                       :href="addQuery(job.link,{ 
-                        jobsource: `${ jobSourcePrefix.value }${ storeJob.typeJobSource }` 
+                        jobsource: `${ jobSourcePrefix }${ storeJob.typeJobSource }` 
                       })"
                       target="_blank"
                       :data-gtm-index="`推薦職缺-${ storeJob.typeName }${ index + 1 }`"
@@ -270,13 +270,11 @@ const searchLink = computed(() => {
 })
 const moreLink = computed(() => {
   const queries = {
-    keyword: storeJob.typeKeyword,
     jobsource: `${ jobSourcePrefix.value }${ storeJob.typeJobSource }`,
     utm_source: 'cweb_studentmainpage',
-    utm_medium: `${ storeJob.currentType }_seemore`,
-    ...(storeJob.currentType === 'intern' ? { rostatus: 1024 } : {})
+    utm_medium: `${ storeJob.currentType }_seemore`
   }
-  return addQuery(jobLink, queries)
+  return addQuery(storeJob.typeMoreLink, queries)
 })
 
 const openCategoryPicker = () => {
