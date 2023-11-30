@@ -9,22 +9,35 @@ describe('formatter-data', () => {
           salaryDesc: 'salaryDesc',
           link: 'link'
         }
-      ]
+      ],
+      moreLink: 'moreLink'
     }
     
     const result = formatter.data(data)
     
-    expect(result).toEqual([ {
-      title: 'jobName',
-      salary: 'salaryDesc',
-      area: 'addresNoDesc',
-      link: 'link'
-    } ])
+    expect(result).toEqual(
+      {
+        jobList: [
+          {
+            title: 'jobName',
+            salary: 'salaryDesc',
+            area: 'addresNoDesc',
+            link: 'link'
+          }
+        ],
+        moreLink: 'moreLink'
+      })
   })
 
   it('如果jobList為[]，應該回傳 []', () => {
-    const result = formatter.data({ jobList: [] })
+    const result = formatter.data({
+      jobList: [], 
+      moreLink: 'moreLink' 
+    })
 
-    expect(result).toEqual([])
+    expect(result).toEqual({
+      jobList: [], 
+      moreLink: 'moreLink' 
+    })
   })
 })
