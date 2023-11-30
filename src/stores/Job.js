@@ -10,13 +10,15 @@ export const useJob = (id = 'Job', pinia) => {
       name: '打工職缺',
       keyword: '打工',
       jobsource: 'college_pt',
-      jobs: []
+      jobs: [],
+      moreLink: ''
     },
     intern: {
       name: '實習機會',
       keyword: '實習',
       jobsource: 'college_intern',
-      jobs: []
+      jobs: [],
+      moreLink: ''
     }
   })
 
@@ -27,9 +29,9 @@ export const useJob = (id = 'Job', pinia) => {
   const tags = computed(() => _tags.value)
   const advertises = computed(() => _advertises.value)
   const typeJobs = computed(() => _typeMap.value[currentType.value]?.jobs)
-  const typeKeyword = computed(() => _typeMap.value[currentType.value]?.keyword)
   const typeJobSource = computed(() => _typeMap.value[currentType.value]?.jobsource)
   const typeName = computed(() => _typeMap.value[currentType.value]?.name)
+  const typeMoreLink = computed(() => _typeMap.value[currentType.value]?.moreLink)
   const listedType = computed(() => [ 'parttime', 'intern' ].map((type) => {
     return {
       id: type,
@@ -48,8 +50,12 @@ export const useJob = (id = 'Job', pinia) => {
     try {
       const resultPt = await apiService.getPtJob()
       const resultIntern = await apiService.getInternJob()
-      _typeMap.value.parttime.jobs = resultPt
-      _typeMap.value.intern.jobs = resultIntern
+
+      _typeMap.value.parttime.jobs = resultPt.jobList
+      _typeMap.value.parttime.moreLink = resultPt.moreLink
+
+      _typeMap.value.intern.jobs = resultIntern.jobList
+      _typeMap.value.intern.moreLink = resultIntern.moreLink
 
       return {
         parttime: resultPt,
@@ -89,9 +95,9 @@ export const useJob = (id = 'Job', pinia) => {
       advertises,
       listedType,
       typeJobs,
-      typeKeyword,
       typeJobSource,
       typeName,
+      typeMoreLink,
       loading,
       getAllJobs,
       getAdvertises,
