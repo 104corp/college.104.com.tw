@@ -8,18 +8,26 @@ const store = useJob('Job', pinia)
 describe('Job - function', () => {
   it('getAllJobs：執行api Service 並且 computed-typeJobs 數值正確', async () => {
     store.channel104student = undefined
-    const spyServiceIntern = vi.spyOn(apiService, 'getInternJob').mockResolvedValue('formatted getInternJob response')
-    const spyServicePt = vi.spyOn(apiService, 'getPtJob').mockResolvedValue('formatted getPtJob response')
+    const spyServiceIntern = vi.spyOn(apiService, 'getInternJob').mockResolvedValue({
+      jobList: 'formatted intern jobList',
+      moreLink: 'formatted intern moreLink'
+    })
+    const spyServicePt = vi.spyOn(apiService, 'getPtJob').mockResolvedValue({
+      jobList: 'formatted pt jobList',
+      moreLink: 'formatted pt moreLink'
+    })
     await store.getAllJobs()
 
     expect(spyServiceIntern).toHaveBeenCalled()
     expect(spyServicePt).toHaveBeenCalled()
     
     store.currentType = 'parttime'
-    expect(store.typeJobs).toEqual('formatted getPtJob response')
+    expect(store.typeJobs).toEqual('formatted pt jobList')
+    expect(store.typeMoreLink).toEqual('formatted pt moreLink')
     
     store.currentType = 'intern'
-    expect(store.typeJobs).toEqual('formatted getInternJob response')
+    expect(store.typeJobs).toEqual('formatted intern jobList')
+    expect(store.typeMoreLink).toEqual('formatted intern moreLink')
   })
 
   it('getTags：執行api Service 並更新 store.tags', async () => {

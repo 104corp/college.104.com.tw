@@ -3,16 +3,19 @@ import { apiHandler } from '@/apis/apiHandler.js'
 const apiPath = 'home/partTimeJobList'
 export const formatter = {
   data: (data) => {
-    return data.jobList.map(({
-      jobName, addresNoDesc, salaryDesc, link 
-    }) => {
-      return {
-        title: jobName,
-        salary: salaryDesc,
-        area: addresNoDesc,
-        link
-      }
-    })    
+    return {
+      jobList: data.jobList.map(({
+        jobName, addresNoDesc, salaryDesc, link 
+      }) => {
+        return {
+          title: jobName,
+          salary: salaryDesc,
+          area: addresNoDesc,
+          link
+        }
+      }),
+      moreLink: data.moreLink
+    }
   }
 }
 
@@ -26,7 +29,8 @@ export default {
           salaryDesc: 'string',
           link: 'string'
         }
-      ]
+      ],
+      moreLink: 'string'
     }
       
     return await apiHandler(
