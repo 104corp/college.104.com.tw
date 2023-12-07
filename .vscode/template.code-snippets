@@ -1,0 +1,16 @@
+{
+    "store-api": {
+		"prefix": "store-api",
+		"body": [
+			"// import apiService from '@/apis/index.js'",
+			"loading.$__actionName.value = true",
+			"try {",
+			"	const result = await apiService.$__serviceName()",
+			"	$__value.value = result",
+			"	return result",
+			"  } finally {",
+			"	loading.$__actionName.value = false",
+			" }"
+		]
+	}
+}
