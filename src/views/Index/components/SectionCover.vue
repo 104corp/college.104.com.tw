@@ -160,7 +160,7 @@
                 :key="advertise.link"
                 :href="advertise.link"
                 target="_blank"
-                :data-gtm-index="gtmAdvertisesPosition[index + 1]"
+                :data-gtm-index="gtmAdvertisesPosition[index]"
                 class="[&:nth-child(n+5)]:hidden"
               >
                 <BaseImage
@@ -249,12 +249,12 @@ const utm = {
   utm_medium: 'university_activity'
 }
 
-const gtmAdvertisesPosition = {
-  1: '左上',
-  2: '右上',
-  3: '左下',
-  4: '右下'
-}
+const gtmAdvertisesPosition = [
+  '左上',
+  '右上',
+  '左下',
+  '右下'
+]
 
 const keyword = ref('')
 const area = ref([])
