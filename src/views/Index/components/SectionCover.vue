@@ -61,6 +61,7 @@
             <a
               :href="searchLink"
               target="_blank"
+              data-gtm-index="搜尋"
               class="btn btn-primary px-12 py-10"
               md="px-77"
             >搜尋</a>
@@ -71,11 +72,11 @@
             md="px-32"
           >
             <a
-              v-for="(tag,index) in storeJob.tags"
+              v-for="tag in storeJob.tags"
               :key="tag.name"
               :href="tag.url"
               target="_blank"
-              :data-gtm-index="`關鍵字-${ index+1 }-${ tag.name }`"
+              :data-gtm-index="`關鍵字-${ tag.name }`"
               class="flex-shrink-0"
               :class="{ 'tag-primary-lake-200': tag.type === 'parttime',
                         'tag-primary-green-200': tag.type === 'intern' }"
@@ -155,10 +156,11 @@
               md="grid grid-cols-2 grid-rows-2 gap-12 w-396 h-224"
             >
               <a
-                v-for="advertise in storeJob.advertises"
+                v-for="(advertise, index) in storeJob.advertises"
                 :key="advertise.link"
                 :href="advertise.link"
                 target="_blank"
+                :data-gtm-index="gtmAdvertisesPosition[index]"
                 class="[&:nth-child(n+5)]:hidden"
               >
                 <BaseImage
@@ -184,7 +186,7 @@
         more-text="更多活動"
         :more-link="addQuery(meetUrl, utm)"
         :image="storeEvent.latestPost?.image"
-        :data-gtm-index="`活動板位-${storeEvent.latestPost?.title}`"
+        data-gtm-index="活動"
       ></CardEvent>
       <CardEvent
         :is-loading="storeInstagram.loading.getChannel104student"
@@ -195,7 +197,7 @@
         more-text="看所有貼文"
         more-link="https://instagram.com/104student?igshid=NTc4MTIwNjQ2YQ=="
         :image="storeInstagram.latestPost104student?.image"
-        data-gtm-index="活動板位-IG"
+        data-gtm-index="IG"
       ></CardEvent>
       <CardEvent
         :is-loading="storePodcast.loading.getChannel104youth"
@@ -206,7 +208,7 @@
         more-text="聽所有單集"
         :more-link="addQuery(`${blogUrl}category/podcast/104youth/`, utm)"
         :image="storePodcast.latestPost104youth?.image"
-        :data-gtm-index="`活動板位-${storePodcast.latestPost104youth?.title}`"
+        data-gtm-index="播客"
       ></CardEvent>
     </div>
   </div>
@@ -246,6 +248,13 @@ const utm = {
   utm_source: 'cweb_studentmainpage',
   utm_medium: 'university_activity'
 }
+
+const gtmAdvertisesPosition = [
+  '左上',
+  '右上',
+  '左下',
+  '右下'
+]
 
 const keyword = ref('')
 const area = ref([])
