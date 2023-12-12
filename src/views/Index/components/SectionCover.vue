@@ -108,6 +108,7 @@
                 <a
                   :href="moreLink"
                   target="_blank"
+                  data-gtm-index="”職缺-更多"
                   class="inline-flex items-center text-(14 gray-500) font-700"
                   md="hover:text-orange-400"
                 >更多<i class="i-icon:arrow ml-4"></i></a>
