@@ -8,8 +8,5 @@ phases:
       - npm ci --production=false
       - npm run test
       - npm run build
-
-artifacts:
-  files:
-    - "**/*"
-  base-directory: "dist"
+      - aws s3 rm --recursive s3://${DEPLOY_BUCKET_NAME}
+      - aws s3 sync dist s3://${DEPLOY_BUCKET_NAME} --region=ap-northeast-1
