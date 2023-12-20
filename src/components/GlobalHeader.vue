@@ -153,7 +153,7 @@ const props = defineProps({
       return [ 
         {
           name: '人力銀行',
-          url: `${ mainUrl }jobs/main/?v=2`
+          url: `${ mainUrl }jobs/main/`
         },
         {
           name: '興趣測驗',
