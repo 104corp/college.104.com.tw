@@ -6,6 +6,8 @@ on:
       - "sprint/*"
       - "develop"
 
+preview:
+  baseurl: college.104-dev.com.tw
 buildspec:
   version: 0.2
   env:
