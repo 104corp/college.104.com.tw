@@ -1,0 +1,29 @@
+name: preview
+
+on:
+  pull_request:
+    branches:
+      - "sprint/*"
+      - "develop"
+
+preview:
+  baseurl: college.104-dev.com.tw
+buildspec:
+  version: 0.2
+  env:
+    shell: bash
+    variables:
+      STAGE: development
+      S3_BUCKET_NAME: preview-college.104-dev.com.tw
+  phases:
+    install:
+      commands:
+        - n 20
+        - npm ci --production=false
+    pre_build:
+      commands:
+        - npm run test
+        - npm run build
+    build:
+      commands:
+        - aws s3 sync dist s3://${S3_BUCKET_NAME}/${GITHUB_HEAD_BRANCH_NAME} --region=ap-northeast-1 --delete
