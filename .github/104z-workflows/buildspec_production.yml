@@ -12,12 +12,12 @@ buildspec:
     variables:
       STAGE: production
       S3_BUCKET_NAME: prod-college104comtw
-phases:
-  pre_build:
-    commands:
-      - n 20
-      - npm ci --production=false
-      - npm run test
-      - npm run build
-      - aws s3 sync dist s3://${S3_BUCKET_NAME} --region=ap-northeast-1 --delete
+  phases:
+    pre_build:
+      commands:
+        - n 20
+        - npm ci --production=false
+        - npm run test
+        - npm run build
+        - aws s3 sync dist s3://${S3_BUCKET_NAME} --region=ap-northeast-1 --delete
 
